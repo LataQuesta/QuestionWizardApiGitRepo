@@ -1,0 +1,555 @@
+﻿<html>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style type='text/css'>
+    body {
+        font-family: 'Montserrat';
+        color: black;
+    }
+
+    .heading-1 {
+        position: relative;
+        text-align: center;
+    }
+
+        .heading-1:before {
+            content: "";
+            display: block;
+            border-top: 7px solid #ffcc00;
+            width: 52%;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 24%;
+            z-index: 0;
+        }
+
+        .heading-1 span {
+            background: #fff;
+            padding: 0 10px;
+            position: relative;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #ffcc00;
+            color: white;
+            font-size: 24px;
+        }
+
+    .post-thumb {
+        float: right;
+        position: relative;
+        top: 30px;
+    }
+
+        .post-thumb img {
+            width: 118px;
+            height: 118px;
+        }
+
+    .blueBorderLine {
+        border-style: solid;
+        border-color: darkblue;
+    }
+
+    .post-title {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .FirstPgTable {
+        position: relative;
+        top: -23px;
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    .TdWidth {
+        width: 174px;
+    }
+
+    .RocundCorSales {
+        width: 253px;
+        height: 75px;
+        border-radius: 15px;
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .outerpdfboxCont {
+        margin: -8px;
+        display: table;
+        box-shadow: 1px 1px 2px #ddd;
+    }
+
+    ul.checkmark {
+        list-style-type: none;
+        padding-left: 18px;
+    }
+
+        ul.checkmark li:before {
+            content: "\2713\0020";
+            position: absolute;
+            left: 0;
+            /* place the SVG at the start of the padding */
+            width: 1em;
+            height: 1em;
+        }
+
+
+        ul.checkmark li {
+            position: relative;
+            padding-left: 1.5em;
+            /* space to preserve indentation on wrap */
+        }
+
+    ul.big {
+        list-style: none;
+        padding-left: 18px;
+    }
+
+        ul.big li::before {
+            position: relative;
+            /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+            content: "";
+            display: inline-block;
+            /* By using an em scale, the arrows will size with the font */
+            width: 0.4em;
+            height: 0.4em;
+            border-right: 0.2em solid black;
+            border-top: 0.2em solid black;
+            transform: rotate(45deg);
+            margin-right: 0.5em;
+        }
+
+    .BoxTableLightGrey {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        background-color: lightgray;
+    }
+
+    .BoxTableLightwhite {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        background-color: white;
+        padding: 16px;
+    }
+
+    .box1 {
+        width: 1053px;
+        margin: 50px auto;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        color: black;
+        position: relative;
+        border-radius: 9px;
+    }
+
+
+    /* speech bubble 5 */
+
+    .sb5:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid black;
+        border-right: 10px solid transparent;
+        border-top: 10px solid black;
+        border-bottom: 10px solid transparent;
+        right: -21px;
+        top: 6px;
+    }
+
+    .sb5:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 7px solid white;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #fff;
+        border-bottom: 7px solid transparent;
+        right: -11px;
+        top: 10px;
+    }
+
+    .ThirdPg-Tbl-ProgressBar {
+        color: white;
+        padding: 1%;
+        text-align: right;
+        font-size: 20px;
+    }
+     .flex-container {
+    display: flex;
+    margin: 15px;
+}
+
+.flex-child {
+    flex: 1;
+    border: 15px solid white;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+.checkmark1 {
+      position: relative;
+    top: -27px;
+    left: -28px;
+    transform: rotate(45deg);
+    height: 30px;
+    width: 17px;
+    margin-left: 60%;
+    border-bottom: 7px solid #78b13f;
+    border-right: 7px solid #78b13f;
+    }
+</style>
+
+<body>
+    <div class='outerpdfboxCont'>
+        <div style='page-break-after: always'>
+            <div class='blueBorderLine'></div>
+
+            <div style='position: relative;
+            top: -23px;    margin: 20px;'>
+                <div class='post-thumb'>
+                    <img src='@QuestaLog_InitialPdf' style="width: 444px; height: 405px; position: absolute; top: -145px; left: -426px; " />
+                </div>
+                <h3 class='post-title'>
+                    Questa Sales and Services Suitability Report (QSSSR)
+                </h3>
+                <table class='FirstPgTable'>
+                    <tr>
+                        <td class='TdWidth'>Name </td>
+                        <td> : </td>
+                        <td>&nbsp;</td>
+                        <td>@Name</td>
+                    </tr>
+                    <tr>
+                        <td class='TdWidth'>Assessment ID </td>
+                        <td> : </td>
+                        <td>&nbsp;</td>
+                        <td>@AssessmentID</td>
+                    </tr>
+                    <tr>
+                        <td class='TdWidth'>D.O.B </td>
+                        <td> : </td>
+                        <td>&nbsp;</td>
+                        <td>@DOB</td>
+                    </tr>
+                    <tr>
+                        <td class='TdWidth'>Contact Number </td>
+                        <td> : </td>
+                        <td>&nbsp;</td>
+                        <td>@MobileNo</td>
+                    </tr>
+                    <tr>
+                        <td class='TdWidth'>Email ID </td>
+                        <td> : </td>
+                        <td>&nbsp;</td>
+                        <td>@EmailId</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class='blueBorderLine' style="position: relative;
+            top: -57px;"></div>
+            @CatergoriesBaseOnCalculation
+            <div class='blueBorderLine' style="position: relative;
+            top: -23px;"></div>
+
+            <div style=" position: relative;
+                 top: -45px;">
+                <p style='margin: 24px;text-align: center; padding: 8px;font-size: 22px;'>
+                    The <b> Suitability Score</b> is a predictive indicator of how well the candidate would perform in sales/customer service roles
+                </p>
+
+                <h1 class="heading-1"><span>QSSSR</span></h1>
+                <p style='text-align: center;font-size: 18px;position: relative;
+            top: -11px;'>IS A COMBINATION OF</p>
+                <table style="margin: 0 auto;">
+                    <tr>
+                        <td>
+                            <img style=' height: 97px;
+                                 position: relative;
+                                 z-index: -1;
+                                 top: -78px;
+                                 left: -264px;'
+                                 src='@Low_Point_Arrow_1' />
+                            <img style='height: 67px;
+                        position: relative;
+                        top: -65px;
+                        z-index: -1;'
+                                 src='@Low_Point_Arrow_3' />
+                            <img style='height: 97px;
+                        position: relative;
+                        z-index: -1;
+                        top: -78px;
+                        left: 264px;'
+                                 src='@Low_Point_Arrow_2' />
+                        </td>
+                    </tr>
+                </table>
+                <table style='margin: 0 auto;position: relative;top: -76px;'>
+                    <tr>
+                        <td>
+                            <div class='RocundCorSales' style=' border: solid 1px blue; position: relative;
+                                 left: -26px;'>
+                                <p>PART I - The Main Enneagram Type</p>
+                            </div>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <div class='RocundCorSales' style=' border: solid 1px red;position: relative;
+                                 top: -19px;'>
+                                <p>PART II - Aptitude</p>
+                            </div>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <div class='RocundCorSales' style=' border: solid 1px green; position: relative;left: 10px;'>
+                                <p>PART III - Enneagram based competencies</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div style='position: relative;
+                top: -41px;'>
+                    <div style='position: relative;
+            top: -50px;padding: 12px;'>
+                        <div class='blueBorderLine' style=' border-color: royalblue;'></div>
+                        <div style='font-size: 20px;
+                left: 40px;
+                max-width: 988px;
+                padding: 7px;
+                font-weight: 400;'>Profile Summary</div>
+                        <div class='blueBorderLine' style='width: 67%;border-color: royalblue;'></div>
+                    </div>
+
+
+
+                    <div style='border: 1px solid black;margin: 12px;    position: relative;
+            top: -50px;'>
+                        <p style='font-size: 20px;text-align: center;'>
+                            Candidate’s Suitability Score
+                        </p>
+
+                        <div style='background-image: linear-gradient(to left, green, yellow, orange, red);width: 68%;padding: 13px;margin: 0 auto;'>
+                            <div style='background-color: white;text-align: right;font-size: 12px; position: relative;left: -14px;width:@PercentageReportStatus;'>
+                                @PercentageReportStatus
+                            </div>
+                        </div>
+                        <span style='float: left;position: relative;left: 194px;'>Low</span>
+                        <span style='float: right; position: relative; left: -194px;'>High</span>
+                        <br />
+                        <p style='font-size: 20px;text-align: center;'>
+                            @DescriptionOfSuitability
+                        </p>
+                    </div>
+
+                    <table style='padding: 0 13px;position: relative;
+            top: -40px;'>
+                        <tr>
+                            <td style='width: 50px;'>
+                                <span style=' display: inline-block;
+                                      transform: rotate(-90deg) translateY(50%);
+                                      position: relative;
+                                      font-size: 18px;
+                                      font-weight: 700;'>Aptitude</span>
+                            </td>
+                            <td>
+                                <div style='border-left: 5px solid royalblue;height: 198px;'>
+                                </div>
+                            </td>
+                            <td>
+                                <img style='width: 680px;display: block;'
+                                     src='@Base64ApptitudeImg' />
+                            </td>
+                            <td rowspan="2">
+                                <table style=' position: relative;
+                                       left: -61px;'>
+                                    <tr>
+                                        <td>
+                                            <span style=' display: inline-block;
+                                                  transform: rotate(-90deg ) translateY(50%);
+                                                  position: relative;
+                                                  left: -6px;
+                                                  font-size: 18px;
+                                                  font-weight: 700;text-align: center;'>Enneagram Type</span>
+                                        </td>
+                                        <td>
+                                            <div style=' border-left: 5px solid royalblue;
+                                                 height: 640px;
+                                                 position: relative;
+                                                 top: -13px;'>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div style="position: relative;color: black;top: -23px;font-size: 16px;">
+                                                @NormalName
+                                            </div>
+                                            <img style='width: 239px;
+                height: 222px;' src='@Type' />
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style='width: 50px;'>
+                                <span style='transform: rotate(-90deg);
+                                position: absolute;
+                                left: -95px;
+                                color: black;
+                                font-size: 18px;
+                                font-weight: 700;'>
+                                    Enneagram
+                                    Based Competencies
+                                </span>
+                            </td>
+                            <td>
+                                <div style='border-left: 5px solid royalblue;height: 398px;'>
+                                </div>
+                            </td>
+                            <td style="display: inline-block;">
+                                <img style='display: block;width: 791px;'
+                                     src='@Base64CompentenciesImg' />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+       
+
+
+        <div style='page-break-inside: avoid;page-break-after: always;'>
+
+            <div style='padding: 12px;'>
+                <div class='blueBorderLine' style=' border-color: royalblue;'></div>
+                <div style='font-size: 20px;left: 40px;max-width: 988px;padding: 7px;    font-weight: 400;'>
+                    PART I - Enneagram Type
+                </div>
+                <div class='blueBorderLine' style='width: 67%;border-color: royalblue;'></div>
+            </div>
+
+            <img style='width: 239px;height: 220px;float: right;position: relative;
+    left: -98px;top: -22px;'
+                 src='@Type' />
+
+            @MainType
+
+
+
+
+
+            <div style='padding: 12px;'>
+                <div class='blueBorderLine' style=' border-color: green;'></div>
+                <div style='font-size: 20px;left: 40px;max-width: 988px;padding: 7px;'>
+                    PART II - Aptitude
+                </div>
+                <div class='blueBorderLine' style='border-color: green;'></div>
+            </div>
+            <img style='width: 720px;height: 258px; position: relative;left: 126px;'
+                 src='@Base64ApptitudeImg' />
+
+
+            <table style='border-collapse: collapse;margin: 12px;font-size: 22px;'>
+                <tr>
+                    <td style='border: 1px solid black;background-color: lightgray;'>
+                        @VerbalAptitude
+                    </td>
+                </tr>
+            </table>
+
+            <table style='border-collapse: collapse;margin: 12px;font-size: 22px;'>
+               
+                <tr>
+                    <td style='border: 1px solid black; background-color: white;color: black;'>
+                        @LogicalReasoningAptitude
+                    </td>
+                </tr>
+            </table>
+
+
+            <table style='border-collapse: collapse;margin: 12px;font-size: 22px;'>
+
+                <tr>
+                    <td style='border: 1px solid black; background-color: lightgray;color: black;'>
+                        @NumericalAptitude
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        @ConsistencyPage
+
+        <div style='page-break-inside: avoid;'>
+
+            <div style='padding: 12px;'>
+                <div class='blueBorderLine' style=' border-color: #FFD580;'></div>
+                <div style='font-size: 18px;left: 40px;max-width: 988px;padding: 7px;'>
+                    <b>
+                        PART IV - Interview Questions
+                    </b>
+                </div>
+                <div class='blueBorderLine' style='border-color: #FFD580;'></div>
+            </div>
+
+
+            <table style='border-collapse: collapse;margin: 12px;font-size: 22px;'>
+                <tr>
+                    <td style='border: 3px solid #ffe6cc;padding: 11px;'>
+                        Indicative questions for low-scored competencies for a) Sales candidates b) Customer Service candidate.
+                    </td>
+                </tr>
+            </table>
+
+            <br />
+            <table style='margin: 12px;font-size: 20px;'>
+                <tr>
+                    <td>
+                        @LowestCompentencyScore
+                    </td>
+                </tr>
+            </table>
+            
+            <br /><br /><br /><br /><br />
+
+            <table align="center" style="margin: 0px auto;">
+                <tr>
+                    <td>
+                        <div style="border:  2px solid black;
+                        height: 950px;
+                        width: 1090px;">
+                            <div style=" text-align: center;
+                            background-color: #FED8B1;
+                            height: 45px;">
+                                <p style="margin: 0;"><b>Comments</b>
+                                <p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <br />
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

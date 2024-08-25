@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="00e55be02951481f90b155bcd6f55ed4" Name="Diagram1">
+        <EntityTypeShape EntityType="QuestionDemoModel.ErrorLog" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstAge" Width="1.5" PointX="7.75" PointY="11.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.MstConfig" Width="1.5" PointX="10.75" PointY="6.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstCountry" Width="1.5" PointX="8.75" PointY="3.875" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstEmployeeStatu" Width="1.5" PointX="9.75" PointY="11.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstGender" Width="1.5" PointX="11.75" PointY="9.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstIndustry" Width="1.5" PointX="0.75" PointY="8.375" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstMailConfig" Width="1.5" PointX="12.75" PointY="12.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstMaritalStatu" Width="1.5" PointX="12.75" PointY="6.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstProfession" Width="1.5" PointX="13.75" PointY="3.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstProfileSelected" Width="1.5" PointX="13.75" PointY="9.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstQualification" Width="1.5" PointX="12.75" PointY="16.5" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstQuestion" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstQuestionReponseType" Width="1.5" PointX="3.75" PointY="4" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstQuestionResponse" Width="1.5" PointX="8.25" PointY="7" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstQuestionSubType" Width="1.5" PointX="6" PointY="7.375" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstQuestionType" Width="1.5" PointX="3.75" PointY="28.125" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstScoreModule" Width="1.5" PointX="5.25" PointY="32.375" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstState" Width="1.5" PointX="11" PointY="3.75" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstSubModule" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnAttachmentMailSent" Width="1.5" PointX="5.25" PointY="17.125" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnExamSetStatu" Width="1.5" PointX="5.25" PointY="24.75" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnIndustry" Width="1.5" PointX="3" PointY="11.125" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnQuesResponseWithSubModule" Width="1.5" PointX="5.25" PointY="12.125" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnQuestion" Width="1.5" PointX="8.25" PointY="14.25" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnQuestionResponse" Width="1.5" PointX="10.5" PointY="14.125" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnUserTestDetail" Width="1.5" PointX="3" PointY="14.25" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstState_mstCountry_CountryId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnIndustry_IndustryId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstQuestion_mstQuestionType_TypeId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstQuestionResponse_mstQuestion_QuestionId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestion_mstQuestion_QuestionId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestionResponse_mstQuestion_QuestionId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionResponse_ResponseId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstQuestionSubType_mstQuestionType_TypeId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionType_TypeId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_mstScoreModule_mstSubModule_SubModuleId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnAttachmentMailSent_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnExamSetStatus_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestion_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestionResponse_txnQuestion_TestQuestionId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnQuestionResponse_txnUserTestDetails_TestId" />
+        <EntityTypeShape EntityType="QuestionDemoModel.txnCandidate" Width="1.5" PointX="0.75" PointY="12" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnIndustry_UserId" />
+        <AssociationConnector Association="QuestionDemoModel.FK_txnUserTestDetails_txnCandidate_UserId" />
+        <EntityTypeShape EntityType="QuestionDemoModel.mstMailType" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

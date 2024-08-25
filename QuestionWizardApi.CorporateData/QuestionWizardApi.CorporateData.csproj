@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8AFF85-62F9-418F-AAFE-758EEC66E708}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuestionWizardApi.CorporateData</RootNamespace>
+    <AssemblyName>QuestionWizardApi.CorporateData</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CorporateAssessmentModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CorporateAssessmentModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CorporateAssessmentModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CorporateAssessmentModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CorporateAssessmentModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DummyCandidateRecord.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstAge.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstAssessmentModule.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstAssessmentSet.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstCluster.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstCompany.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstCompetency.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstConfig.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstCountry.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstEmployeeStatu.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstExperence.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstGender.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstHumanResourceRepo.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstIndustry.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstmailConfigByAssessment.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstMailTemplate.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstMainTypeCalScore.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstMaritalStatu.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstProfession.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstProfileSelected.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstQualification.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstQuestion.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstQuestionReponseType.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstQuestionResponse.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstQuestionSubType.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstQuestionType.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MstReportRepository.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstState.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mstUserLogin.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mst_mailConfigByAssessment.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mst_QMP_Normatives.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sp_ExportRearrangeOrderScoreCard_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_ExportSubTypeWiseScoreCard_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_ExportTypeWiseScoreCard_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_ExportTypeWiseScoreCard_Result1.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_ExportTypeWiseScoreCard_Result2.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_getmailbodyforcandidate_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_getmailbodyforHr_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMasterData_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMasterData_Result1.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMasterData_Result2.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMasterData_Result3.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnCampanyMapToAssessment.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnCandidate.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnCandidateLinkHistory.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnClusterMapToCompetency.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnCompetencyByCompany.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TxnConfigureMailSent.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnDynamicMisTyping.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnExamSetStatu.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnHrMapToCompanyAndAssessment.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnIndustry.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TxnLinkGenerationId.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnMailSentToCandidate.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnModuleByAssessment.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnQuestion.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnQuestionResponse.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="txnUserTestDetail.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetRowScoreTypeWise_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetRowScoreTypeWise_Result1.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetRowScoreTypeWise_Result2.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetScoreCardName_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetScoreCardName_Result1.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetScoreCardName_Result2.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubTypeWiseScoreBoard_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubTypeWiseScoreBoard_Result1.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubTypeWiseScoreBoard_Result2.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_TypeWiseScoreBoard_Result.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_TypeWiseScoreBoard_Result1.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_TypeWiseScoreBoard_Result2.cs">
+      <DependentUpon>CorporateAssessmentModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="CorporateAssessmentModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CorporateAssessmentModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="CorporateAssessmentModel.edmx.diagram">
+      <DependentUpon>CorporateAssessmentModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CorporateAssessmentModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CorporateAssessmentModel.edmx</DependentUpon>
+      <LastGenOutput>CorporateAssessmentModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CorporateAssessmentModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CorporateAssessmentModel.edmx</DependentUpon>
+      <LastGenOutput>CorporateAssessmentModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="script.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

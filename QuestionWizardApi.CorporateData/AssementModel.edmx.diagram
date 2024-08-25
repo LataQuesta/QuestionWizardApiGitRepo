@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c79a59d2ee3d4c16a0dd657bb896c291" Name="Diagram1">
+        <EntityTypeShape EntityType="QuestionDBModel.ErrorLog" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstAge" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstCompany" Width="1.5" PointX="3.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstCompetency" Width="1.5" PointX="3.75" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.MstCompetencyCluster" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.MstConfig" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstCountry" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstEmployeeStatu" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstExamSet" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstGender" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstIndustry" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstMailConfig" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstMailType" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstMaritalStatu" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstModule" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstPair" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstProfession" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstProfileSelected" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstQualification" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstQuestion" Width="1.5" PointX="3" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstQuestionReponseType" Width="1.5" PointX="0.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstQuestionResponse" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstQuestionSubType" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstQuestionType" Width="1.5" PointX="0.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstScoreModule" Width="1.5" PointX="8.25" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstState" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.mstSubModule" Width="1.5" PointX="6" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnAttachmentMailSent" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnCandidate" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnCompanyVSet" Width="1.5" PointX="6" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnCompetencyByCompany" Width="1.5" PointX="6" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnDynamicMisTyping" Width="1.5" PointX="5.25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnExamSetStatu" Width="1.5" PointX="8.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnIndustry" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnModule7ScoreCard" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnQuesResponseWithSubModule" Width="1.5" PointX="8.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnQuestion" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnQuestionResponse" Width="1.5" PointX="10.5" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuestionDBModel.txnUserTestDetail" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnCompanyVSet_CompanyId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnCompetencyByCompany_mstCompany_CompanyId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnCompetencyByCompany_mstCompetency_CompetencyId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstState_mstCountry_CountryId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestion_mstExamSet_SetId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestionType_mstExamSet_SetId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnExamSetStatus_mstExamSet_SetId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestion_mstExamSet_Setid" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnIndustry_IndustryId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestion_mstQuestionType_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestionResponse_mstQuestion_QuestionId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestion_mstQuestion_QuestionId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestionResponse_mstQuestion_QuestionId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestionResponse_mstQuestionResponse_ResponseId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstQuestionSubType_mstQuestionType_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnCompetencyByCompany_mstQuestionType_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnModule7ScoreCard_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestionResponse_mstQuestionType_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_mstScoreModule_mstSubModule_SubModuleId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnAttachmentMailSent_txnUserTestDetails_TestId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnIndustry_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnUserTestDetails_txnCandidate_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnDynamicMisTyping_TestId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnExamSetStatus_txnUserTestDetails_TestId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnModule7ScoreCard_TestId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestion_txnUserTestDetails_TestId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestionResponse_txnQuestion_TestQuestionId" ManuallyRouted="false" />
+        <AssociationConnector Association="QuestionDBModel.FK_txnQuestionResponse_txnUserTestDetails_TestId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

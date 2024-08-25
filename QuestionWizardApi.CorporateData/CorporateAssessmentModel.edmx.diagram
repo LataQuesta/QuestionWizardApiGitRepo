@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="12b06ea3f76c4a06a985e7c07db30fd7" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="CorporateAssessmentModel.ErrorLog" Width="1.5" PointX="2.75" PointY="5.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstAge" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstAssessmentSet" Width="1.5" PointX="0.75" PointY="12.25" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstCompetency" Width="1.5" PointX="3" PointY="31.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.MstConfig" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstCountry" Width="1.5" PointX="7.75" PointY="1" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstEmployeeStatu" Width="1.5" PointX="9.75" PointY="3.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstGender" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstIndustry" Width="1.5" PointX="1.5" PointY="35" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstMailTemplate" Width="1.5" PointX="2.75" PointY="1" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstMaritalStatu" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstProfession" Width="1.5" PointX="11.75" PointY="3.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstProfileSelected" Width="1.5" PointX="5" PointY="1.625" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstQualification" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstQuestion" Width="1.5" PointX="8.25" PointY="14.375" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstQuestionReponseType" Width="1.5" PointX="6" PointY="10.375" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstQuestionResponse" Width="1.5" PointX="10.5" PointY="14.625" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstQuestionSubType" Width="1.5" PointX="8.25" PointY="9.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstQuestionType" Width="1.5" PointX="6" PointY="6.5" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstState" Width="1.5" PointX="10" PointY="0.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnCompetencyByCompany" Width="1.5" PointX="5.25" PointY="22" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnDynamicMisTyping" Width="1.5" PointX="3" PointY="10" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnExamSetStatu" Width="1.5" PointX="5.25" PointY="18.125" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnIndustry" Width="1.5" PointX="3.75" PointY="26.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnModuleByAssessment" Width="1.5" PointX="5.25" PointY="13.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnQuestion" Width="1.5" PointX="13.5" PointY="14.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnQuestionResponse" Width="1.5" PointX="15.75" PointY="14.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnUserTestDetail" Width="1.5" PointX="0.75" PointY="5.25" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnDynamicMisTyping_mstAssessmentModule_AssessmentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnModuleByAssessment_mstAssessmentSet_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCompetencyByCompany_mstCompetency_CompetencyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstState_mstCountry_CountryId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnIndustry_IndustryId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstProfileSelected_mstMailTemplate_FinalMailSentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstProfileSelected_mstMailTemplate_InitialMailSentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstQuestion_mstQuestionType_TypeId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstQuestionResponse_mstQuestion_QuestionId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestion_mstQuestion_QuestionId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestionResponse_mstQuestion_QuestionId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestionResponse_mstQuestionResponse_ResponseId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstQuestionSubType_mstQuestionType_TypeId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestionResponse_mstQuestionType_TypeId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnDynamicMisTyping_TestId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnExamSetStatus_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestion_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestionResponse_txnQuestion_TxnQuestionId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestionResponse_txnUserTestDetails_TestId" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstAssessmentModule" Width="1.5" PointX="3" PointY="37.875" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstAssessmentModule_mstAssessmentSet_AssessmentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstQuestion_mstAssessmentModule_ModuleId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnExamSetStatus_mstAssessmentModule_ModuleId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnModuleByAssessment_mstAssessmentModule_ModuleId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnQuestion_mstAssessmentSet_ModuleId" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstMainTypeCalScore" Width="1.5" PointX="8.25" PointY="19.75" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstMainTypeCalScore_mstQuestionType_MainTypeId" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstExperence" Width="1.5" PointX="13.375" PointY="9.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.MstReportRepository" Width="1.5" PointX="13.375" PointY="6.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstCluster" Width="1.5" PointX="15.375" PointY="1.5" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.Mst_QMP_Normatives" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnClusterMapToCompetency" Width="1.5" PointX="17.625" PointY="6.125" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnClusterMapToCompetency_mstCluster_ClusterId" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.DummyCandidateRecord" Width="1.5" PointX="5.25" PointY="45.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mst_mailConfigByAssessment" Width="1.5" PointX="5" PointY="2.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstmailConfigByAssessment" Width="1.5" PointX="8" PointY="1.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstUserLogin" Width="1.5" PointX="18.375" PointY="15.125" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnCampanyMapToAssessment" Width="1.5" PointX="6.25" PointY="33.625" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnCandidateLinkHistory" Width="1.5" PointX="11" PointY="0.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.TxnConfigureMailSent" Width="1.5" PointX="10.5" PointY="28.875" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnHrMapToCompanyAndAssessment" Width="1.5" PointX="8.5" PointY="33.375" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.TxnLinkGenerationId" Width="1.5" PointX="8.25" PointY="28.5" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnMailSentToCandidate" Width="1.5" PointX="3" PointY="20.25" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mst_mailConfigByAssessment_mstAssessmentSet_AssessmentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mst_mailConfigByAssessment_mstMailTemplate_MailTemplateId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstmailConfigByAssessment_mstAssessmentSet_AssessmentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCampanyMapToAssessment_mstAssessmentSet_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnHrMapToCompanyAndAssessment_mstAssessmentSet_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_TxnLinkGenerationId_mstAssessmentSet_AssessmentId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_mstmailConfigByAssessment_mstMailTemplate_MailTemplateId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCandidateLinkHistory_mstMailTemplate_FinalMailTemplateId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCandidateLinkHistory_mstMailTemplate_InitialMailTemplateId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_TxnLinkGenerationId_mstMailTemplate_FinalMailId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_TxnLinkGenerationId_mstMailTemplate_InitialMailId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCandidateLinkHistory_txnUserTestDetails_TestId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_TxnConfigureMailSent_TxnLinkGenerationId_LinkGenerationId" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstCompany" Width="1.5" PointX="3.25" PointY="27.75" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.mstHumanResourceRepo" Width="1.5" PointX="0.75" PointY="23.75" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCampanyMapToAssessment_mstCompany_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnCompetencyByCompany_mstCompany_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnHrMapToCompanyAndAssessment_mstCompany_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_TxnLinkGenerationId_mstCompany_CompanyId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnHrMapToCompanyAndAssessment_mstHumanResourceRepo_HrId" />
+        <EntityTypeShape EntityType="CorporateAssessmentModel.txnCandidate" Width="1.5" PointX="3" PointY="42.875" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_TxnCandidate_mstHumanResource_HrId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnIndustry_UserId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnMailSentToCandidate_txnCandidate_UserId" />
+        <AssociationConnector Association="CorporateAssessmentModel.FK_txnUserTestDetails_txnCandidate_UserId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

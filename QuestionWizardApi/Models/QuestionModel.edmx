@@ -1,0 +1,2150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="QuestionDemoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ErrorLog">
+          <Key>
+            <PropertyRef Name="ErrorId" />
+          </Key>
+          <Property Name="ErrorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RequestMethod" Type="varchar(max)" />
+          <Property Name="RequestUri" Type="varchar(max)" />
+          <Property Name="Message" Type="varchar(max)" />
+          <Property Name="DateTime" Type="datetime" />
+          <Property Name="ErrorMessage" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="mstAge">
+          <Key>
+            <PropertyRef Name="AgeId" />
+          </Key>
+          <Property Name="AgeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AgeName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="MstConfig">
+          <Key>
+            <PropertyRef Name="ConfigId" />
+          </Key>
+          <Property Name="ConfigId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ConfigValue" Type="varchar(max)" />
+          <Property Name="ConfigName" Type="varchar(max)" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="mstCountry">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstEmployeeStatus">
+          <Key>
+            <PropertyRef Name="EmploymentId" />
+          </Key>
+          <Property Name="EmploymentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmploymentName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstExamSet">
+          <Key>
+            <PropertyRef Name="SetId" />
+          </Key>
+          <Property Name="SetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SetName" Type="varchar" MaxLength="250" />
+          <Property Name="PartialSetName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="SetOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="mstGender">
+          <Key>
+            <PropertyRef Name="GenderId" />
+          </Key>
+          <Property Name="GenderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GenderName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstIndustry">
+          <Key>
+            <PropertyRef Name="IndustryId" />
+          </Key>
+          <Property Name="IndustryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IndustryName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstMailConfig">
+          <Key>
+            <PropertyRef Name="ConfigId" />
+          </Key>
+          <Property Name="ConfigId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MailTypeId" Type="int" />
+          <Property Name="SMTP_SenderNAME" Type="varchar(max)" />
+          <Property Name="SMTP_USERNAME" Type="varchar(max)" />
+          <Property Name="SMTP_PASSWORD" Type="varchar(max)" />
+          <Property Name="CONFIGSET" Type="varchar(max)" />
+          <Property Name="FromMailAddress" Type="varchar(max)" />
+          <Property Name="BCCMailAddress" Type="varchar(max)" />
+          <Property Name="CCMailAddress" Type="varchar(max)" />
+          <Property Name="HOST" Type="varchar(max)" />
+          <Property Name="PORT" Type="varchar(max)" />
+          <Property Name="BODY" Type="varchar(max)" />
+          <Property Name="Active" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstMailType">
+          <Key>
+            <PropertyRef Name="MailTypeId" />
+          </Key>
+          <Property Name="MailTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MailTypeName" Type="varchar(max)" />
+          <Property Name="Active" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstMaritalStatus">
+          <Key>
+            <PropertyRef Name="MaritalId" />
+          </Key>
+          <Property Name="MaritalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaritalName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstProfession">
+          <Key>
+            <PropertyRef Name="ProfessionId" />
+          </Key>
+          <Property Name="ProfessionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProfessionName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstProfileSelected">
+          <Key>
+            <PropertyRef Name="ProfileId" />
+          </Key>
+          <Property Name="ProfileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProfileName" Type="varchar" MaxLength="250" />
+          <Property Name="InitialMailSent" Type="int" />
+          <Property Name="FinalMail" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstQualification">
+          <Key>
+            <PropertyRef Name="QualificationId" />
+          </Key>
+          <Property Name="QualificationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QualificationName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstQuestion">
+          <Key>
+            <PropertyRef Name="QuestionId" />
+          </Key>
+          <Property Name="QuestionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Question" Type="varchar(max)" />
+          <Property Name="TypeId" Type="int" />
+          <Property Name="SetId" Type="int" />
+          <Property Name="ResponseTypeId" Type="int" />
+          <Property Name="SubModuleId" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="mstQuestionReponseType">
+          <Key>
+            <PropertyRef Name="ResponseTypeId" />
+          </Key>
+          <Property Name="ResponseTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ResponseTypeName" Type="varchar" MaxLength="250" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="mstQuestionResponse">
+          <Key>
+            <PropertyRef Name="ResponseId" />
+          </Key>
+          <Property Name="ResponseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QuestionId" Type="int" />
+          <Property Name="SubTypeId" Type="int" />
+          <Property Name="ResponseNumber" Type="int" />
+          <Property Name="ResponseText" Type="varchar(max)" />
+          <Property Name="weight" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="mstQuestionSubType">
+          <Key>
+            <PropertyRef Name="SubTypeId" />
+          </Key>
+          <Property Name="SubTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubTypeName" Type="varchar" MaxLength="250" />
+          <Property Name="TypeId" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="mstQuestionType">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="SetId" Type="int" />
+        </EntityType>
+        <EntityType Name="mstScoreModule">
+          <Key>
+            <PropertyRef Name="ScoreId" />
+          </Key>
+          <Property Name="ScoreId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Rating" Type="int" />
+          <Property Name="Score" Type="int" />
+          <Property Name="Percentage" Type="int" />
+          <Property Name="SubModuleId" Type="int" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="mstState">
+          <Key>
+            <PropertyRef Name="StateId" />
+          </Key>
+          <Property Name="StateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CountryId" Type="int" />
+          <Property Name="StateName" Type="varchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="mstSubModule">
+          <Key>
+            <PropertyRef Name="SubModuleId" />
+          </Key>
+          <Property Name="SubModuleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubModuleName" Type="nvarchar" MaxLength="250" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="txnAttachmentMailSent">
+          <Key>
+            <PropertyRef Name="MailSentId" />
+          </Key>
+          <Property Name="MailSentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TestId" Type="int" />
+          <Property Name="FileName" Type="varchar(max)" />
+          <Property Name="MailSentFlg" Type="bit" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="int" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="txnCandidate">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="250" />
+          <Property Name="LastName" Type="varchar" MaxLength="250" />
+          <Property Name="UserEmail" Type="varchar" MaxLength="250" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="250" />
+          <Property Name="UserGender" Type="int" />
+          <Property Name="UserAge" Type="int" />
+          <Property Name="UserState" Type="int" />
+          <Property Name="UserCountry" Type="int" />
+          <Property Name="UserQualification" Type="int" />
+          <Property Name="UserProfessional" Type="int" />
+          <Property Name="UserMaritalStatus" Type="int" />
+          <Property Name="UserEmployeeStatus" Type="int" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="ProfileSelected" Type="int" />
+          <Property Name="IsOTPRequire" Type="bit" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="LastModified" Type="datetime" />
+          <Property Name="IsInitialMail" Type="bit" />
+          <Property Name="IsAttachmentSent" Type="bit" />
+          <Property Name="TransId" Type="varchar(max)" />
+          <Property Name="TransStatus" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="txnExamSetStatus">
+          <Key>
+            <PropertyRef Name="ExamId" />
+          </Key>
+          <Property Name="ExamId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SetId" Type="int" />
+          <Property Name="TestId" Type="int" />
+          <Property Name="Status" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="txnIndustry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IndustryId" Type="int" />
+          <Property Name="UserId" Type="int" />
+        </EntityType>
+        <EntityType Name="txnQuesResponseWithSubModule">
+          <Key>
+            <PropertyRef Name="QResId" />
+          </Key>
+          <Property Name="QResId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TestId" Type="int" />
+          <Property Name="SubModuleId" Type="int" />
+          <Property Name="SetId" Type="int" />
+          <Property Name="SumOfScore" Type="int" />
+          <Property Name="AvgOfScore" Type="int" />
+          <Property Name="calcuation" Type="int" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="int" />
+        </EntityType>
+        <EntityType Name="txnQuestion">
+          <Key>
+            <PropertyRef Name="TestQuestionId" />
+          </Key>
+          <Property Name="TestQuestionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QuestionId" Type="int" />
+          <Property Name="ImpactScore" Type="int" />
+          <Property Name="ResponseAt" Type="datetime" />
+          <Property Name="IsAnswer" Type="bit" />
+          <Property Name="TestId" Type="int" />
+          <Property Name="ResponseBy" Type="int" />
+          <Property Name="Setid" Type="int" />
+        </EntityType>
+        <EntityType Name="txnQuestionResponse">
+          <Key>
+            <PropertyRef Name="TestQuestionResponseId" />
+          </Key>
+          <Property Name="TestQuestionResponseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QuestionId" Type="int" />
+          <Property Name="QuestionResponseId" Type="int" />
+          <Property Name="TestQuestionId" Type="int" />
+          <Property Name="TestId" Type="int" Nullable="false" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+          <Property Name="SubTypeId" Type="int" />
+          <Property Name="impactscore" Type="int" />
+        </EntityType>
+        <EntityType Name="txnUserTestDetails">
+          <Key>
+            <PropertyRef Name="TestId" />
+          </Key>
+          <Property Name="TestId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IPAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="status" Type="varchar" MaxLength="20" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="LastModifiedAt" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_mstQuestion_mstExamSet_SetId">
+          <End Role="mstExamSet" Type="Self.mstExamSet" Multiplicity="0..1" />
+          <End Role="mstQuestion" Type="Self.mstQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="mstQuestion">
+              <PropertyRef Name="SetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestion_mstQuestionReponseType_ResponseTypeId">
+          <End Role="mstQuestionReponseType" Type="Self.mstQuestionReponseType" Multiplicity="0..1" />
+          <End Role="mstQuestion" Type="Self.mstQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionReponseType">
+              <PropertyRef Name="ResponseTypeId" />
+            </Principal>
+            <Dependent Role="mstQuestion">
+              <PropertyRef Name="ResponseTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestion_mstQuestionType_TypeId">
+          <End Role="mstQuestionType" Type="Self.mstQuestionType" Multiplicity="0..1" />
+          <End Role="mstQuestion" Type="Self.mstQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="mstQuestion">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionResponse_mstQuestion_QuestionId">
+          <End Role="mstQuestion" Type="Self.mstQuestion" Multiplicity="0..1" />
+          <End Role="mstQuestionResponse" Type="Self.mstQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="mstQuestionResponse">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionResponse_mstQuestionSubType_SubTypeId">
+          <End Role="mstQuestionSubType" Type="Self.mstQuestionSubType" Multiplicity="0..1" />
+          <End Role="mstQuestionResponse" Type="Self.mstQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionSubType">
+              <PropertyRef Name="SubTypeId" />
+            </Principal>
+            <Dependent Role="mstQuestionResponse">
+              <PropertyRef Name="SubTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionSubType_mstQuestionType_TypeId">
+          <End Role="mstQuestionType" Type="Self.mstQuestionType" Multiplicity="0..1" />
+          <End Role="mstQuestionSubType" Type="Self.mstQuestionSubType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="mstQuestionSubType">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionType_mstExamSet_SetId">
+          <End Role="mstExamSet" Type="Self.mstExamSet" Multiplicity="0..1" />
+          <End Role="mstQuestionType" Type="Self.mstQuestionType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="mstQuestionType">
+              <PropertyRef Name="SetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstScoreModule_mstSubModule_SubModuleId">
+          <End Role="mstSubModule" Type="Self.mstSubModule" Multiplicity="0..1" />
+          <End Role="mstScoreModule" Type="Self.mstScoreModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstSubModule">
+              <PropertyRef Name="SubModuleId" />
+            </Principal>
+            <Dependent Role="mstScoreModule">
+              <PropertyRef Name="SubModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstState_mstCountry_CountryId">
+          <End Role="mstCountry" Type="Self.mstCountry" Multiplicity="0..1" />
+          <End Role="mstState" Type="Self.mstState" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstCountry">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="mstState">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnAttachmentMailSent_txnUserTestDetails_TestId">
+          <End Role="txnUserTestDetails" Type="Self.txnUserTestDetails" Multiplicity="0..1" />
+          <End Role="txnAttachmentMailSent" Type="Self.txnAttachmentMailSent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetails">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnAttachmentMailSent">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnExamSetStatus_mstExamSet_SetId">
+          <End Role="mstExamSet" Type="Self.mstExamSet" Multiplicity="0..1" />
+          <End Role="txnExamSetStatus" Type="Self.txnExamSetStatus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="txnExamSetStatus">
+              <PropertyRef Name="SetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnExamSetStatus_txnUserTestDetails_TestId">
+          <End Role="txnUserTestDetails" Type="Self.txnUserTestDetails" Multiplicity="0..1" />
+          <End Role="txnExamSetStatus" Type="Self.txnExamSetStatus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetails">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnExamSetStatus">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnIndustry_IndustryId">
+          <End Role="mstIndustry" Type="Self.mstIndustry" Multiplicity="0..1" />
+          <End Role="txnIndustry" Type="Self.txnIndustry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstIndustry">
+              <PropertyRef Name="IndustryId" />
+            </Principal>
+            <Dependent Role="txnIndustry">
+              <PropertyRef Name="IndustryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnIndustry_UserId">
+          <End Role="txnCandidate" Type="Self.txnCandidate" Multiplicity="0..1" />
+          <End Role="txnIndustry" Type="Self.txnIndustry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnCandidate">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="txnIndustry">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId">
+          <End Role="mstSubModule" Type="Self.mstSubModule" Multiplicity="0..1" />
+          <End Role="txnQuesResponseWithSubModule" Type="Self.txnQuesResponseWithSubModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstSubModule">
+              <PropertyRef Name="SubModuleId" />
+            </Principal>
+            <Dependent Role="txnQuesResponseWithSubModule">
+              <PropertyRef Name="SubModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId">
+          <End Role="txnUserTestDetails" Type="Self.txnUserTestDetails" Multiplicity="0..1" />
+          <End Role="txnQuesResponseWithSubModule" Type="Self.txnQuesResponseWithSubModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetails">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnQuesResponseWithSubModule">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestion_mstExamSet_Setid">
+          <End Role="mstExamSet" Type="Self.mstExamSet" Multiplicity="0..1" />
+          <End Role="txnQuestion" Type="Self.txnQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="txnQuestion">
+              <PropertyRef Name="Setid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestion_mstQuestion_QuestionId">
+          <End Role="mstQuestion" Type="Self.mstQuestion" Multiplicity="0..1" />
+          <End Role="txnQuestion" Type="Self.txnQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="txnQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestion_txnUserTestDetails_TestId">
+          <End Role="txnUserTestDetails" Type="Self.txnUserTestDetails" Multiplicity="0..1" />
+          <End Role="txnQuestion" Type="Self.txnQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetails">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnQuestion">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_mstQuestion_QuestionId">
+          <End Role="mstQuestion" Type="Self.mstQuestion" Multiplicity="0..1" />
+          <End Role="txnQuestionResponse" Type="Self.txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_mstQuestionResponse_ResponseId">
+          <End Role="mstQuestionResponse" Type="Self.mstQuestionResponse" Multiplicity="0..1" />
+          <End Role="txnQuestionResponse" Type="Self.txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionResponse">
+              <PropertyRef Name="ResponseId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="QuestionResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_mstQuestionType_TypeId">
+          <End Role="mstQuestionType" Type="Self.mstQuestionType" Multiplicity="1" />
+          <End Role="txnQuestionResponse" Type="Self.txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_txnQuestion_TestQuestionId">
+          <End Role="txnQuestion" Type="Self.txnQuestion" Multiplicity="0..1" />
+          <End Role="txnQuestionResponse" Type="Self.txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnQuestion">
+              <PropertyRef Name="TestQuestionId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="TestQuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_txnUserTestDetails_TestId">
+          <End Role="txnUserTestDetails" Type="Self.txnUserTestDetails" Multiplicity="1" />
+          <End Role="txnQuestionResponse" Type="Self.txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetails">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnUserTestDetails_txnCandidate_UserId">
+          <End Role="txnCandidate" Type="Self.txnCandidate" Multiplicity="0..1" />
+          <End Role="txnUserTestDetails" Type="Self.txnUserTestDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnCandidate">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="txnUserTestDetails">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Sp_InsertRandomQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="SETId" Type="int" Mode="In" />
+          <Parameter Name="TestId" Type="int" Mode="In" />
+          <Parameter Name="TYPEID" Type="int" Mode="In" />
+          <Parameter Name="HostName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="TestUniqId" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="usp_GetScoreCardName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TestId" Type="int" Mode="In" />
+          <Parameter Name="SetId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="usp_SubTypeWiseScoreBoard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TestId" Type="int" Mode="In" />
+          <Parameter Name="SETID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="usp_TypeWiseScoreBoard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TestId" Type="int" Mode="In" />
+          <Parameter Name="SETId" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="QuestionDemoModelStoreContainer">
+          <EntitySet Name="ErrorLog" EntityType="Self.ErrorLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstAge" EntityType="Self.mstAge" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MstConfig" EntityType="Self.MstConfig" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstCountry" EntityType="Self.mstCountry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstEmployeeStatus" EntityType="Self.mstEmployeeStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstExamSet" EntityType="Self.mstExamSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstGender" EntityType="Self.mstGender" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstIndustry" EntityType="Self.mstIndustry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstMailConfig" EntityType="Self.mstMailConfig" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstMailType" EntityType="Self.mstMailType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstMaritalStatus" EntityType="Self.mstMaritalStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstProfession" EntityType="Self.mstProfession" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstProfileSelected" EntityType="Self.mstProfileSelected" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstQualification" EntityType="Self.mstQualification" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstQuestion" EntityType="Self.mstQuestion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstQuestionReponseType" EntityType="Self.mstQuestionReponseType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstQuestionResponse" EntityType="Self.mstQuestionResponse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstQuestionSubType" EntityType="Self.mstQuestionSubType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstQuestionType" EntityType="Self.mstQuestionType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstScoreModule" EntityType="Self.mstScoreModule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstState" EntityType="Self.mstState" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mstSubModule" EntityType="Self.mstSubModule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnAttachmentMailSent" EntityType="Self.txnAttachmentMailSent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnCandidate" EntityType="Self.txnCandidate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnExamSetStatus" EntityType="Self.txnExamSetStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnIndustry" EntityType="Self.txnIndustry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnQuesResponseWithSubModule" EntityType="Self.txnQuesResponseWithSubModule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnQuestion" EntityType="Self.txnQuestion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnQuestionResponse" EntityType="Self.txnQuestionResponse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="txnUserTestDetails" EntityType="Self.txnUserTestDetails" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_mstQuestion_mstExamSet_SetId" Association="Self.FK_mstQuestion_mstExamSet_SetId">
+            <End Role="mstExamSet" EntitySet="mstExamSet" />
+            <End Role="mstQuestion" EntitySet="mstQuestion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" Association="Self.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId">
+            <End Role="mstQuestionReponseType" EntitySet="mstQuestionReponseType" />
+            <End Role="mstQuestion" EntitySet="mstQuestion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestion_mstQuestionType_TypeId" Association="Self.FK_mstQuestion_mstQuestionType_TypeId">
+            <End Role="mstQuestionType" EntitySet="mstQuestionType" />
+            <End Role="mstQuestion" EntitySet="mstQuestion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionResponse_mstQuestion_QuestionId" Association="Self.FK_mstQuestionResponse_mstQuestion_QuestionId">
+            <End Role="mstQuestion" EntitySet="mstQuestion" />
+            <End Role="mstQuestionResponse" EntitySet="mstQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" Association="Self.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId">
+            <End Role="mstQuestionSubType" EntitySet="mstQuestionSubType" />
+            <End Role="mstQuestionResponse" EntitySet="mstQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionSubType_mstQuestionType_TypeId" Association="Self.FK_mstQuestionSubType_mstQuestionType_TypeId">
+            <End Role="mstQuestionType" EntitySet="mstQuestionType" />
+            <End Role="mstQuestionSubType" EntitySet="mstQuestionSubType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionType_mstExamSet_SetId" Association="Self.FK_mstQuestionType_mstExamSet_SetId">
+            <End Role="mstExamSet" EntitySet="mstExamSet" />
+            <End Role="mstQuestionType" EntitySet="mstQuestionType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstScoreModule_mstSubModule_SubModuleId" Association="Self.FK_mstScoreModule_mstSubModule_SubModuleId">
+            <End Role="mstSubModule" EntitySet="mstSubModule" />
+            <End Role="mstScoreModule" EntitySet="mstScoreModule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstState_mstCountry_CountryId" Association="Self.FK_mstState_mstCountry_CountryId">
+            <End Role="mstCountry" EntitySet="mstCountry" />
+            <End Role="mstState" EntitySet="mstState" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnAttachmentMailSent_txnUserTestDetails_TestId" Association="Self.FK_txnAttachmentMailSent_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetails" EntitySet="txnUserTestDetails" />
+            <End Role="txnAttachmentMailSent" EntitySet="txnAttachmentMailSent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnExamSetStatus_mstExamSet_SetId" Association="Self.FK_txnExamSetStatus_mstExamSet_SetId">
+            <End Role="mstExamSet" EntitySet="mstExamSet" />
+            <End Role="txnExamSetStatus" EntitySet="txnExamSetStatus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnExamSetStatus_txnUserTestDetails_TestId" Association="Self.FK_txnExamSetStatus_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetails" EntitySet="txnUserTestDetails" />
+            <End Role="txnExamSetStatus" EntitySet="txnExamSetStatus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnIndustry_IndustryId" Association="Self.FK_txnIndustry_IndustryId">
+            <End Role="mstIndustry" EntitySet="mstIndustry" />
+            <End Role="txnIndustry" EntitySet="txnIndustry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnIndustry_UserId" Association="Self.FK_txnIndustry_UserId">
+            <End Role="txnCandidate" EntitySet="txnCandidate" />
+            <End Role="txnIndustry" EntitySet="txnIndustry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId" Association="Self.FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId">
+            <End Role="mstSubModule" EntitySet="mstSubModule" />
+            <End Role="txnQuesResponseWithSubModule" EntitySet="txnQuesResponseWithSubModule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId" Association="Self.FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetails" EntitySet="txnUserTestDetails" />
+            <End Role="txnQuesResponseWithSubModule" EntitySet="txnQuesResponseWithSubModule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestion_mstExamSet_Setid" Association="Self.FK_txnQuestion_mstExamSet_Setid">
+            <End Role="mstExamSet" EntitySet="mstExamSet" />
+            <End Role="txnQuestion" EntitySet="txnQuestion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestion_mstQuestion_QuestionId" Association="Self.FK_txnQuestion_mstQuestion_QuestionId">
+            <End Role="mstQuestion" EntitySet="mstQuestion" />
+            <End Role="txnQuestion" EntitySet="txnQuestion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestion_txnUserTestDetails_TestId" Association="Self.FK_txnQuestion_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetails" EntitySet="txnUserTestDetails" />
+            <End Role="txnQuestion" EntitySet="txnQuestion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_mstQuestion_QuestionId" Association="Self.FK_txnQuestionResponse_mstQuestion_QuestionId">
+            <End Role="mstQuestion" EntitySet="mstQuestion" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_mstQuestionResponse_ResponseId" Association="Self.FK_txnQuestionResponse_mstQuestionResponse_ResponseId">
+            <End Role="mstQuestionResponse" EntitySet="mstQuestionResponse" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_mstQuestionType_TypeId" Association="Self.FK_txnQuestionResponse_mstQuestionType_TypeId">
+            <End Role="mstQuestionType" EntitySet="mstQuestionType" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_txnQuestion_TestQuestionId" Association="Self.FK_txnQuestionResponse_txnQuestion_TestQuestionId">
+            <End Role="txnQuestion" EntitySet="txnQuestion" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_txnUserTestDetails_TestId" Association="Self.FK_txnQuestionResponse_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetails" EntitySet="txnUserTestDetails" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnUserTestDetails_txnCandidate_UserId" Association="Self.FK_txnUserTestDetails_txnCandidate_UserId">
+            <End Role="txnCandidate" EntitySet="txnCandidate" />
+            <End Role="txnUserTestDetails" EntitySet="txnUserTestDetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QuestionDemoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="QuestionDemoEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="usp_SubTypeWiseScoreBoard" ReturnType="Collection(QuestionDemoModel.usp_SubTypeWiseScoreBoard_Result)">
+            <Parameter Name="TestId" Mode="In" Type="Int32" />
+            <Parameter Name="SETID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="usp_TypeWiseScoreBoard" ReturnType="Collection(QuestionDemoModel.usp_TypeWiseScoreBoard_Result)">
+            <Parameter Name="TestId" Mode="In" Type="Int32" />
+            <Parameter Name="SETId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Sp_InsertRandomQuestion" ReturnType="Collection(Int32)">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="SETId" Mode="In" Type="Int32" />
+            <Parameter Name="TestId" Mode="In" Type="Int32" />
+            <Parameter Name="TYPEID" Mode="In" Type="Int32" />
+            <Parameter Name="HostName" Mode="In" Type="String" />
+            <Parameter Name="TestUniqId" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="mstExamSets" EntityType="QuestionDemoModel.mstExamSet" />
+          <FunctionImport Name="usp_GetScoreCardName" ReturnType="Collection(QuestionDemoModel.usp_GetScoreCardName_Result1)">
+            <Parameter Name="TestId" Mode="In" Type="Int32" />
+            <Parameter Name="SetId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="ErrorLogs" EntityType="QuestionDemoModel.ErrorLog" />
+          <EntitySet Name="mstAges" EntityType="QuestionDemoModel.mstAge" />
+          <EntitySet Name="MstConfigs" EntityType="QuestionDemoModel.MstConfig" />
+          <EntitySet Name="mstCountries" EntityType="QuestionDemoModel.mstCountry" />
+          <EntitySet Name="mstEmployeeStatus" EntityType="QuestionDemoModel.mstEmployeeStatu" />
+          <EntitySet Name="mstGenders" EntityType="QuestionDemoModel.mstGender" />
+          <EntitySet Name="mstIndustries" EntityType="QuestionDemoModel.mstIndustry" />
+          <EntitySet Name="mstMailConfigs" EntityType="QuestionDemoModel.mstMailConfig" />
+          <EntitySet Name="mstMaritalStatus" EntityType="QuestionDemoModel.mstMaritalStatu" />
+          <EntitySet Name="mstProfessions" EntityType="QuestionDemoModel.mstProfession" />
+          <EntitySet Name="mstProfileSelecteds" EntityType="QuestionDemoModel.mstProfileSelected" />
+          <EntitySet Name="mstQualifications" EntityType="QuestionDemoModel.mstQualification" />
+          <EntitySet Name="mstQuestions" EntityType="QuestionDemoModel.mstQuestion" />
+          <EntitySet Name="mstQuestionReponseTypes" EntityType="QuestionDemoModel.mstQuestionReponseType" />
+          <EntitySet Name="mstQuestionResponses" EntityType="QuestionDemoModel.mstQuestionResponse" />
+          <EntitySet Name="mstQuestionSubTypes" EntityType="QuestionDemoModel.mstQuestionSubType" />
+          <EntitySet Name="mstQuestionTypes" EntityType="QuestionDemoModel.mstQuestionType" />
+          <EntitySet Name="mstScoreModules" EntityType="QuestionDemoModel.mstScoreModule" />
+          <EntitySet Name="mstStates" EntityType="QuestionDemoModel.mstState" />
+          <EntitySet Name="mstSubModules" EntityType="QuestionDemoModel.mstSubModule" />
+          <EntitySet Name="txnAttachmentMailSents" EntityType="QuestionDemoModel.txnAttachmentMailSent" />
+          <EntitySet Name="txnExamSetStatus" EntityType="QuestionDemoModel.txnExamSetStatu" />
+          <EntitySet Name="txnIndustries" EntityType="QuestionDemoModel.txnIndustry" />
+          <EntitySet Name="txnQuesResponseWithSubModules" EntityType="QuestionDemoModel.txnQuesResponseWithSubModule" />
+          <EntitySet Name="txnQuestions" EntityType="QuestionDemoModel.txnQuestion" />
+          <EntitySet Name="txnQuestionResponses" EntityType="QuestionDemoModel.txnQuestionResponse" />
+          <EntitySet Name="txnUserTestDetails" EntityType="QuestionDemoModel.txnUserTestDetail" />
+          <AssociationSet Name="FK_mstState_mstCountry_CountryId" Association="QuestionDemoModel.FK_mstState_mstCountry_CountryId">
+            <End Role="mstCountry" EntitySet="mstCountries" />
+            <End Role="mstState" EntitySet="mstStates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestion_mstExamSet_SetId" Association="QuestionDemoModel.FK_mstQuestion_mstExamSet_SetId">
+            <End Role="mstExamSet" EntitySet="mstExamSets" />
+            <End Role="mstQuestion" EntitySet="mstQuestions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionType_mstExamSet_SetId" Association="QuestionDemoModel.FK_mstQuestionType_mstExamSet_SetId">
+            <End Role="mstExamSet" EntitySet="mstExamSets" />
+            <End Role="mstQuestionType" EntitySet="mstQuestionTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnExamSetStatus_mstExamSet_SetId" Association="QuestionDemoModel.FK_txnExamSetStatus_mstExamSet_SetId">
+            <End Role="mstExamSet" EntitySet="mstExamSets" />
+            <End Role="txnExamSetStatu" EntitySet="txnExamSetStatus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestion_mstExamSet_Setid" Association="QuestionDemoModel.FK_txnQuestion_mstExamSet_Setid">
+            <End Role="mstExamSet" EntitySet="mstExamSets" />
+            <End Role="txnQuestion" EntitySet="txnQuestions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnIndustry_IndustryId" Association="QuestionDemoModel.FK_txnIndustry_IndustryId">
+            <End Role="mstIndustry" EntitySet="mstIndustries" />
+            <End Role="txnIndustry" EntitySet="txnIndustries" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" Association="QuestionDemoModel.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId">
+            <End Role="mstQuestionReponseType" EntitySet="mstQuestionReponseTypes" />
+            <End Role="mstQuestion" EntitySet="mstQuestions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestion_mstQuestionType_TypeId" Association="QuestionDemoModel.FK_mstQuestion_mstQuestionType_TypeId">
+            <End Role="mstQuestionType" EntitySet="mstQuestionTypes" />
+            <End Role="mstQuestion" EntitySet="mstQuestions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionResponse_mstQuestion_QuestionId" Association="QuestionDemoModel.FK_mstQuestionResponse_mstQuestion_QuestionId">
+            <End Role="mstQuestion" EntitySet="mstQuestions" />
+            <End Role="mstQuestionResponse" EntitySet="mstQuestionResponses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestion_mstQuestion_QuestionId" Association="QuestionDemoModel.FK_txnQuestion_mstQuestion_QuestionId">
+            <End Role="mstQuestion" EntitySet="mstQuestions" />
+            <End Role="txnQuestion" EntitySet="txnQuestions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_mstQuestion_QuestionId" Association="QuestionDemoModel.FK_txnQuestionResponse_mstQuestion_QuestionId">
+            <End Role="mstQuestion" EntitySet="mstQuestions" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" Association="QuestionDemoModel.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId">
+            <End Role="mstQuestionSubType" EntitySet="mstQuestionSubTypes" />
+            <End Role="mstQuestionResponse" EntitySet="mstQuestionResponses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_mstQuestionResponse_ResponseId" Association="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionResponse_ResponseId">
+            <End Role="mstQuestionResponse" EntitySet="mstQuestionResponses" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstQuestionSubType_mstQuestionType_TypeId" Association="QuestionDemoModel.FK_mstQuestionSubType_mstQuestionType_TypeId">
+            <End Role="mstQuestionType" EntitySet="mstQuestionTypes" />
+            <End Role="mstQuestionSubType" EntitySet="mstQuestionSubTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_mstQuestionType_TypeId" Association="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionType_TypeId">
+            <End Role="mstQuestionType" EntitySet="mstQuestionTypes" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mstScoreModule_mstSubModule_SubModuleId" Association="QuestionDemoModel.FK_mstScoreModule_mstSubModule_SubModuleId">
+            <End Role="mstSubModule" EntitySet="mstSubModules" />
+            <End Role="mstScoreModule" EntitySet="mstScoreModules" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId" Association="QuestionDemoModel.FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId">
+            <End Role="mstSubModule" EntitySet="mstSubModules" />
+            <End Role="txnQuesResponseWithSubModule" EntitySet="txnQuesResponseWithSubModules" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnAttachmentMailSent_txnUserTestDetails_TestId" Association="QuestionDemoModel.FK_txnAttachmentMailSent_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetail" EntitySet="txnUserTestDetails" />
+            <End Role="txnAttachmentMailSent" EntitySet="txnAttachmentMailSents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnExamSetStatus_txnUserTestDetails_TestId" Association="QuestionDemoModel.FK_txnExamSetStatus_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetail" EntitySet="txnUserTestDetails" />
+            <End Role="txnExamSetStatu" EntitySet="txnExamSetStatus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId" Association="QuestionDemoModel.FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetail" EntitySet="txnUserTestDetails" />
+            <End Role="txnQuesResponseWithSubModule" EntitySet="txnQuesResponseWithSubModules" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestion_txnUserTestDetails_TestId" Association="QuestionDemoModel.FK_txnQuestion_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetail" EntitySet="txnUserTestDetails" />
+            <End Role="txnQuestion" EntitySet="txnQuestions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_txnQuestion_TestQuestionId" Association="QuestionDemoModel.FK_txnQuestionResponse_txnQuestion_TestQuestionId">
+            <End Role="txnQuestion" EntitySet="txnQuestions" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnQuestionResponse_txnUserTestDetails_TestId" Association="QuestionDemoModel.FK_txnQuestionResponse_txnUserTestDetails_TestId">
+            <End Role="txnUserTestDetail" EntitySet="txnUserTestDetails" />
+            <End Role="txnQuestionResponse" EntitySet="txnQuestionResponses" />
+          </AssociationSet>
+          <EntitySet Name="txnCandidates" EntityType="QuestionDemoModel.txnCandidate" />
+          <AssociationSet Name="FK_txnIndustry_UserId" Association="QuestionDemoModel.FK_txnIndustry_UserId">
+            <End Role="txnCandidate" EntitySet="txnCandidates" />
+            <End Role="txnIndustry" EntitySet="txnIndustries" />
+          </AssociationSet>
+          <AssociationSet Name="FK_txnUserTestDetails_txnCandidate_UserId" Association="QuestionDemoModel.FK_txnUserTestDetails_txnCandidate_UserId">
+            <End Role="txnCandidate" EntitySet="txnCandidates" />
+            <End Role="txnUserTestDetail" EntitySet="txnUserTestDetails" />
+          </AssociationSet>
+          <EntitySet Name="mstMailTypes" EntityType="QuestionDemoModel.mstMailType" />
+          </EntityContainer>
+        <ComplexType Name="usp_ScoreBoard_Result">
+          <Property Type="Int32" Name="Type1" Nullable="true" />
+          <Property Type="Int32" Name="Type2" Nullable="true" />
+          <Property Type="Int32" Name="Type3" Nullable="true" />
+          <Property Type="Int32" Name="Type4" Nullable="true" />
+          <Property Type="Int32" Name="Typ5" Nullable="true" />
+          <Property Type="Int32" Name="Typ6" Nullable="true" />
+          <Property Type="Int32" Name="Typ7" Nullable="true" />
+          <Property Type="Int32" Name="Typ8" Nullable="true" />
+          <Property Type="Int32" Name="Typ9" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="usp_ScoreBoard_Result1">
+          <Property Type="Int32" Name="ImpactScore" Nullable="true" />
+          <Property Type="String" Name="TypeName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TypeId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="usp_FinalScoreBoard_Result">
+          <Property Type="Int32" Name="ImpactScore" Nullable="true" />
+          <Property Type="Int32" Name="SubTypeId" Nullable="true" />
+          <Property Type="String" Name="SubTypeName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TypeId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="usp_SubTypeWiseScoreBoard_Result">
+          <Property Type="Int32" Name="ImpactScore" Nullable="true" />
+          <Property Type="Int32" Name="SubTypeId" Nullable="true" />
+          <Property Type="String" Name="SubTypeName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TypeId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="usp_TypeWiseScoreBoard_Result">
+          <Property Type="Int32" Name="ImpactScore" Nullable="true" />
+          <Property Type="String" Name="TypeName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TypeId" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="mstExamSet">
+          <Key>
+            <PropertyRef Name="SetId" />
+          </Key>
+          <Property Name="SetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SetName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SetOrder" Type="Int32" />
+          <Property Name="PartialSetName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="mstQuestions" Relationship="QuestionDemoModel.FK_mstQuestion_mstExamSet_SetId" FromRole="mstExamSet" ToRole="mstQuestion" />
+          <NavigationProperty Name="mstQuestionTypes" Relationship="QuestionDemoModel.FK_mstQuestionType_mstExamSet_SetId" FromRole="mstExamSet" ToRole="mstQuestionType" />
+          <NavigationProperty Name="txnExamSetStatus" Relationship="QuestionDemoModel.FK_txnExamSetStatus_mstExamSet_SetId" FromRole="mstExamSet" ToRole="txnExamSetStatu" />
+          <NavigationProperty Name="txnQuestions" Relationship="QuestionDemoModel.FK_txnQuestion_mstExamSet_Setid" FromRole="mstExamSet" ToRole="txnQuestion" />
+        </EntityType>
+        <ComplexType Name="usp_GetScoreCardName_Result">
+          <Property Type="Int32" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="usp_GetScoreCardName_Result1">
+          <Property Type="Int32" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <EntityType Name="ErrorLog">
+          <Key>
+            <PropertyRef Name="ErrorId" />
+          </Key>
+          <Property Name="ErrorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RequestMethod" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RequestUri" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateTime" Type="DateTime" Precision="3" />
+          <Property Name="ErrorMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="mstAge">
+          <Key>
+            <PropertyRef Name="AgeId" />
+          </Key>
+          <Property Name="AgeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AgeName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="MstConfig">
+          <Key>
+            <PropertyRef Name="ConfigId" />
+          </Key>
+          <Property Name="ConfigId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ConfigValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConfigName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="mstCountry">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CountryName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="mstStates" Relationship="QuestionDemoModel.FK_mstState_mstCountry_CountryId" FromRole="mstCountry" ToRole="mstState" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstEmployeeStatu">
+          <Key>
+            <PropertyRef Name="EmploymentId" />
+          </Key>
+          <Property Name="EmploymentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmploymentName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstGender">
+          <Key>
+            <PropertyRef Name="GenderId" />
+          </Key>
+          <Property Name="GenderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GenderName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstIndustry">
+          <Key>
+            <PropertyRef Name="IndustryId" />
+          </Key>
+          <Property Name="IndustryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IndustryName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="txnIndustries" Relationship="QuestionDemoModel.FK_txnIndustry_IndustryId" FromRole="mstIndustry" ToRole="txnIndustry" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstMailConfig">
+          <Key>
+            <PropertyRef Name="ConfigId" />
+          </Key>
+          <Property Name="ConfigId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SMTP_SenderNAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SMTP_USERNAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SMTP_PASSWORD" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CONFIGSET" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FromMailAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HOST" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PORT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BODY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Active" Type="Boolean" />
+          <Property Name="MailTypeId" Type="Int32" />
+          <Property Name="BCCMailAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CCMailAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="mstMaritalStatu">
+          <Key>
+            <PropertyRef Name="MaritalId" />
+          </Key>
+          <Property Name="MaritalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaritalName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstProfession">
+          <Key>
+            <PropertyRef Name="ProfessionId" />
+          </Key>
+          <Property Name="ProfessionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProfessionName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstProfileSelected">
+          <Key>
+            <PropertyRef Name="ProfileId" />
+          </Key>
+          <Property Name="ProfileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProfileName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="InitialMailSent" Type="Int32" />
+          <Property Name="FinalMail" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstQualification">
+          <Key>
+            <PropertyRef Name="QualificationId" />
+          </Key>
+          <Property Name="QualificationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QualificationName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstQuestion">
+          <Key>
+            <PropertyRef Name="QuestionId" />
+          </Key>
+          <Property Name="QuestionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TypeId" Type="Int32" />
+          <Property Name="SetId" Type="Int32" />
+          <Property Name="ResponseTypeId" Type="Int32" />
+          <Property Name="SubModuleId" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mstExamSet" Relationship="QuestionDemoModel.FK_mstQuestion_mstExamSet_SetId" FromRole="mstQuestion" ToRole="mstExamSet" />
+          <NavigationProperty Name="mstQuestionReponseType" Relationship="QuestionDemoModel.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" FromRole="mstQuestion" ToRole="mstQuestionReponseType" />
+          <NavigationProperty Name="mstQuestionType" Relationship="QuestionDemoModel.FK_mstQuestion_mstQuestionType_TypeId" FromRole="mstQuestion" ToRole="mstQuestionType" />
+          <NavigationProperty Name="mstQuestionResponses" Relationship="QuestionDemoModel.FK_mstQuestionResponse_mstQuestion_QuestionId" FromRole="mstQuestion" ToRole="mstQuestionResponse" />
+          <NavigationProperty Name="txnQuestions" Relationship="QuestionDemoModel.FK_txnQuestion_mstQuestion_QuestionId" FromRole="mstQuestion" ToRole="txnQuestion" />
+          <NavigationProperty Name="txnQuestionResponses" Relationship="QuestionDemoModel.FK_txnQuestionResponse_mstQuestion_QuestionId" FromRole="mstQuestion" ToRole="txnQuestionResponse" />
+        </EntityType>
+        <EntityType Name="mstQuestionReponseType">
+          <Key>
+            <PropertyRef Name="ResponseTypeId" />
+          </Key>
+          <Property Name="ResponseTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseTypeName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mstQuestions" Relationship="QuestionDemoModel.FK_mstQuestion_mstQuestionReponseType_ResponseTypeId" FromRole="mstQuestionReponseType" ToRole="mstQuestion" />
+        </EntityType>
+        <EntityType Name="mstQuestionResponse">
+          <Key>
+            <PropertyRef Name="ResponseId" />
+          </Key>
+          <Property Name="ResponseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuestionId" Type="Int32" />
+          <Property Name="SubTypeId" Type="Int32" />
+          <Property Name="ResponseNumber" Type="Int32" />
+          <Property Name="ResponseText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="weight" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mstQuestion" Relationship="QuestionDemoModel.FK_mstQuestionResponse_mstQuestion_QuestionId" FromRole="mstQuestionResponse" ToRole="mstQuestion" />
+          <NavigationProperty Name="mstQuestionSubType" Relationship="QuestionDemoModel.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" FromRole="mstQuestionResponse" ToRole="mstQuestionSubType" />
+          <NavigationProperty Name="txnQuestionResponses" Relationship="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionResponse_ResponseId" FromRole="mstQuestionResponse" ToRole="txnQuestionResponse" />
+        </EntityType>
+        <EntityType Name="mstQuestionSubType">
+          <Key>
+            <PropertyRef Name="SubTypeId" />
+          </Key>
+          <Property Name="SubTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubTypeName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="TypeId" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mstQuestionResponses" Relationship="QuestionDemoModel.FK_mstQuestionResponse_mstQuestionSubType_SubTypeId" FromRole="mstQuestionSubType" ToRole="mstQuestionResponse" />
+          <NavigationProperty Name="mstQuestionType" Relationship="QuestionDemoModel.FK_mstQuestionSubType_mstQuestionType_TypeId" FromRole="mstQuestionSubType" ToRole="mstQuestionType" />
+        </EntityType>
+        <EntityType Name="mstQuestionType">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SetId" Type="Int32" />
+          <NavigationProperty Name="mstExamSet" Relationship="QuestionDemoModel.FK_mstQuestionType_mstExamSet_SetId" FromRole="mstQuestionType" ToRole="mstExamSet" />
+          <NavigationProperty Name="mstQuestions" Relationship="QuestionDemoModel.FK_mstQuestion_mstQuestionType_TypeId" FromRole="mstQuestionType" ToRole="mstQuestion" />
+          <NavigationProperty Name="mstQuestionSubTypes" Relationship="QuestionDemoModel.FK_mstQuestionSubType_mstQuestionType_TypeId" FromRole="mstQuestionType" ToRole="mstQuestionSubType" />
+          <NavigationProperty Name="txnQuestionResponses" Relationship="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionType_TypeId" FromRole="mstQuestionType" ToRole="txnQuestionResponse" />
+        </EntityType>
+        <EntityType Name="mstScoreModule">
+          <Key>
+            <PropertyRef Name="ScoreId" />
+          </Key>
+          <Property Name="ScoreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Rating" Type="Int32" />
+          <Property Name="Score" Type="Int32" />
+          <Property Name="Percentage" Type="Int32" />
+          <Property Name="SubModuleId" Type="Int32" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mstSubModule" Relationship="QuestionDemoModel.FK_mstScoreModule_mstSubModule_SubModuleId" FromRole="mstScoreModule" ToRole="mstSubModule" />
+        </EntityType>
+        <EntityType Name="mstState">
+          <Key>
+            <PropertyRef Name="StateId" />
+          </Key>
+          <Property Name="StateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CountryId" Type="Int32" />
+          <Property Name="StateName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="mstCountry" Relationship="QuestionDemoModel.FK_mstState_mstCountry_CountryId" FromRole="mstState" ToRole="mstCountry" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="mstSubModule">
+          <Key>
+            <PropertyRef Name="SubModuleId" />
+          </Key>
+          <Property Name="SubModuleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubModuleName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="mstScoreModules" Relationship="QuestionDemoModel.FK_mstScoreModule_mstSubModule_SubModuleId" FromRole="mstSubModule" ToRole="mstScoreModule" />
+          <NavigationProperty Name="txnQuesResponseWithSubModules" Relationship="QuestionDemoModel.FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId" FromRole="mstSubModule" ToRole="txnQuesResponseWithSubModule" />
+        </EntityType>
+        <EntityType Name="txnAttachmentMailSent">
+          <Key>
+            <PropertyRef Name="MailSentId" />
+          </Key>
+          <Property Name="MailSentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TestId" Type="Int32" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MailSentFlg" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="Int32" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="txnUserTestDetail" Relationship="QuestionDemoModel.FK_txnAttachmentMailSent_txnUserTestDetails_TestId" FromRole="txnAttachmentMailSent" ToRole="txnUserTestDetail" />
+        </EntityType>
+        <EntityType Name="txnExamSetStatu">
+          <Key>
+            <PropertyRef Name="ExamId" />
+          </Key>
+          <Property Name="ExamId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SetId" Type="Int32" />
+          <Property Name="TestId" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="mstExamSet" Relationship="QuestionDemoModel.FK_txnExamSetStatus_mstExamSet_SetId" FromRole="txnExamSetStatu" ToRole="mstExamSet" />
+          <NavigationProperty Name="txnUserTestDetail" Relationship="QuestionDemoModel.FK_txnExamSetStatus_txnUserTestDetails_TestId" FromRole="txnExamSetStatu" ToRole="txnUserTestDetail" />
+        </EntityType>
+        <EntityType Name="txnIndustry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IndustryId" Type="Int32" />
+          <Property Name="UserId" Type="Int32" />
+          <NavigationProperty Name="mstIndustry" Relationship="QuestionDemoModel.FK_txnIndustry_IndustryId" FromRole="txnIndustry" ToRole="mstIndustry" />
+          <NavigationProperty Name="txnCandidate" Relationship="QuestionDemoModel.FK_txnIndustry_UserId" FromRole="txnIndustry" ToRole="txnCandidate" />
+        </EntityType>
+        <EntityType Name="txnQuesResponseWithSubModule">
+          <Key>
+            <PropertyRef Name="QResId" />
+          </Key>
+          <Property Name="QResId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TestId" Type="Int32" />
+          <Property Name="SubModuleId" Type="Int32" />
+          <Property Name="SetId" Type="Int32" />
+          <Property Name="SumOfScore" Type="Int32" />
+          <Property Name="AvgOfScore" Type="Int32" />
+          <Property Name="calcuation" Type="Int32" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="Int32" />
+          <NavigationProperty Name="mstSubModule" Relationship="QuestionDemoModel.FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId" FromRole="txnQuesResponseWithSubModule" ToRole="mstSubModule" />
+          <NavigationProperty Name="txnUserTestDetail" Relationship="QuestionDemoModel.FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId" FromRole="txnQuesResponseWithSubModule" ToRole="txnUserTestDetail" />
+        </EntityType>
+        <EntityType Name="txnQuestion">
+          <Key>
+            <PropertyRef Name="TestQuestionId" />
+          </Key>
+          <Property Name="TestQuestionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuestionId" Type="Int32" />
+          <Property Name="ImpactScore" Type="Int32" />
+          <Property Name="ResponseAt" Type="DateTime" Precision="3" />
+          <Property Name="IsAnswer" Type="Boolean" />
+          <Property Name="TestId" Type="Int32" />
+          <Property Name="ResponseBy" Type="Int32" />
+          <Property Name="Setid" Type="Int32" />
+          <NavigationProperty Name="mstExamSet" Relationship="QuestionDemoModel.FK_txnQuestion_mstExamSet_Setid" FromRole="txnQuestion" ToRole="mstExamSet" />
+          <NavigationProperty Name="mstQuestion" Relationship="QuestionDemoModel.FK_txnQuestion_mstQuestion_QuestionId" FromRole="txnQuestion" ToRole="mstQuestion" />
+          <NavigationProperty Name="txnUserTestDetail" Relationship="QuestionDemoModel.FK_txnQuestion_txnUserTestDetails_TestId" FromRole="txnQuestion" ToRole="txnUserTestDetail" />
+          <NavigationProperty Name="txnQuestionResponses" Relationship="QuestionDemoModel.FK_txnQuestionResponse_txnQuestion_TestQuestionId" FromRole="txnQuestion" ToRole="txnQuestionResponse" />
+        </EntityType>
+        <EntityType Name="txnQuestionResponse">
+          <Key>
+            <PropertyRef Name="TestQuestionResponseId" />
+          </Key>
+          <Property Name="TestQuestionResponseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuestionId" Type="Int32" />
+          <Property Name="QuestionResponseId" Type="Int32" />
+          <Property Name="TestQuestionId" Type="Int32" />
+          <Property Name="TestId" Type="Int32" Nullable="false" />
+          <Property Name="TypeId" Type="Int32" Nullable="false" />
+          <Property Name="SubTypeId" Type="Int32" />
+          <Property Name="impactscore" Type="Int32" />
+          <NavigationProperty Name="mstQuestion" Relationship="QuestionDemoModel.FK_txnQuestionResponse_mstQuestion_QuestionId" FromRole="txnQuestionResponse" ToRole="mstQuestion" />
+          <NavigationProperty Name="mstQuestionResponse" Relationship="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionResponse_ResponseId" FromRole="txnQuestionResponse" ToRole="mstQuestionResponse" />
+          <NavigationProperty Name="mstQuestionType" Relationship="QuestionDemoModel.FK_txnQuestionResponse_mstQuestionType_TypeId" FromRole="txnQuestionResponse" ToRole="mstQuestionType" />
+          <NavigationProperty Name="txnQuestion" Relationship="QuestionDemoModel.FK_txnQuestionResponse_txnQuestion_TestQuestionId" FromRole="txnQuestionResponse" ToRole="txnQuestion" />
+          <NavigationProperty Name="txnUserTestDetail" Relationship="QuestionDemoModel.FK_txnQuestionResponse_txnUserTestDetails_TestId" FromRole="txnQuestionResponse" ToRole="txnUserTestDetail" />
+        </EntityType>
+        <EntityType Name="txnUserTestDetail">
+          <Key>
+            <PropertyRef Name="TestId" />
+          </Key>
+          <Property Name="TestId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IPAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedAt" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="txnAttachmentMailSents" Relationship="QuestionDemoModel.FK_txnAttachmentMailSent_txnUserTestDetails_TestId" FromRole="txnUserTestDetail" ToRole="txnAttachmentMailSent" />
+          <NavigationProperty Name="txnExamSetStatus" Relationship="QuestionDemoModel.FK_txnExamSetStatus_txnUserTestDetails_TestId" FromRole="txnUserTestDetail" ToRole="txnExamSetStatu" />
+          <NavigationProperty Name="txnQuesResponseWithSubModules" Relationship="QuestionDemoModel.FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId" FromRole="txnUserTestDetail" ToRole="txnQuesResponseWithSubModule" />
+          <NavigationProperty Name="txnQuestions" Relationship="QuestionDemoModel.FK_txnQuestion_txnUserTestDetails_TestId" FromRole="txnUserTestDetail" ToRole="txnQuestion" />
+          <NavigationProperty Name="txnQuestionResponses" Relationship="QuestionDemoModel.FK_txnQuestionResponse_txnUserTestDetails_TestId" FromRole="txnUserTestDetail" ToRole="txnQuestionResponse" />
+          <NavigationProperty Name="txnCandidate" Relationship="QuestionDemoModel.FK_txnUserTestDetails_txnCandidate_UserId" FromRole="txnUserTestDetail" ToRole="txnCandidate" />
+        </EntityType>
+        <Association Name="FK_mstState_mstCountry_CountryId">
+          <End Type="QuestionDemoModel.mstCountry" Role="mstCountry" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstState" Role="mstState" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstCountry">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="mstState">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestion_mstExamSet_SetId">
+          <End Type="QuestionDemoModel.mstExamSet" Role="mstExamSet" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestion" Role="mstQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="mstQuestion">
+              <PropertyRef Name="SetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionType_mstExamSet_SetId">
+          <End Type="QuestionDemoModel.mstExamSet" Role="mstExamSet" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestionType" Role="mstQuestionType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="mstQuestionType">
+              <PropertyRef Name="SetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnExamSetStatus_mstExamSet_SetId">
+          <End Type="QuestionDemoModel.mstExamSet" Role="mstExamSet" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnExamSetStatu" Role="txnExamSetStatu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="txnExamSetStatu">
+              <PropertyRef Name="SetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestion_mstExamSet_Setid">
+          <End Type="QuestionDemoModel.mstExamSet" Role="mstExamSet" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuestion" Role="txnQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstExamSet">
+              <PropertyRef Name="SetId" />
+            </Principal>
+            <Dependent Role="txnQuestion">
+              <PropertyRef Name="Setid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnIndustry_IndustryId">
+          <End Type="QuestionDemoModel.mstIndustry" Role="mstIndustry" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnIndustry" Role="txnIndustry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstIndustry">
+              <PropertyRef Name="IndustryId" />
+            </Principal>
+            <Dependent Role="txnIndustry">
+              <PropertyRef Name="IndustryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestion_mstQuestionReponseType_ResponseTypeId">
+          <End Type="QuestionDemoModel.mstQuestionReponseType" Role="mstQuestionReponseType" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestion" Role="mstQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionReponseType">
+              <PropertyRef Name="ResponseTypeId" />
+            </Principal>
+            <Dependent Role="mstQuestion">
+              <PropertyRef Name="ResponseTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestion_mstQuestionType_TypeId">
+          <End Type="QuestionDemoModel.mstQuestionType" Role="mstQuestionType" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestion" Role="mstQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="mstQuestion">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionResponse_mstQuestion_QuestionId">
+          <End Type="QuestionDemoModel.mstQuestion" Role="mstQuestion" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestionResponse" Role="mstQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="mstQuestionResponse">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestion_mstQuestion_QuestionId">
+          <End Type="QuestionDemoModel.mstQuestion" Role="mstQuestion" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuestion" Role="txnQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="txnQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_mstQuestion_QuestionId">
+          <End Type="QuestionDemoModel.mstQuestion" Role="mstQuestion" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuestionResponse" Role="txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestion">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionResponse_mstQuestionSubType_SubTypeId">
+          <End Type="QuestionDemoModel.mstQuestionSubType" Role="mstQuestionSubType" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestionResponse" Role="mstQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionSubType">
+              <PropertyRef Name="SubTypeId" />
+            </Principal>
+            <Dependent Role="mstQuestionResponse">
+              <PropertyRef Name="SubTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_mstQuestionResponse_ResponseId">
+          <End Type="QuestionDemoModel.mstQuestionResponse" Role="mstQuestionResponse" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuestionResponse" Role="txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionResponse">
+              <PropertyRef Name="ResponseId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="QuestionResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstQuestionSubType_mstQuestionType_TypeId">
+          <End Type="QuestionDemoModel.mstQuestionType" Role="mstQuestionType" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstQuestionSubType" Role="mstQuestionSubType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="mstQuestionSubType">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_mstQuestionType_TypeId">
+          <End Type="QuestionDemoModel.mstQuestionType" Role="mstQuestionType" Multiplicity="1" />
+          <End Type="QuestionDemoModel.txnQuestionResponse" Role="txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstQuestionType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mstScoreModule_mstSubModule_SubModuleId">
+          <End Type="QuestionDemoModel.mstSubModule" Role="mstSubModule" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.mstScoreModule" Role="mstScoreModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstSubModule">
+              <PropertyRef Name="SubModuleId" />
+            </Principal>
+            <Dependent Role="mstScoreModule">
+              <PropertyRef Name="SubModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuesResponseWithSubModule_mstSubModule_SubModuleId">
+          <End Type="QuestionDemoModel.mstSubModule" Role="mstSubModule" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuesResponseWithSubModule" Role="txnQuesResponseWithSubModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mstSubModule">
+              <PropertyRef Name="SubModuleId" />
+            </Principal>
+            <Dependent Role="txnQuesResponseWithSubModule">
+              <PropertyRef Name="SubModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnAttachmentMailSent_txnUserTestDetails_TestId">
+          <End Type="QuestionDemoModel.txnUserTestDetail" Role="txnUserTestDetail" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnAttachmentMailSent" Role="txnAttachmentMailSent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetail">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnAttachmentMailSent">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnExamSetStatus_txnUserTestDetails_TestId">
+          <End Type="QuestionDemoModel.txnUserTestDetail" Role="txnUserTestDetail" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnExamSetStatu" Role="txnExamSetStatu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetail">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnExamSetStatu">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuesResponseWithSubModule_txnUserTestDetails_TestId">
+          <End Type="QuestionDemoModel.txnUserTestDetail" Role="txnUserTestDetail" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuesResponseWithSubModule" Role="txnQuesResponseWithSubModule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetail">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnQuesResponseWithSubModule">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestion_txnUserTestDetails_TestId">
+          <End Type="QuestionDemoModel.txnUserTestDetail" Role="txnUserTestDetail" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuestion" Role="txnQuestion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetail">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnQuestion">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_txnQuestion_TestQuestionId">
+          <End Type="QuestionDemoModel.txnQuestion" Role="txnQuestion" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnQuestionResponse" Role="txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnQuestion">
+              <PropertyRef Name="TestQuestionId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="TestQuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnQuestionResponse_txnUserTestDetails_TestId">
+          <End Type="QuestionDemoModel.txnUserTestDetail" Role="txnUserTestDetail" Multiplicity="1" />
+          <End Type="QuestionDemoModel.txnQuestionResponse" Role="txnQuestionResponse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnUserTestDetail">
+              <PropertyRef Name="TestId" />
+            </Principal>
+            <Dependent Role="txnQuestionResponse">
+              <PropertyRef Name="TestId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="txnCandidate">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FirstName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="UserEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="UserGender" Type="Int32" />
+          <Property Name="UserAge" Type="Int32" />
+          <Property Name="UserState" Type="Int32" />
+          <Property Name="UserCountry" Type="Int32" />
+          <Property Name="UserQualification" Type="Int32" />
+          <Property Name="UserProfessional" Type="Int32" />
+          <Property Name="UserMaritalStatus" Type="Int32" />
+          <Property Name="UserEmployeeStatus" Type="Int32" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="ProfileSelected" Type="Int32" />
+          <Property Name="IsOTPRequire" Type="Boolean" />
+          <NavigationProperty Name="txnIndustries" Relationship="QuestionDemoModel.FK_txnIndustry_UserId" FromRole="txnCandidate" ToRole="txnIndustry" />
+          <NavigationProperty Name="txnUserTestDetails" Relationship="QuestionDemoModel.FK_txnUserTestDetails_txnCandidate_UserId" FromRole="txnCandidate" ToRole="txnUserTestDetail" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="LastModified" Type="DateTime" Precision="3" />
+          <Property Name="IsInitialMail" Type="Boolean" />
+          <Property Name="IsAttachmentSent" Type="Boolean" />
+          <Property Name="TransId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TransStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_txnIndustry_UserId">
+          <End Type="QuestionDemoModel.txnCandidate" Role="txnCandidate" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnIndustry" Role="txnIndustry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnCandidate">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="txnIndustry">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_txnUserTestDetails_txnCandidate_UserId">
+          <End Type="QuestionDemoModel.txnCandidate" Role="txnCandidate" Multiplicity="0..1" />
+          <End Type="QuestionDemoModel.txnUserTestDetail" Role="txnUserTestDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="txnCandidate">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="txnUserTestDetail">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="mstMailType">
+          <Key>
+            <PropertyRef Name="MailTypeId" />
+          </Key>
+          <Property Name="MailTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MailTypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Active" Type="Boolean" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QuestionDemoModelStoreContainer" CdmEntityContainer="QuestionDemoEntities">
+          <FunctionImportMapping FunctionImportName="usp_SubTypeWiseScoreBoard" FunctionName="QuestionDemoModel.Store.usp_SubTypeWiseScoreBoard">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QuestionDemoModel.usp_SubTypeWiseScoreBoard_Result">
+                <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+                <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+                <ScalarProperty Name="SubTypeName" ColumnName="SubTypeName" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_TypeWiseScoreBoard" FunctionName="QuestionDemoModel.Store.usp_TypeWiseScoreBoard">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QuestionDemoModel.usp_TypeWiseScoreBoard_Result">
+                <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Sp_InsertRandomQuestion" FunctionName="QuestionDemoModel.Store.Sp_InsertRandomQuestion" />
+          <EntitySetMapping Name="mstExamSets">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstExamSet">
+              <MappingFragment StoreEntitySet="mstExamSet">
+                <ScalarProperty Name="PartialSetName" ColumnName="PartialSetName" />
+                <ScalarProperty Name="SetOrder" ColumnName="SetOrder" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="SetName" ColumnName="SetName" />
+                <ScalarProperty Name="SetId" ColumnName="SetId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetScoreCardName" FunctionName="QuestionDemoModel.Store.usp_GetScoreCardName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QuestionDemoModel.usp_GetScoreCardName_Result1">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="ErrorLogs">
+            <EntityTypeMapping TypeName="QuestionDemoModel.ErrorLog">
+              <MappingFragment StoreEntitySet="ErrorLog">
+                <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="RequestUri" ColumnName="RequestUri" />
+                <ScalarProperty Name="RequestMethod" ColumnName="RequestMethod" />
+                <ScalarProperty Name="ErrorId" ColumnName="ErrorId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstAges">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstAge">
+              <MappingFragment StoreEntitySet="mstAge">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="AgeName" ColumnName="AgeName" />
+                <ScalarProperty Name="AgeId" ColumnName="AgeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MstConfigs">
+            <EntityTypeMapping TypeName="QuestionDemoModel.MstConfig">
+              <MappingFragment StoreEntitySet="MstConfig">
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ConfigName" ColumnName="ConfigName" />
+                <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+                <ScalarProperty Name="ConfigId" ColumnName="ConfigId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstCountries">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstCountry">
+              <MappingFragment StoreEntitySet="mstCountry">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstEmployeeStatus">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstEmployeeStatu">
+              <MappingFragment StoreEntitySet="mstEmployeeStatus">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="EmploymentName" ColumnName="EmploymentName" />
+                <ScalarProperty Name="EmploymentId" ColumnName="EmploymentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstGenders">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstGender">
+              <MappingFragment StoreEntitySet="mstGender">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+                <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstIndustries">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstIndustry">
+              <MappingFragment StoreEntitySet="mstIndustry">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IndustryName" ColumnName="IndustryName" />
+                <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstMailConfigs">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstMailConfig">
+              <MappingFragment StoreEntitySet="mstMailConfig">
+                <ScalarProperty Name="CCMailAddress" ColumnName="CCMailAddress" />
+                <ScalarProperty Name="BCCMailAddress" ColumnName="BCCMailAddress" />
+                <ScalarProperty Name="MailTypeId" ColumnName="MailTypeId" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="BODY" ColumnName="BODY" />
+                <ScalarProperty Name="PORT" ColumnName="PORT" />
+                <ScalarProperty Name="HOST" ColumnName="HOST" />
+                <ScalarProperty Name="FromMailAddress" ColumnName="FromMailAddress" />
+                <ScalarProperty Name="CONFIGSET" ColumnName="CONFIGSET" />
+                <ScalarProperty Name="SMTP_PASSWORD" ColumnName="SMTP_PASSWORD" />
+                <ScalarProperty Name="SMTP_USERNAME" ColumnName="SMTP_USERNAME" />
+                <ScalarProperty Name="SMTP_SenderNAME" ColumnName="SMTP_SenderNAME" />
+                <ScalarProperty Name="ConfigId" ColumnName="ConfigId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstMaritalStatus">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstMaritalStatu">
+              <MappingFragment StoreEntitySet="mstMaritalStatus">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="MaritalName" ColumnName="MaritalName" />
+                <ScalarProperty Name="MaritalId" ColumnName="MaritalId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstProfessions">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstProfession">
+              <MappingFragment StoreEntitySet="mstProfession">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ProfessionName" ColumnName="ProfessionName" />
+                <ScalarProperty Name="ProfessionId" ColumnName="ProfessionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstProfileSelecteds">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstProfileSelected">
+              <MappingFragment StoreEntitySet="mstProfileSelected">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="FinalMail" ColumnName="FinalMail" />
+                <ScalarProperty Name="InitialMailSent" ColumnName="InitialMailSent" />
+                <ScalarProperty Name="ProfileName" ColumnName="ProfileName" />
+                <ScalarProperty Name="ProfileId" ColumnName="ProfileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstQualifications">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstQualification">
+              <MappingFragment StoreEntitySet="mstQualification">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="QualificationName" ColumnName="QualificationName" />
+                <ScalarProperty Name="QualificationId" ColumnName="QualificationId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstQuestions">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstQuestion">
+              <MappingFragment StoreEntitySet="mstQuestion">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="SubModuleId" ColumnName="SubModuleId" />
+                <ScalarProperty Name="ResponseTypeId" ColumnName="ResponseTypeId" />
+                <ScalarProperty Name="SetId" ColumnName="SetId" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstQuestionReponseTypes">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstQuestionReponseType">
+              <MappingFragment StoreEntitySet="mstQuestionReponseType">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="ResponseTypeName" ColumnName="ResponseTypeName" />
+                <ScalarProperty Name="ResponseTypeId" ColumnName="ResponseTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstQuestionResponses">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstQuestionResponse">
+              <MappingFragment StoreEntitySet="mstQuestionResponse">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="ResponseText" ColumnName="ResponseText" />
+                <ScalarProperty Name="ResponseNumber" ColumnName="ResponseNumber" />
+                <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+                <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+                <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstQuestionSubTypes">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstQuestionSubType">
+              <MappingFragment StoreEntitySet="mstQuestionSubType">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="SubTypeName" ColumnName="SubTypeName" />
+                <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstQuestionTypes">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstQuestionType">
+              <MappingFragment StoreEntitySet="mstQuestionType">
+                <ScalarProperty Name="SetId" ColumnName="SetId" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstScoreModules">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstScoreModule">
+              <MappingFragment StoreEntitySet="mstScoreModule">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="SubModuleId" ColumnName="SubModuleId" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="Score" ColumnName="Score" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="ScoreId" ColumnName="ScoreId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstStates">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstState">
+              <MappingFragment StoreEntitySet="mstState">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="StateName" ColumnName="StateName" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstSubModules">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstSubModule">
+              <MappingFragment StoreEntitySet="mstSubModule">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="SubModuleName" ColumnName="SubModuleName" />
+                <ScalarProperty Name="SubModuleId" ColumnName="SubModuleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnAttachmentMailSents">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnAttachmentMailSent">
+              <MappingFragment StoreEntitySet="txnAttachmentMailSent">
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="MailSentFlg" ColumnName="MailSentFlg" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="MailSentId" ColumnName="MailSentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnExamSetStatus">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnExamSetStatu">
+              <MappingFragment StoreEntitySet="txnExamSetStatus">
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="SetId" ColumnName="SetId" />
+                <ScalarProperty Name="ExamId" ColumnName="ExamId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnIndustries">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnIndustry">
+              <MappingFragment StoreEntitySet="txnIndustry">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnQuesResponseWithSubModules">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnQuesResponseWithSubModule">
+              <MappingFragment StoreEntitySet="txnQuesResponseWithSubModule">
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="calcuation" ColumnName="calcuation" />
+                <ScalarProperty Name="AvgOfScore" ColumnName="AvgOfScore" />
+                <ScalarProperty Name="SumOfScore" ColumnName="SumOfScore" />
+                <ScalarProperty Name="SetId" ColumnName="SetId" />
+                <ScalarProperty Name="SubModuleId" ColumnName="SubModuleId" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="QResId" ColumnName="QResId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnQuestions">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnQuestion">
+              <MappingFragment StoreEntitySet="txnQuestion">
+                <ScalarProperty Name="Setid" ColumnName="Setid" />
+                <ScalarProperty Name="ResponseBy" ColumnName="ResponseBy" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="IsAnswer" ColumnName="IsAnswer" />
+                <ScalarProperty Name="ResponseAt" ColumnName="ResponseAt" />
+                <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+                <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+                <ScalarProperty Name="TestQuestionId" ColumnName="TestQuestionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnQuestionResponses">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnQuestionResponse">
+              <MappingFragment StoreEntitySet="txnQuestionResponse">
+                <ScalarProperty Name="impactscore" ColumnName="impactscore" />
+                <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="TestQuestionId" ColumnName="TestQuestionId" />
+                <ScalarProperty Name="QuestionResponseId" ColumnName="QuestionResponseId" />
+                <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+                <ScalarProperty Name="TestQuestionResponseId" ColumnName="TestQuestionResponseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnUserTestDetails">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnUserTestDetail">
+              <MappingFragment StoreEntitySet="txnUserTestDetails">
+                <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="txnCandidates">
+            <EntityTypeMapping TypeName="QuestionDemoModel.txnCandidate">
+              <MappingFragment StoreEntitySet="txnCandidate">
+                <ScalarProperty Name="TransStatus" ColumnName="TransStatus" />
+                <ScalarProperty Name="TransId" ColumnName="TransId" />
+                <ScalarProperty Name="IsAttachmentSent" ColumnName="IsAttachmentSent" />
+                <ScalarProperty Name="IsInitialMail" ColumnName="IsInitialMail" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsOTPRequire" ColumnName="IsOTPRequire" />
+                <ScalarProperty Name="ProfileSelected" ColumnName="ProfileSelected" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="UserEmployeeStatus" ColumnName="UserEmployeeStatus" />
+                <ScalarProperty Name="UserMaritalStatus" ColumnName="UserMaritalStatus" />
+                <ScalarProperty Name="UserProfessional" ColumnName="UserProfessional" />
+                <ScalarProperty Name="UserQualification" ColumnName="UserQualification" />
+                <ScalarProperty Name="UserCountry" ColumnName="UserCountry" />
+                <ScalarProperty Name="UserState" ColumnName="UserState" />
+                <ScalarProperty Name="UserAge" ColumnName="UserAge" />
+                <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mstMailTypes">
+            <EntityTypeMapping TypeName="QuestionDemoModel.mstMailType">
+              <MappingFragment StoreEntitySet="mstMailType">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="MailTypeName" ColumnName="MailTypeName" />
+                <ScalarProperty Name="MailTypeId" ColumnName="MailTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

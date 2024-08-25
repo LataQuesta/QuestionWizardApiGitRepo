@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style type='text/css'>
+        @font-face {
+            font-family: "Arial Nova Cond";
+            src: url("http://questaenneagramlivenew-env.eba-bjy4vchz.ap-south-1.elasticbeanstalk.com/HTML%20File/QMap/Pages/font/e02bdd9828bed1e2490bdf94662dbba8.eot"); /* IE9*/
+            src: url("http://questaenneagramlivenew-env.eba-bjy4vchz.ap-south-1.elasticbeanstalk.com/HTML%20File/QMap/Pages/font/e02bdd9828bed1e2490bdf94662dbba8.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("http://questaenneagramlivenew-env.eba-bjy4vchz.ap-south-1.elasticbeanstalk.com/HTML%20File/QMap/Pages/font/e02bdd9828bed1e2490bdf94662dbba8.woff2") format("woff2"), /* chrome、firefox */
+            url("http://questaenneagramlivenew-env.eba-bjy4vchz.ap-south-1.elasticbeanstalk.com/HTML%20File/QMap/Pages/font/e02bdd9828bed1e2490bdf94662dbba8.woff") format("woff"), /* chrome、firefox */
+            url("http://questaenneagramlivenew-env.eba-bjy4vchz.ap-south-1.elasticbeanstalk.com/HTML%20File/QMap/Pages/font/e02bdd9828bed1e2490bdf94662dbba8.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url("http://questaenneagramlivenew-env.eba-bjy4vchz.ap-south-1.elasticbeanstalk.com/HTML%20File/QMap/Pages/font/e02bdd9828bed1e2490bdf94662dbba8.svg#Arial Nova Cond") format("svg"); /* iOS 4.1- */
+        }
+
+        .P_Font_Family {
+            font-size: 16px;
+            font-family: 'Arial Nova Cond', sans-serif;
+        }
+
+        .text-block_1 {
+            position: absolute;
+            bottom: 20px;
+            top: 0;
+            color: black;
+            padding-left: 181px;
+            padding-right: 181px;
+        }
+
+        .text-block {
+            position: absolute;
+            bottom: 55px;
+            right: -82px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        h2.Sec-pg-header-1 {
+            font-family: 'Arial Nova Cond', sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        h2.Sec-pg-header-2 {
+            font-family: 'Arial Nova Cond', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h2.Thir-pg-header-1 {
+            font-family: 'Arial Nova Cond', sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: #483D8B;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Arial Nova Cond', sans-serif;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            font-size: 18px;
+            font-family: 'Arial Nova Cond', sans-serif;
+        }
+
+        li {
+            margin: 5px;
+            
+            word-wrap: break-word;
+        }
+
+
+
+
+        .container {
+            display: flex;
+        }
+
+        .row {
+            display: flex;
+            /* equal height of the children */
+        }
+
+        .col {
+            flex: 1;
+            padding: 0 52px;
+            margin: -8px;
+        }
+
+
+
+        .gridheaderright {
+            text-align: right;
+        }
+
+        .gridheaderbig {
+            font-size: 135%;
+        }
+
+
+
+        ul.arrow-list {
+            position: relative;
+            list-style: none;
+        }
+
+            ul.arrow-list li.arrow::before {
+                content: '➢';
+                position: absolute;
+                left: 13px;
+            }
+
+        .numberCircle {
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            padding: 8px;
+            background: #FFD700;
+            color: #666;
+            text-align: center;
+            font: 24px Arial, sans-serif;
+        }
+
+        .row1 {
+            display: flex;
+            /* equal height of the children */
+        }
+
+        .col1 {
+            flex: 1;
+            padding: 0em;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        ul.check {
+            font-size: 18px;
+            font-family: 'Arial Nova Cond', sans-serif;
+            list-style: none;
+            padding-left: 0;
+        }
+
+            ul.check li {
+                position: relative;
+                padding-left: 1.5em;
+                /* space to preserve indentation on wrap */
+            }
+
+                ul.check li:before {
+                    content: '✓';
+                    position: absolute;
+                    left: 0;
+                    /* place the SVG at the start of the padding */
+                    width: 1em;
+                    height: 1em;
+                }
+
+        .ProfileOverview {
+            font-size: 17px;
+            font-family: 'Arial Nova Cond', sans-serif;
+            margin: 12px;
+            height: 101px;
+            width: 380px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style='page-break-after:always;margin: auto;width: 90%;padding: 10px;'>
+        <h2 class="Sec-pg-header-1" style="text-align:left">Introduction</h2>
+        <hr style="border-top: 5px solid #61A0B2;">
+        <p>
+            This report has been created with the intention of providing additional information to the interviewers about the candidate being assessed. Towards a unique all-encompassing approach, this report combines the candidate's personality type with the leadership competencies that are critical for success in teams and organisations. Knowing the personality brings out the individual's preferred style or typical way of behaving that influences their potential performance and how they help build/sustain the organisation's culture. The competency evaluation brings out the behaviours they may have developed over the years through feedback or wisdom as part of their coping strategy. Together it gives us a clear picture of how the individual views his/her behaviour, rather than how others might describe them and thus provides a more accurate point of reference for the interviewer to probe and make more informed decisions.
+        </p>
+        <p>
+            The accuracy of this report depends on the frankness with which the questions were answered as well as the level of self-awareness. The assessment accounts for the overall consistency with which the individual has responded. While the core personality and hence the Enneagram profiling does not change (proven to be stable and consistent through one's lifetime), the competency section has a shelf life of 18-24 months. If there are significant changes in their life or work, it is recommended that the assessment be retaken.
+        </p>
+        <h2 class="Sec-pg-header-2" style="text-align:left">What can you find in this report? </h2>
+        <hr style="border-top: 5px solid #61A0B2;">
+        <p>
+            Enneagram Personality Type – This section brings out the natural style and the key characteristics of the candidate based on their inherent personality providing a clear insight into how they would come across in the workplace. It helps the assessors evaluate the candidate’s alignment with the role, team and organisation.
+        </p>
+        <hr style="border-top: 1px solid black;">
+        <p>
+            Competency Profile Overview – Based on extensive research, 18 leadership competencies have been identified as critical to success and growth in organisations. This section clearly brings out which of these competencies act as strengths/ are moderately displayed/ might have become derailers/ are areas that need focus to be developed by the individual. The assessors can use this information to further probe competencies that are critical for the role.
+        </p>
+        <hr style="border-top: 1px solid black;">
+        <p>
+            Competency Summary - This segment provides an overall scoring on the 5  Competency clusters under which the Leadership competencies are bifurcated. It further brings out the comparison of the individual’s responses vis-à-vis the normative scores based on the individual’s personality type. It helps identify areas that can naturally be developed by this individual.
+        </p>
+        <hr style="border-top: 1px solid;">
+        <p>
+            Interview Questions – This section focuses on competency-based questions which can be useful to the assessors during the interview
+        </p>
+        <hr style="border-top: 1px solid black;">
+        <p>
+            Definitions of the competencies – This segment provides a clear understanding of the behaviours associated with each of the 18 competencies
+        </p>
+        <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br><br> <br><br>
+        <p style="text-align: center;">
+            You can visit us at <a href="https://www.questaenneagram.com">www.questaenneagram.com</a> or write to us at
+                                <a href="mailto:support@questa.in">support@questa.in</a>
+        </p>
+    </div>
+    <div style='page-break-after:always;margin: auto;width: 90%;padding: 10px;'>
+        @_Page_3_TypeWise_HTML
+    </div>
+    <div style='page-break-after:always;margin: auto;width: 90%;padding: 10px;'>
+
+        @_Page_4_TypeWise_HTML
+
+    </div>
+    <div style='page-break-after:always;margin: auto;width: 90%;padding: 10px;'>
+        <h2 class="Thir-pg-header-1">
+            Profile overview
+
+        </h2>
+        <p style="font-size: 18px;font-family: 'Arial Nova Cond', sans-serif;text-align: left;">
+            This section classifies each of the leadership competencies across a spectrum from strengths to derailers based on the scores of the individual.
+        </p>
+
+        <table style="border-collapse: collapse;margin: 12px;height: 101px;font-size: 18px;font-family: 'Arial Nova Cond', sans-serif;">
+            <tr>
+                <td style='border-top: 1px solid black;
+                    border-left: 1px solid black;border-right: 1px solid black;
+                    background-color: #A3D37E;border-bottom: 1px solid black;
+                    width: 194px;height: 58px;'>
+                    Strength
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;'>
+                    Competencies that the individual may be displaying effectively most often - can be inherent or learned over time
+                </td>
+            </tr>
+            <tr>
+                <td style='border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;background-color: #BDD7EE;border-bottom: 1px solid black; width: 194px;height: 58px;'>
+                    Balanced
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;'>
+                    Moderately scored competencies. May not be displayed consistently and can be developed into strengths if focused upon
+                </td>
+            </tr>
+            <tr>
+                <td style='border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;background-color: #FFD966;border-bottom: 1px solid black; width: 194px;height: 58px;'>
+                    Needs development
+
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;'>
+                    Competencies which are not displayed significantly, thereby impacting effectiveness and thus requiring focus
+                </td>
+            </tr>
+            <tr>
+                <td style='border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;background-color: #BFBFBF;border-bottom: 1px solid black; width: 194px;height: 58px;'>
+                    Neglected
+
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;'>
+                    Competencies that are the most under-used, impacting outcomes and performance and will require effort to develop
+                </td>
+            </tr>
+            <tr>
+                <td style='border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;background-color: #F88167;border-bottom: 1px solid black; width: 194px;height: 58px;'>
+                    Derailer
+
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;'>
+                    Competencies that are over-used and can be a detriment to success, even acting as showstoppers; should be moderated to become strengths
+                </td>
+            </tr>
+        </table>
+
+
+
+
+        @ProfileTableScore
+
+        <!--<div class="row">
+        <div class="col">
+            @Strengths_HTML
+            <br />
+            @NeedsDevelopment_HTML
+
+
+        </div>
+        <div class="col">
+            @Balanced_HTML
+            <br>
+            @Neglected_HTML
+
+            <br>
+            @Derailers_HTML
+
+        </div>
+    </div>-->
+        @BalancedNote
+
+
+
+
+
+    </div>
+
+    <div style='page-break-after:always;margin: auto;width: 90%;padding: 10px;'>
+        <h2 class="Thir-pg-header-1">Competency Summary</h2>
+        <p style="font-size: 20px;font-family: 'Arial Nova Cond', sans-serif;text-align: center;font-weight: bold;">
+            Competency Cluster Scores
+        </p>
+
+        <img src="{{AllCluserScoreImage}}" style="display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;">
+
+        <p style="font-size: 18px;font-family: 'Arial Nova Cond', sans-serif;text-align: center;font-weight: bold;">
+            Competency Wise Scores
+        </p>
+
+        <table style="border-collapse: collapse;margin: 12px;height: 101px;font-size: 18px;font-family: 'Arial Nova Cond', sans-serif;margin: 0px auto;width: 100%;">
+            <tr>
+                <td style='border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black; background-color: #628D93; border-bottom: 1px solid black; width: 10%; height: 16px; '>
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;
+                    border-bottom: 1px solid black;width: 80%;'>
+                    This depicts the normative scores based on the Enneagram Type of the individual.
+                </td>
+            </tr>
+            <tr>
+                <td style='border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black; background-color: #354350; border-bottom: 1px solid black; width: 10%; height: 16px;'>
+                </td>
+                <td style='padding: 9px;border-top: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;
+                    border-bottom: 1px solid black;width: 80%;'>
+                    This depicts the scores based on the individual’s responses to the questions in the assessment.
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table style="margin: 0px auto;">
+            <tr>
+                <td style="  border: 1px solid black;">
+                    <img src="{{BusinessAcumenScoreImage}}" style="width: 79%;
+                        height: 330px;
+                    background-size: 130% 150%;
+                    background-position: 42% 15%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="  border: 1px solid black;">
+                    <img src="{{DriveForResultScoreImage}}" style="width: 79%;
+                        height: 330px;
+
+                    background-size: 130% 150%;
+                    background-position: 42% 15%;">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style='page-break-inside: avoid; margin: auto; width: 90%; padding: 10px;'>
+        <h2 class="Thir-pg-header-1">Competency Summary</h2>
+        <p style="font-size: 20px;font-family: 'Arial Nova Cond', sans-serif;text-align: center;font-weight: bold;">
+            Competency Cluster Scores
+        </p>
+
+        <table style="margin: 0px auto;">
+            <tr>
+                <td style="  border: 1px solid black;">
+                    <img src="{{IntegratingTheEcosystem}}" style="width: 79%;
+                            height: 330px;
+
+                        background-size: 130% 150%;
+                        background-position: 42% 15%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="  border: 1px solid black;">
+                    <img src="{{LeadingNDevelopingTalent}}" style="width: 79%;
+                            height: 330px;
+
+                        background-size: 130% 150%;
+
+                        background-position: 42% 15%;">
+                </td>
+            </tr>
+            <tr>
+                <td style="  border: 1px solid black;">
+                    <img src="{{ManagingSelf}}" style="width: 79%;
+                            height: 330px;
+
+                        background-size: 130% 150%;
+
+                        background-position: 42% 15%;">
+                </td>
+            </tr>
+        </table>
+
+
+        <br/>
+        
+
+        <table style="border-collapse: collapse;font-size: 20px;font-family: 'Arial Nova Cond', sans-serif;text-align: center;">
+            <tr>
+                <td style='background-color: #628D93; width: 80%; '>
+                    @ConsistencyNote
+
+                </td>
+                <td style='padding: 23px; width: 10%; background-color: #354350; color: white'>
+                    @ConsistencyTemperature
+
+                </td>
+            </tr>
+            <tr>
+                <td style='background-color: #628D93; width: 80%;'>
+                </td>
+                <td style='padding: 2px; width: 10%; background-color: #354350;'>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
