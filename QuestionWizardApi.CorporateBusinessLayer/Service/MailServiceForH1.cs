@@ -2557,7 +2557,7 @@ namespace QuestionWizardApi.CorporateBusinessLayer.Service
 
             if(hostname.Equals("localhost"))
             {
-                byte[] bytes = File.ReadAllBytes(@"E:\Shared\Data\" + FileName);
+                byte[] bytes = File.ReadAllBytes(@"E:\Questa\Shared\Data\" + FileName);
 
                 string StrImgInBase64String_ = "data:image/png;base64, " + Convert.ToBase64String(bytes);
 

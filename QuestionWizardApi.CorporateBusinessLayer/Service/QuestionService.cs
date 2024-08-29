@@ -2140,7 +2140,7 @@ namespace QuestionWizardApi.CorporateBusinessLayer.Service
 
                     if(hostname.Equals("localhost"))
                     {
-                        using (var fs = new FileStream(@"E:\Shared\Data\"+FileName, FileMode.Create, FileAccess.Write))
+                        using (var fs = new FileStream(@"E:\Questa\Shared\Data\"+FileName, FileMode.Create, FileAccess.Write))
                         {
                             fs.Write(imageBytes, 0, imageBytes.Length);
                         }
