@@ -1,3 +1,48 @@
+E:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+E:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csprojResolveAssemblyReference.cache
+E:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+E:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+I:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csprojResolveAssemblyReference.cache
+I:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+I:\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csprojResolveAssemblyReference.cache
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csprojResolveAssemblyReference.cache
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Release\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Release\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csprojResolveAssemblyReference.cache
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.AssemblyReference.cache
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.CoreCompileInputs.cache
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.AssemblyReference.cache
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.CoreCompileInputs.cache
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.AssemblyReference.cache
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.CoreCompileInputs.cache
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb
 E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
 E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
 E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.AssemblyReference.cache

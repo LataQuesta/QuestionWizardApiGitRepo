@@ -1,2 +1,1133 @@
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xmlworker.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\StudentAssessmentBusiness.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\StudentAssessmentData.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\StudentAssessmentBusiness.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\StudentAssessmentData.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.pdb
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csprojResolveAssemblyReference.cache
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+F:\Avadhut\Questa Enngram\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xmlworker.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+E:\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csprojResolveAssemblyReference.cache
+E:\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+E:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xmlworker.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentBusinessLayer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentIBusinessLayer.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentModel.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentData.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentBusinessLayer.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentIBusinessLayer.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentModel.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+I:\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.StudentData.pdb
+I:\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csprojResolveAssemblyReference.cache
+I:\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+I:\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csprojResolveAssemblyReference.cache
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xmlworker.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.SimpleNotificationService.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\HtmlRenderer.WinForms.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+D:\New Questa Enngeagram Pr\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\bin\Select.Html.dep
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csprojResolveAssemblyReference.cache
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+D:\New Questa Enngeagram Pr\New folder\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.Html.dep
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csprojResolveAssemblyReference.cache
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+D:\New Questa Enngeagram Pr\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\csc.exe
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Collections.Immutable.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\vbc.exe
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\roslyn\VBCSCompiler.exe.config
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.Web.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AI.WindowsServer.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.ApplicationInsights.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.Html.dep
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll.config
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.AssemblyReference.cache
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.CoreCompileInputs.cache
+D:\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.CopyComplete
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Deployment.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Webpages.Razor.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll.config
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\Select.Html.dep
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.AssemblyReference.cache
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.CoreCompileInputs.cache
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+E:\AVDUT DATA\Questa Project\H1 Project\QuestionWizardApi\QuestionWizardApi\obj\Debug\Question.CDC34D53.Up2Date
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Deployment.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Razor.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Deployment.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Razor.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll.config
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+E:\Shared\QuestionWizardApi\QuestionWizardApi\bin\Select.Html.dep
+E:\Shared\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.AssemblyReference.cache
+E:\Shared\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.CoreCompileInputs.cache
+E:\Shared\QuestionWizardApi\QuestionWizardApi\obj\Debug\Question.CDC34D53.Up2Date
+E:\Shared\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+E:\Shared\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\ApplicationInsights.config
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Owin.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Cors.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Deployment.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Razor.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\WebActivatorEx.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Newtonsoft.Json.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Common.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Helpers.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Mvc.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.Razor.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Deployment.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\System.Web.WebPages.Razor.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.S3.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll.config
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\DocumentFormat.OpenXml.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.pdb
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AWSSDK.Core.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\itextsharp.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\AutoMapper.xml
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\bin\Select.Html.dep
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.AssemblyReference.cache
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.CoreCompileInputs.cache
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\Question.CDC34D53.Up2Date
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+E:\Questa\Shared\API\QuestionWizardApi\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\ApplicationInsights.config
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.dll.config
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\EntityFramework.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\EntityFramework.SqlServer.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Cors.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Security.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Web.Infrastructure.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Newtonsoft.Json.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.Web.Common.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.Web.Mvc.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.WebApi.DependencyResolver.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Owin.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Select.HtmlToPdf.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Net.Http.Formatting.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Cors.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Helpers.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Http.Cors.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Http.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Http.WebHost.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Mvc.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Razor.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.WebPages.Deployment.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.WebPages.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.WebPages.Razor.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\WebActivatorEx.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AWSSDK.S3.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\DocumentFormat.OpenXml.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AWSSDK.Core.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\itextsharp.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AutoMapper.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\BouncyCastle.Crypto.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateBusinessLayer.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateIBusinessLayer.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateModel.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\EntityFramework.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\EntityFramework.SqlServer.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Cors.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Security.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Newtonsoft.Json.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.Web.Common.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Ninject.Web.Mvc.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Select.HtmlToPdf.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Net.Http.Formatting.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Helpers.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Http.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Http.Cors.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Http.WebHost.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Mvc.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.Razor.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.WebPages.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.WebPages.Deployment.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\System.Web.WebPages.Razor.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AWSSDK.S3.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AWSSDK.S3.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\QuestionWizardApi.CorporateData.dll.config
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\DocumentFormat.OpenXml.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AWSSDK.Core.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AWSSDK.Core.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\itextsharp.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\AutoMapper.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\bin\Select.Html.dep
 E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.AssemblyReference.cache
 E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\obj\Debug\QuestionWizardApi.csproj.CoreCompileInputs.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\obj\Debug\Question.CDC34D53.Up2Date
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\obj\Debug\QuestionWizardApi.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi\obj\Debug\QuestionWizardApi.pdb
