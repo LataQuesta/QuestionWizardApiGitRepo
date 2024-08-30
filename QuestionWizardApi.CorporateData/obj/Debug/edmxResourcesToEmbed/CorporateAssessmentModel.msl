@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CorporateAssessmentModelStoreContainer" CdmEntityContainer="CorporateAssessmentEntities">
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLog">
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="RequestUri" ColumnName="RequestUri" />
+          <ScalarProperty Name="RequestMethod" ColumnName="RequestMethod" />
+          <ScalarProperty Name="ErrorId" ColumnName="ErrorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstAges">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstAge">
+        <MappingFragment StoreEntitySet="mstAge">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AgeName" ColumnName="AgeName" />
+          <ScalarProperty Name="AgeId" ColumnName="AgeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstAssessmentSets">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstAssessmentSet">
+        <MappingFragment StoreEntitySet="mstAssessmentSet">
+          <ScalarProperty Name="TotalQuestion" ColumnName="TotalQuestion" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="AssessmentName" ColumnName="AssessmentName" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstCompetencies">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstCompetency">
+        <MappingFragment StoreEntitySet="mstCompetency">
+          <ScalarProperty Name="CompetencyName" ColumnName="CompetencyName" />
+          <ScalarProperty Name="CompetencyId" ColumnName="CompetencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstConfigs">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.MstConfig">
+        <MappingFragment StoreEntitySet="MstConfig">
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ConfigName" ColumnName="ConfigName" />
+          <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+          <ScalarProperty Name="ConfigId" ColumnName="ConfigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstCountries">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstCountry">
+        <MappingFragment StoreEntitySet="mstCountry">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstEmployeeStatus">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstEmployeeStatu">
+        <MappingFragment StoreEntitySet="mstEmployeeStatus">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EmploymentName" ColumnName="EmploymentName" />
+          <ScalarProperty Name="EmploymentId" ColumnName="EmploymentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstGenders">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstGender">
+        <MappingFragment StoreEntitySet="mstGender">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstIndustries">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstIndustry">
+        <MappingFragment StoreEntitySet="mstIndustry">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IndustryName" ColumnName="IndustryName" />
+          <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstMailTemplates">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstMailTemplate">
+        <MappingFragment StoreEntitySet="mstMailTemplate">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="BODY" ColumnName="BODY" />
+          <ScalarProperty Name="PORT" ColumnName="PORT" />
+          <ScalarProperty Name="HOST" ColumnName="HOST" />
+          <ScalarProperty Name="CCMailAddress" ColumnName="CCMailAddress" />
+          <ScalarProperty Name="BCCMailAddress" ColumnName="BCCMailAddress" />
+          <ScalarProperty Name="FromMailAddress" ColumnName="FromMailAddress" />
+          <ScalarProperty Name="CONFIGSET" ColumnName="CONFIGSET" />
+          <ScalarProperty Name="SMTP_PASSWORD" ColumnName="SMTP_PASSWORD" />
+          <ScalarProperty Name="SMTP_USERNAME" ColumnName="SMTP_USERNAME" />
+          <ScalarProperty Name="SMTP_SenderNAME" ColumnName="SMTP_SenderNAME" />
+          <ScalarProperty Name="MailTemplateId" ColumnName="MailTemplateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstMaritalStatus">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstMaritalStatu">
+        <MappingFragment StoreEntitySet="mstMaritalStatus">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MaritalName" ColumnName="MaritalName" />
+          <ScalarProperty Name="MaritalId" ColumnName="MaritalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstProfessions">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstProfession">
+        <MappingFragment StoreEntitySet="mstProfession">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ProfessionName" ColumnName="ProfessionName" />
+          <ScalarProperty Name="ProfessionId" ColumnName="ProfessionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstProfileSelecteds">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstProfileSelected">
+        <MappingFragment StoreEntitySet="mstProfileSelected">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FinalMailSentId" ColumnName="FinalMailSentId" />
+          <ScalarProperty Name="InitialMailSentId" ColumnName="InitialMailSentId" />
+          <ScalarProperty Name="ProfileName" ColumnName="ProfileName" />
+          <ScalarProperty Name="ProfileId" ColumnName="ProfileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstQualifications">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstQualification">
+        <MappingFragment StoreEntitySet="mstQualification">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="QualificationName" ColumnName="QualificationName" />
+          <ScalarProperty Name="QualificationId" ColumnName="QualificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstQuestions">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstQuestion">
+        <MappingFragment StoreEntitySet="mstQuestion">
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SubModuleId" ColumnName="SubModuleId" />
+          <ScalarProperty Name="ResponseTypeId" ColumnName="ResponseTypeId" />
+          <ScalarProperty Name="SetId" ColumnName="SetId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstQuestionReponseTypes">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstQuestionReponseType">
+        <MappingFragment StoreEntitySet="mstQuestionReponseType">
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ResponseTypeName" ColumnName="ResponseTypeName" />
+          <ScalarProperty Name="ResponseTypeId" ColumnName="ResponseTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstQuestionResponses">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstQuestionResponse">
+        <MappingFragment StoreEntitySet="mstQuestionResponse">
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="ResponseText" ColumnName="ResponseText" />
+          <ScalarProperty Name="ResponseNumber" ColumnName="ResponseNumber" />
+          <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstQuestionSubTypes">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstQuestionSubType">
+        <MappingFragment StoreEntitySet="mstQuestionSubType">
+          <ScalarProperty Name="colorCode" ColumnName="colorCode" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="SubTypeName" ColumnName="SubTypeName" />
+          <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstQuestionTypes">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstQuestionType">
+        <MappingFragment StoreEntitySet="mstQuestionType">
+          <ScalarProperty Name="colorCode" ColumnName="colorCode" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstStates">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstState">
+        <MappingFragment StoreEntitySet="mstState">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnCompetencyByCompanies">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnCompetencyByCompany">
+        <MappingFragment StoreEntitySet="txnCompetencyByCompany">
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="CompetencyId" ColumnName="CompetencyId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CompetencyByCompanyId" ColumnName="CompetencyByCompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnDynamicMisTypings">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnDynamicMisTyping">
+        <MappingFragment StoreEntitySet="txnDynamicMisTyping">
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="HighestType" ColumnName="HighestType" />
+          <ScalarProperty Name="MisTypeId" ColumnName="MisTypeId" />
+          <ScalarProperty Name="MisTypeName" ColumnName="MisTypeName" />
+          <ScalarProperty Name="TypeB" ColumnName="TypeB" />
+          <ScalarProperty Name="TypeA" ColumnName="TypeA" />
+          <ScalarProperty Name="MisTypingId" ColumnName="MisTypingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnExamSetStatus">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnExamSetStatu">
+        <MappingFragment StoreEntitySet="txnExamSetStatus">
+          <ScalarProperty Name="IsDisplayInstruction" ColumnName="IsDisplayInstruction" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="ExamId" ColumnName="ExamId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnIndustries">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnIndustry">
+        <MappingFragment StoreEntitySet="txnIndustry">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnModuleByAssessments">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnModuleByAssessment">
+        <MappingFragment StoreEntitySet="txnModuleByAssessment">
+          <ScalarProperty Name="isactive" ColumnName="isactive" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="TxnSetId" ColumnName="TxnSetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnQuestions">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnQuestion">
+        <MappingFragment StoreEntitySet="txnQuestion">
+          <ScalarProperty Name="QuesOrder" ColumnName="QuesOrder" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="ResponseBy" ColumnName="ResponseBy" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="IsAnswer" ColumnName="IsAnswer" />
+          <ScalarProperty Name="ResponseAt" ColumnName="ResponseAt" />
+          <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="TxnQuestionId" ColumnName="TxnQuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnQuestionResponses">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnQuestionResponse">
+        <MappingFragment StoreEntitySet="txnQuestionResponse">
+          <ScalarProperty Name="impactscore" ColumnName="impactscore" />
+          <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="TxnQuestionId" ColumnName="TxnQuestionId" />
+          <ScalarProperty Name="QuestionResponseId" ColumnName="QuestionResponseId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="TestQuestionResponseId" ColumnName="TestQuestionResponseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnUserTestDetails">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnUserTestDetail">
+        <MappingFragment StoreEntitySet="txnUserTestDetails">
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sp_InsertRandomQuestion" FunctionName="CorporateAssessmentModel.Store.Sp_InsertRandomQuestion" />
+    <FunctionImportMapping FunctionImportName="usp_GetRowScoreTypeWise" FunctionName="CorporateAssessmentModel.Store.usp_GetRowScoreTypeWise">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.usp_GetRowScoreTypeWise_Result2">
+          <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="colorCode" ColumnName="colorCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetScoreCardName" FunctionName="CorporateAssessmentModel.Store.usp_GetScoreCardName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.usp_GetScoreCardName_Result2">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_SubTypeWiseScoreBoard" FunctionName="CorporateAssessmentModel.Store.usp_SubTypeWiseScoreBoard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.usp_SubTypeWiseScoreBoard_Result2">
+          <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+          <ScalarProperty Name="SubTypeId" ColumnName="SubTypeId" />
+          <ScalarProperty Name="SubTypeName" ColumnName="SubTypeName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="colorCode" ColumnName="colorCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_TypeWiseScoreBoard" FunctionName="CorporateAssessmentModel.Store.usp_TypeWiseScoreBoard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.usp_TypeWiseScoreBoard_Result2">
+          <ScalarProperty Name="ImpactScore" ColumnName="ImpactScore" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="colorCode" ColumnName="colorCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="mstAssessmentModules">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstAssessmentModule">
+        <MappingFragment StoreEntitySet="mstAssessmentModule">
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="ModuleOrder" ColumnName="ModuleOrder" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PartialModuleName" ColumnName="PartialModuleName" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstMainTypeCalScores">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstMainTypeCalScore">
+        <MappingFragment StoreEntitySet="mstMainTypeCalScore">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="MainTypeId" ColumnName="MainTypeId" />
+          <ScalarProperty Name="CalTypeId" ColumnName="CalTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstExperences">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstExperence">
+        <MappingFragment StoreEntitySet="mstExperence">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ExperenceName" ColumnName="ExperenceName" />
+          <ScalarProperty Name="ExperenceId" ColumnName="ExperenceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetMasterData" FunctionName="CorporateAssessmentModel.Store.SP_GetMasterData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.SP_GetMasterData_Result3">
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="MstReportRepositories">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.MstReportRepository">
+        <MappingFragment StoreEntitySet="MstReportRepository">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="RepositoryId" ColumnName="RepositoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstClusters">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstCluster">
+        <MappingFragment StoreEntitySet="mstCluster">
+          <ScalarProperty Name="ClusterName" ColumnName="ClusterName" />
+          <ScalarProperty Name="ClusterId" ColumnName="ClusterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sp_ExportRearrangeOrderScoreCard" FunctionName="CorporateAssessmentModel.Store.Sp_ExportRearrangeOrderScoreCard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.Sp_ExportRearrangeOrderScoreCard_Result">
+          <ScalarProperty Name="Type_Name" ColumnName="Type Name" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Response_Value" ColumnName="Response Value" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_ExportSubTypeWiseScoreCard" FunctionName="CorporateAssessmentModel.Store.Sp_ExportSubTypeWiseScoreCard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.Sp_ExportSubTypeWiseScoreCard_Result">
+          <ScalarProperty Name="Type_Name" ColumnName="Type Name" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Response_Value" ColumnName="Response Value" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_ExportTypeWiseScoreCard" FunctionName="CorporateAssessmentModel.Store.Sp_ExportTypeWiseScoreCard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.Sp_ExportTypeWiseScoreCard_Result2">
+          <ScalarProperty Name="Type_Name" ColumnName="Type Name" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Response_Value" ColumnName="Response Value" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Mst_QMP_Normatives">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.Mst_QMP_Normatives">
+        <MappingFragment StoreEntitySet="Mst_QMP_Normatives">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Type9" ColumnName="Type9" />
+          <ScalarProperty Name="Type8" ColumnName="Type8" />
+          <ScalarProperty Name="Type7" ColumnName="Type7" />
+          <ScalarProperty Name="Type6" ColumnName="Type6" />
+          <ScalarProperty Name="Type5" ColumnName="Type5" />
+          <ScalarProperty Name="Type4" ColumnName="Type4" />
+          <ScalarProperty Name="Type3" ColumnName="Type3" />
+          <ScalarProperty Name="Type2" ColumnName="Type2" />
+          <ScalarProperty Name="Type1" ColumnName="Type1" />
+          <ScalarProperty Name="CompeteciesName" ColumnName="CompeteciesName" />
+          <ScalarProperty Name="CompetencyId" ColumnName="CompetencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnClusterMapToCompetencies">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnClusterMapToCompetency">
+        <MappingFragment StoreEntitySet="txnClusterMapToCompetency">
+          <ScalarProperty Name="WeightageScore" ColumnName="WeightageScore" />
+          <ScalarProperty Name="Weightage" ColumnName="Weightage" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="ClusterId" ColumnName="ClusterId" />
+          <ScalarProperty Name="ClusterMapToCompetencyId" ColumnName="ClusterMapToCompetencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Cal_QmapPairWiseConsistency" FunctionName="CorporateAssessmentModel.Store.Sp_Cal_QmapPairWiseConsistency" />
+    <EntitySetMapping Name="DummyCandidateRecords">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.DummyCandidateRecord">
+        <MappingFragment StoreEntitySet="DummyCandidateRecord">
+          <ScalarProperty Name="CandidateEmail" ColumnName="CandidateEmail" />
+          <ScalarProperty Name="CandidateName" ColumnName="CandidateName" />
+          <ScalarProperty Name="LinkGenerationId" ColumnName="LinkGenerationId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CandidateRecordId" ColumnName="CandidateRecordId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sp_Cal_QLeapPairWiseConsistency" FunctionName="CorporateAssessmentModel.Store.Sp_Cal_QLeapPairWiseConsistency" />
+    <EntitySetMapping Name="mst_mailConfigByAssessment">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mst_mailConfigByAssessment">
+        <MappingFragment StoreEntitySet="mst_mailConfigByAssessment">
+          <ScalarProperty Name="MailTemplateId" ColumnName="MailTemplateId" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="MailConfigName" ColumnName="MailConfigName" />
+          <ScalarProperty Name="MailType" ColumnName="MailType" />
+          <ScalarProperty Name="MailConfigId" ColumnName="MailConfigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstmailConfigByAssessments">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstmailConfigByAssessment">
+        <MappingFragment StoreEntitySet="mstmailConfigByAssessment">
+          <ScalarProperty Name="MailTemplateId" ColumnName="MailTemplateId" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="MailConfigName" ColumnName="MailConfigName" />
+          <ScalarProperty Name="MailType" ColumnName="MailType" />
+          <ScalarProperty Name="MailConfigId" ColumnName="MailConfigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstUserLogins">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstUserLogin">
+        <MappingFragment StoreEntitySet="mstUserLogin">
+          <ScalarProperty Name="RefreshTokenExpiryTime" ColumnName="RefreshTokenExpiryTime" />
+          <ScalarProperty Name="RefreshToken" ColumnName="RefreshToken" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnCampanyMapToAssessments">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnCampanyMapToAssessment">
+        <MappingFragment StoreEntitySet="txnCampanyMapToAssessment">
+          <ScalarProperty Name="isactive" ColumnName="isactive" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CoAsId" ColumnName="CoAsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnCandidateLinkHistories">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnCandidateLinkHistory">
+        <MappingFragment StoreEntitySet="txnCandidateLinkHistory">
+          <ScalarProperty Name="ReportSendToCandidate" ColumnName="ReportSendToCandidate" />
+          <ScalarProperty Name="ReportSendToHr" ColumnName="ReportSendToHr" />
+          <ScalarProperty Name="FinalMailTemplateId" ColumnName="FinalMailTemplateId" />
+          <ScalarProperty Name="InitialMailTemplateId" ColumnName="InitialMailTemplateId" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="LinkHisId" ColumnName="LinkHisId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TxnConfigureMailSents">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.TxnConfigureMailSent">
+        <MappingFragment StoreEntitySet="TxnConfigureMailSent">
+          <ScalarProperty Name="LastModifedAt" ColumnName="LastModifedAt" />
+          <ScalarProperty Name="LastModifedBy" ColumnName="LastModifedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsReportSentToHr" ColumnName="IsReportSentToHr" />
+          <ScalarProperty Name="IsReportSentToCandidate" ColumnName="IsReportSentToCandidate" />
+          <ScalarProperty Name="IsLinkSentToHr" ColumnName="IsLinkSentToHr" />
+          <ScalarProperty Name="IsLinkSentToCandidate" ColumnName="IsLinkSentToCandidate" />
+          <ScalarProperty Name="LinkGenerationId" ColumnName="LinkGenerationId" />
+          <ScalarProperty Name="MailShootId" ColumnName="MailShootId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnHrMapToCompanyAndAssessments">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnHrMapToCompanyAndAssessment">
+        <MappingFragment StoreEntitySet="txnHrMapToCompanyAndAssessment">
+          <ScalarProperty Name="isactive" ColumnName="isactive" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="HrId" ColumnName="HrId" />
+          <ScalarProperty Name="HrCoAsId" ColumnName="HrCoAsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TxnLinkGenerationIds">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.TxnLinkGenerationId">
+        <MappingFragment StoreEntitySet="TxnLinkGenerationId">
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastModifedAt" ColumnName="LastModifedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FinalMailId" ColumnName="FinalMailId" />
+          <ScalarProperty Name="InitialMailId" ColumnName="InitialMailId" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="LinkGenerationId" ColumnName="LinkGenerationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnMailSentToCandidates">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnMailSentToCandidate">
+        <MappingFragment StoreEntitySet="txnMailSentToCandidate">
+          <ScalarProperty Name="CandidateEmailId" ColumnName="CandidateEmailId" />
+          <ScalarProperty Name="CandidateName" ColumnName="CandidateName" />
+          <ScalarProperty Name="HrEmailId" ColumnName="HrEmailId" />
+          <ScalarProperty Name="HrName" ColumnName="HrName" />
+          <ScalarProperty Name="IsAttachmentReqToHr" ColumnName="IsAttachmentReqToHr" />
+          <ScalarProperty Name="IsAttachmentReqToCandidate" ColumnName="IsAttachmentReqToCandidate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="MailSentId" ColumnName="MailSentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_generatelinkbaseonrequiredetails" FunctionName="CorporateAssessmentModel.Store.sp_generatelinkbaseonrequiredetails" />
+    <FunctionImportMapping FunctionImportName="sp_getmailbodyforcandidate" FunctionName="CorporateAssessmentModel.Store.sp_getmailbodyforcandidate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.sp_getmailbodyforcandidate_Result">
+          <ScalarProperty Name="SenderEmailAddress" ColumnName="SenderEmailAddress" />
+          <ScalarProperty Name="SenderName" ColumnName="SenderName" />
+          <ScalarProperty Name="SMTP_USERNAME" ColumnName="SMTP_USERNAME" />
+          <ScalarProperty Name="SMTP_PASSWORD" ColumnName="SMTP_PASSWORD" />
+          <ScalarProperty Name="CONFIGSET" ColumnName="CONFIGSET" />
+          <ScalarProperty Name="HOST" ColumnName="HOST" />
+          <ScalarProperty Name="PORT" ColumnName="PORT" />
+          <ScalarProperty Name="BODY" ColumnName="BODY" />
+          <ScalarProperty Name="BCCEmail" ColumnName="BCCEmail" />
+          <ScalarProperty Name="CCEmail" ColumnName="CCEmail" />
+          <ScalarProperty Name="SendToHr" ColumnName="SendToHr" />
+          <ScalarProperty Name="SendToCandidate" ColumnName="SendToCandidate" />
+          <ScalarProperty Name="RecevierName" ColumnName="RecevierName" />
+          <ScalarProperty Name="RecevierEmailAddress" ColumnName="RecevierEmailAddress" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getmailbodyforHr" FunctionName="CorporateAssessmentModel.Store.sp_getmailbodyforHr">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CorporateAssessmentModel.sp_getmailbodyforHr_Result">
+          <ScalarProperty Name="SenderEmailAddress" ColumnName="SenderEmailAddress" />
+          <ScalarProperty Name="SenderName" ColumnName="SenderName" />
+          <ScalarProperty Name="SMTP_USERNAME" ColumnName="SMTP_USERNAME" />
+          <ScalarProperty Name="SMTP_PASSWORD" ColumnName="SMTP_PASSWORD" />
+          <ScalarProperty Name="CONFIGSET" ColumnName="CONFIGSET" />
+          <ScalarProperty Name="HOST" ColumnName="HOST" />
+          <ScalarProperty Name="PORT" ColumnName="PORT" />
+          <ScalarProperty Name="BODY" ColumnName="BODY" />
+          <ScalarProperty Name="BCCEmail" ColumnName="BCCEmail" />
+          <ScalarProperty Name="CCEmail" ColumnName="CCEmail" />
+          <ScalarProperty Name="SendToHr" ColumnName="SendToHr" />
+          <ScalarProperty Name="SendToCandidate" ColumnName="SendToCandidate" />
+          <ScalarProperty Name="RecevierName" ColumnName="RecevierName" />
+          <ScalarProperty Name="RecevierEmailAddress" ColumnName="RecevierEmailAddress" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="mstCompanies">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstCompany">
+        <MappingFragment StoreEntitySet="mstCompany">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedAt" ColumnName="LastModifiedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstHumanResourceRepoes">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.mstHumanResourceRepo">
+        <MappingFragment StoreEntitySet="mstHumanResourceRepo">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="HrPhoneNumber" ColumnName="HrPhoneNumber" />
+          <ScalarProperty Name="HrEmail" ColumnName="HrEmail" />
+          <ScalarProperty Name="HrName" ColumnName="HrName" />
+          <ScalarProperty Name="HrId" ColumnName="HrId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="txnCandidates">
+      <EntityTypeMapping TypeName="CorporateAssessmentModel.txnCandidate">
+        <MappingFragment StoreEntitySet="txnCandidate">
+          <ScalarProperty Name="HrId" ColumnName="HrId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="AssessmentId" ColumnName="AssessmentId" />
+          <ScalarProperty Name="ActionCenter" ColumnName="ActionCenter" />
+          <ScalarProperty Name="ThinkingCenter" ColumnName="ThinkingCenter" />
+          <ScalarProperty Name="FellingCenter" ColumnName="FellingCenter" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="IsLogin" ColumnName="IsLogin" />
+          <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+          <ScalarProperty Name="IsTabDevice" ColumnName="IsTabDevice" />
+          <ScalarProperty Name="IsDesktopDevice" ColumnName="IsDesktopDevice" />
+          <ScalarProperty Name="IsMobileDevice" ColumnName="IsMobileDevice" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="IsOTPRequire" ColumnName="IsOTPRequire" />
+          <ScalarProperty Name="ProfileSelected" ColumnName="ProfileSelected" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="UserExperience" ColumnName="UserExperience" />
+          <ScalarProperty Name="UserEmployeeStatus" ColumnName="UserEmployeeStatus" />
+          <ScalarProperty Name="UserMaritalStatus" ColumnName="UserMaritalStatus" />
+          <ScalarProperty Name="UserProfessional" ColumnName="UserProfessional" />
+          <ScalarProperty Name="UserQualification" ColumnName="UserQualification" />
+          <ScalarProperty Name="UserCountry" ColumnName="UserCountry" />
+          <ScalarProperty Name="UserState" ColumnName="UserState" />
+          <ScalarProperty Name="UserAge" ColumnName="UserAge" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserDateOfBirth" ColumnName="UserDateOfBirth" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

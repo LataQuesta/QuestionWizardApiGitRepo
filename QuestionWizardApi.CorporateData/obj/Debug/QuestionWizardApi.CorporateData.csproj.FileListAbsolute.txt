@@ -1,0 +1,12 @@
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\QuestionWizardApi.CorporateData.dll.config
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\QuestionWizardApi.CorporateData.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\QuestionWizardApi.CorporateData.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\EntityFramework.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\EntityFramework.SqlServer.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\EntityFramework.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\bin\Debug\EntityFramework.SqlServer.xml
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\obj\Debug\QuestionWizardApi.CorporateData.csproj.AssemblyReference.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\obj\Debug\QuestionWizardApi.CorporateData.csproj.CoreCompileInputs.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\obj\Debug\Question.5A243731.Up2Date
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\obj\Debug\QuestionWizardApi.CorporateData.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateData\obj\Debug\QuestionWizardApi.CorporateData.pdb

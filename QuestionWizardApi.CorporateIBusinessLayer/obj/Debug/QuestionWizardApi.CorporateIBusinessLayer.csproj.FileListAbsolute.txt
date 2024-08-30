@@ -1,0 +1,9 @@
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\bin\Debug\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\bin\Debug\QuestionWizardApi.CorporateIBusinessLayer.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\bin\Debug\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\obj\Debug\QuestionWizardApi.CorporateIBusinessLayer.csproj.AssemblyReference.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\obj\Debug\QuestionWizardApi.CorporateIBusinessLayer.csproj.CoreCompileInputs.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\obj\Debug\Question.EB718630.Up2Date
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\obj\Debug\QuestionWizardApi.CorporateIBusinessLayer.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateIBusinessLayer\obj\Debug\QuestionWizardApi.CorporateIBusinessLayer.pdb

@@ -1,0 +1,2 @@
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateBusinessLayer\obj\Debug\QuestionWizardApi.CorporateBusinessLayer.csproj.AssemblyReference.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateBusinessLayer\obj\Debug\QuestionWizardApi.CorporateBusinessLayer.csproj.CoreCompileInputs.cache

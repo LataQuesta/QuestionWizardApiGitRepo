@@ -1,0 +1,6 @@
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\bin\Debug\QuestionWizardApi.CorporateModel.pdb
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.AssemblyReference.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.csproj.CoreCompileInputs.cache
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.dll
+E:\Questa\Github\QuestionWizardApiGitRepo\QuestionWizardApi.CorporateModel\obj\Debug\QuestionWizardApi.CorporateModel.pdb

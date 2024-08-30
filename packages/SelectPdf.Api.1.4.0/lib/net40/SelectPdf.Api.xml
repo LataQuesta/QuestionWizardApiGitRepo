@@ -1,0 +1,2429 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SelectPdf.Api</name>
+    </assembly>
+    <members>
+        <member name="T:SelectPdf.Api.ApiClient">
+            <summary>
+            Base class for API clients. Do not use this directly.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.apiEndpoint">
+            <summary>
+            API endpoint
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.apiAsyncEndpoint">
+            <summary>
+            API async jobs endpoint
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.apiWebElementsEndpoint">
+            <summary>
+            API web elements endpoint
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.parameters">
+            <summary>
+            Parameters that will be sent to the API.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.headers">
+            <summary>
+            HTTP Headers that will be sent to the API.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.files">
+            <summary>
+            Files that will be sent to the API.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.binaryData">
+            <summary>
+            Binary data that will be sent to the API.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.numberOfPages">
+            <summary>
+            Number of pages of the pdf document resulted from the conversion.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.jobId">
+            <summary>
+            Job ID for asynchronous calls or for calls that require a second request.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.lastHTTPCode">
+            <summary>
+            Last HTTP Code
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.webElements">
+            <summary>
+            Web elements locations. This is retrieved if pdf_web_elements_selectors parameter is set and elements were found to match the selectors.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.ApiClient.CLIENT_VERSION">
+            <summary>
+            Library version
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.ApiClient.AsyncCallsPingInterval">
+            <summary>
+            Ping interval in seconds for asynchronous calls. Default value is 3 seconds.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.ApiClient.AsyncCallsMaxPings">
+            <summary>
+            Maximum number of pings for asynchronous calls. Default value is 1,000 pings.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.setConcurrentConnections(System.Int32)">
+            <summary>
+            Set the number of concurrent connections (between 1 and 16).
+            </summary>
+            <param name="connectionsNumber">Number of concurrent connections.</param>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.setApiEndpoint(System.String)">
+            <summary>
+            Set a custom SelectPdf API endpoint. Do not use this method unless advised by SelectPdf.
+            </summary>
+            <param name="apiEndpoint">API endpoint.</param>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.setApiAsyncEndpoint(System.String)">
+            <summary>
+            Set a custom SelectPdf API endpoint for async jobs. Do not use this method unless advised by SelectPdf.
+            </summary>
+            <param name="apiAsyncEndpoint">API async jobs endpoint.</param>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.setApiWebElementsEndpoint(System.String)">
+            <summary>
+            Set a custom SelectPdf API endpoint for web elements. Do not use this method unless advised by SelectPdf.
+            </summary>
+            <param name="apiWebElementsEndpoint">API web elements endpoint.</param>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.SerializeParameters">
+            <summary>
+            Serialize parameters.
+            </summary>
+            <returns>Serialized parameters.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.SerializeDictionary(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Serialize dictionary.
+            </summary>
+            <returns>Serialized dictionary.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.EncodeString(System.String)">
+            <summary>
+            Custom encoding method, to overcome the size limitation of Uri.EscapeDataString.
+            </summary>
+            <param name="str">String to encode.</param>
+            <returns>Encoded string.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.PerformPost(System.IO.Stream)">
+            <summary>
+            Create a POST request.
+            </summary>
+            <param name="outStream">Output response to this stream, if specified.</param>
+            <returns>If output stream is not specified, return response as byte array.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.PerformPostAsMultipartFormData(System.IO.Stream)">
+            <summary>
+            Create a multipart/form-data POST request (that can handle file uploads).
+            </summary>
+            <param name="outStream">Output response to this stream, if specified.</param>
+            <returns>If output stream is not specified, return response as byte array.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.StartAsyncJob">
+            <summary>
+            Start an asynchronous job.
+            </summary>
+            <returns>Asynchronous job ID.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.StartAsyncJobMultipartFormData">
+            <summary>
+            Start an asynchronous job that requires multipart form data.
+            </summary>
+            <returns>Asynchronous job ID.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.BinaryReadStream(System.IO.Stream)">
+            <summary>
+            Binary read from Stream into a MemoryStream.
+            </summary>
+            <param name="input">Input stream.</param>
+            <returns>Output memory stream.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.ApiClient.BinaryCopyStream(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Copy from one stream into another.
+            </summary>
+            <param name="input">Input stream.</param>
+            <param name="output">Output stream.</param>
+        </member>
+        <member name="T:SelectPdf.Api.PageSize">
+            <summary>
+            PDF page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.Custom">
+            <summary>
+            Custom page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A0">
+            <summary>
+            A0 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A1">
+            <summary>
+            A1 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A2">
+            <summary>
+            A2 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A3">
+            <summary>
+            A3 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A4">
+            <summary>
+            A4 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A5">
+            <summary>
+            A5 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A6">
+            <summary>
+            A6 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A7">
+            <summary>
+            A7 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.A8">
+            <summary>
+            A8 page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.Letter">
+            <summary>
+            Letter page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.HalfLetter">
+            <summary>
+            Half Letter page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.Ledger">
+            <summary>
+            Ledger page size.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageSize.Legal">
+            <summary>
+            Legal page size.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.PageOrientation">
+            <summary>
+            PDF page orientation.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageOrientation.Portrait">
+            <summary>
+            Portrait page orientation.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageOrientation.Landscape">
+            <summary>
+            Landscape page orientation.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.RenderingEngine">
+            <summary>
+            Rendering engine used for HTML to PDF conversion.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.RenderingEngine.WebKit">
+            <summary>
+            WebKit rendering engine.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.RenderingEngine.Restricted">
+            <summary>
+            WebKit Restricted rendering engine.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.RenderingEngine.Blink">
+            <summary>
+            Blink rendering engine.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.SecureProtocol">
+            <summary>
+            Protocol used for secure (HTTPS) connections.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.SecureProtocol.Tls11OrNewer">
+            <summary>
+            TLS 1.1 or newer. Recommended value.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.SecureProtocol.Tls10">
+            <summary>
+            TLS 1.0 only.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.SecureProtocol.Ssl3">
+            <summary>
+            SSL v3 only.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.PageLayout">
+            <summary>
+            The page layout to be used when the pdf document is opened in a viewer. 
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageLayout.SinglePage">
+            <summary>
+            Displays one page at a time.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageLayout.OneColumn">
+            <summary>
+            Displays the pages in one column.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageLayout.TwoColumnLeft">
+            <summary>
+            Displays the pages in two columns, with odd-numbered pages on the left.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageLayout.TwoColumnRight">
+            <summary>
+            Displays the pages in two columns, with odd-numbered pages on the right.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.PageMode">
+            <summary>
+            The PDF document's page mode. 
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageMode.UseNone">
+            <summary>
+            Neither document outline (bookmarks) nor thumbnail images are visible. 
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageMode.UseOutlines">
+            <summary>
+            Document outline (bookmarks) are visible.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageMode.UseThumbs">
+            <summary>
+            Thumbnail images are visible.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageMode.FullScreen">
+            <summary>
+            Full-screen mode, with no menu bar, window controls or any other window visible.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageMode.UseOC">
+            <summary>
+            Optional content group panel is visible.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageMode.UseAttachments">
+            <summary>
+            Document attachments are visible.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.PageNumbersAlignment">
+            <summary>
+            Alignment for page numbers.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageNumbersAlignment.Left">
+            <summary>
+            Align left.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageNumbersAlignment.Center">
+            <summary>
+            Align center.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.PageNumbersAlignment.Right">
+            <summary>
+            Align right.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.StartupMode">
+            <summary>
+            Specifies the converter startup mode. 
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.StartupMode.Automatic">
+            <summary>
+            The conversion starts right after the page loads.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.StartupMode.Manual">
+            <summary>
+            The conversion starts only when called from JavaScript.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.TextLayout">
+            <summary>
+            The output text layout (for pdf to text calls).
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.TextLayout.Original">
+            <summary>
+            The original layout of the text from the PDF document is preserved.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.TextLayout.Reading">
+            <summary>
+            The text is produced in reading order.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.OutputFormat">
+            <summary>
+            The output format (for pdf to text calls).
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.OutputFormat.Text">
+            <summary>
+            Text.
+            </summary>
+        </member>
+        <member name="F:SelectPdf.Api.OutputFormat.Html">
+            <summary>
+            HTML.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.ApiException">
+            <summary>
+            Exception thrown by SelectPdf API Client.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.ApiException.#ctor(System.String)">
+            <summary>
+            Constructor for ApiException.
+            </summary>
+            <param name="message">The exception message.</param>
+        </member>
+        <member name="M:SelectPdf.Api.ApiException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for ApiException.
+            </summary>
+            <param name="message">The exception message.</param>
+            <param name="innerException">The inner exception that triggered this exception.</param>
+        </member>
+        <member name="T:SelectPdf.Api.AsyncJobClient">
+            <summary>
+            Get the result of an asynchronous call.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.AsyncJobClient.#ctor(System.String,System.String)">
+            <summary>
+            Construct the async job client.
+            </summary>
+            <param name="apiKey">API Key.</param>
+            <param name="jobId">Job ID.</param>
+        </member>
+        <member name="M:SelectPdf.Api.AsyncJobClient.getResult">
+            <summary>
+            Get result of the asynchronous job.
+            </summary>
+            <returns>Byte array containing the resulted file if the job is finished. Returns Null if the job is still running. Throws an exception if an error occurred.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.AsyncJobClient.getNumberOfPages">
+            <summary>
+            Get the number of pages of the PDF document resulted from the API call.
+            </summary>
+            <returns>Number of pages of the PDF document.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.AsyncJobClient.getWebElements">
+            <summary>
+            Get the locations of certain web elements. This is retrieved if pdf_web_elements_selectors parameter is set and elements were found to match the selectors.
+            </summary>
+            <returns>List of web elements locations.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.AsyncJobClient.finished">
+            <summary>
+            Check if asynchronous job is finished.
+            </summary>
+            <returns>True if job finished.</returns>
+        </member>
+        <member name="T:SelectPdf.Api.HtmlToPdfClient">
+            <summary>
+            Html To Pdf Conversion with SelectPdf Online API.
+            </summary>
+            <example>
+            Html to Pdf in .NET with SelectPdf online REST API:
+            <code language="cs">
+            using System;
+            using SelectPdf.Api;
+            
+            namespace SelectPdf.Api.Tests
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        string url = "https://selectpdf.com";
+                        string localFile = "Test.pdf";
+                        string apiKey = "Your API key here";
+            
+                        Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION);
+            
+                        try
+                        {
+                            HtmlToPdfClient client = new HtmlToPdfClient(apiKey);
+            
+                            // set parameters - see full list at https://selectpdf.com/html-to-pdf-api/
+                            client
+                                // main properties
+            
+                                .setPageSize(PageSize.A4) // PDF page size
+                                .setPageOrientation(PageOrientation.Portrait) // PDF page orientation
+                                .setMargins(0) // PDF page margins
+                                .setRenderingEngine(RenderingEngine.WebKit) // rendering engine
+                                .setConversionDelay(1) // conversion delay
+                                .setNavigationTimeout(30) // navigation timeout 
+                                .setShowPageNumbers(false) // page numbers
+                                .setPageBreaksEnhancedAlgorithm(true) // enhanced page break algorithm
+            
+                                // additional properties
+            
+                                // .setUseCssPrint(true) // enable CSS media print
+                                // .setDisableJavascript(true) // disable javascript
+                                // .setDisableInternalLinks(true) // disable internal links
+                                // .setDisableExternalLinks(true) // disable external links
+                                // .setKeepImagesTogether(true) // keep images together
+                                // .setScaleImages(true) // scale images to create smaller pdfs
+                                // .setSinglePagePdf(true) // generate a single page PDF
+                                // .setUserPassword("password") // secure the PDF with a password
+            
+                                // generate automatic bookmarks
+            
+                                // .setPdfBookmarksSelectors("H1, H2") // create outlines (bookmarks) for the specified elements
+                                // .setViewerPageMode(PageMode.UseOutlines) // display outlines (bookmarks) in viewer
+                            ;
+            
+                            Console.WriteLine("Starting conversion ...");
+            
+                            // convert url to file
+                            client.convertUrlToFile(url, localFile);
+            
+                            // convert url to memory
+                            // byte[] pdf = client.convertUrl(url);
+            
+                            // convert html string to file
+                            // client.convertHtmlStringToFile("This is some <b>html</b>.", localFile);
+            
+                            // convert html string to memory
+                            // byte[] pdf = client.convertHtmlString("This is some <b>html</b>.");
+            
+                            Console.WriteLine("Finished! Number of pages: {0}.", client.getNumberOfPages());
+            
+                            // get API usage
+                            UsageClient usageClient = new UsageClient(apiKey);
+                            UsageInformation usage = usageClient.getUsage(false);
+                            Console.WriteLine("Conversions remained this month: {0}.", usage.Available);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("An error occurred: " + ex.Message);
+                        }
+                    }
+                }
+            }
+            </code>
+            <code language="vb">
+            Imports SelectPdf.Api
+            
+            Module Program
+                Sub Main(args As String())
+                    Dim url As String = "https://selectpdf.com"
+                    Dim localFile As String = "Test.pdf"
+                    Dim apiKey As String = "Your API key here"
+            
+                    Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION)
+            
+                    Try
+                        Dim client As HtmlToPdfClient = New HtmlToPdfClient(apiKey)
+            
+                        ' set parameters - see full list at https://selectpdf.com/html-to-pdf-api/
+            
+                        ' main properties
+                        client.setPageSize(PageSize.A4) ' PDF page size
+                        client.setPageOrientation(PageOrientation.Portrait) ' PDF page orientation
+                        client.setMargins(0) ' PDF page margins
+                        client.setRenderingEngine(RenderingEngine.WebKit) ' rendering engine
+                        client.setConversionDelay(1) ' conversion delay
+                        client.setNavigationTimeout(30) ' navigation timeout
+                        client.setShowPageNumbers(False) ' page numbers
+                        client.setPageBreaksEnhancedAlgorithm(True) ' enhanced page break algorithm
+            
+                        ' additional properties
+                        ' client.setUseCssPrint(True) ' enable CSS media print
+                        ' client.setDisableJavascript(True) ' disable javascript
+                        ' client.setDisableInternalLinks(True) ' disable internal links
+                        ' client.setDisableExternalLinks(True) ' disable external links
+                        ' client.setKeepImagesTogether(True) ' keep images together
+                        ' client.setScaleImages(True) ' scale images To create smaller pdfs
+                        ' client.setSinglePagePdf(True) ' generate a Single page PDF
+                        ' client.setUserPassword("password") ' secure the PDF With a password
+            
+                        ' generate automatic bookmarks
+            
+                        ' client.setPdfBookmarksSelectors("H1, H2") ' create outlines (bookmarks) For the specified elements
+                        ' client.setViewerPageMode(PageMode.UseOutlines) ' display outlines (bookmarks) In viewer
+            
+                        Console.WriteLine("Starting conversion ...")
+            
+                        ' convert url to file
+                        client.convertUrlToFile(url, localFile)
+            
+                        ' convert url to memory
+                        ' Dim pdf As Byte() = client.convertUrl(url)
+            
+                        ' convert html string to file
+                        ' client.convertHtmlStringToFile("This is some <b>html</b>.", localFile)
+            
+                        ' convert html string to memory
+                        ' Dim pdf As Byte() = client.convertHtmlString("This is some <b>html</b>.")
+            
+                        Console.WriteLine("Finished! Number of pages: {0}.", client.getNumberOfPages())
+            
+                        ' get API usage
+                        Dim usageClient As UsageClient = New UsageClient(apiKey)
+                        Dim usage As UsageInformation = usageClient.getUsage(False)
+                        Console.WriteLine("Conversions remained this month: {0}.", usage.Available)
+            
+                    Catch ex As Exception
+                        Console.WriteLine("An error occurred: " &amp; ex.Message)
+                    End Try
+                End Sub
+            End Module
+            </code>
+            </example>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.#ctor(System.String)">
+            <summary>
+            Construct the Html To Pdf Client.
+            </summary>
+            <param name="apiKey">API key.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertUrl(System.String)">
+            <summary>
+            Convert the specified url to PDF.
+            </summary>
+            <remarks>SelectPdf online API can convert http:// and https:// publicly available urls.</remarks>
+            <param name="url">Address of the web page being converted.</param>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertUrlToStream(System.String,System.IO.Stream)">
+            <summary>
+            Convert the specified url to PDF and writes the resulted PDF to an output stream.
+            </summary>
+            <remarks>SelectPdf online API can convert http:// and https:// publicly available urls.</remarks>
+            <param name="url">Address of the web page being converted.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertUrlToFile(System.String,System.String)">
+            <summary>
+            Convert the specified url to PDF and writes the resulted PDF to a local file.
+            </summary>
+            <remarks>SelectPdf online API can convert http:// and https:// publicly available urls.</remarks>
+            <param name="url">Address of the web page being converted.</param>
+            <param name="filePath">Local file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertUrlAsync(System.String)">
+            <summary>
+            Convert the specified url to PDF using an asynchronous call.
+            </summary>
+            <remarks>SelectPdf online API can convert http:// and https:// publicly available urls.</remarks>
+            <param name="url">Address of the web page being converted.</param>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertUrlToStreamAsync(System.String,System.IO.Stream)">
+            <summary>
+            Convert the specified url to PDF with an asynchronous call and writes the resulted PDF to an output stream.
+            </summary>
+            <remarks>SelectPdf online API can convert http:// and https:// publicly available urls.</remarks>
+            <param name="url">Address of the web page being converted.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertUrlToFileAsync(System.String,System.String)">
+            <summary>
+            Convert the specified url to PDF with an asynchronous call and writes the resulted PDF to a local file.
+            </summary>
+            <remarks>SelectPdf online API can convert http:// and https:// publicly available urls.</remarks>
+            <param name="url">Address of the web page being converted.</param>
+            <param name="filePath">Local file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlString(System.String)">
+            <summary>
+            Convert the specified HTML string to PDF.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlString(System.String,System.String)">
+            <summary>
+            Convert the specified HTML string to PDF. Use a base url to resolve relative paths to resources.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="baseUrl">Base url used to resolve relative paths to resources (css, images, javascript, etc). Must be a http:// or https:// publicly available url.</param>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToStream(System.String,System.IO.Stream)">
+            <summary>
+            Convert the specified HTML string to PDF and writes the resulted PDF to an output stream.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToStream(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Convert the specified HTML string to PDF and writes the resulted PDF to an output stream. Use a base url to resolve relative paths to resources.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="baseUrl">Base url used to resolve relative paths to resources (css, images, javascript, etc). Must be a http:// or https:// publicly available url.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToFile(System.String,System.String)">
+            <summary>
+            Convert the specified HTML string to PDF and writes the resulted PDF to a local file.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="filePath">Local file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToFile(System.String,System.String,System.String)">
+            <summary>
+            Convert the specified HTML string to PDF and writes the resulted PDF to a local file. Use a base url to resolve relative paths to resources.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="baseUrl">Base url used to resolve relative paths to resources (css, images, javascript, etc). Must be a http:// or https:// publicly available url.</param>
+            <param name="filePath">Local file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringAsync(System.String)">
+            <summary>
+            Convert the specified HTML string to PDF with an asynchronous call.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringAsync(System.String,System.String)">
+            <summary>
+            Convert the specified HTML string to PDF with an asynchronous call. Use a base url to resolve relative paths to resources.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="baseUrl">Base url used to resolve relative paths to resources (css, images, javascript, etc). Must be a http:// or https:// publicly available url.</param>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToStreamAsync(System.String,System.IO.Stream)">
+            <summary>
+            Convert the specified HTML string to PDF with an asynchronous call and writes the resulted PDF to an output stream.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToStreamAsync(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Convert the specified HTML string to PDF with an asynchronous call and writes the resulted PDF to an output stream. Use a base url to resolve relative paths to resources.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="baseUrl">Base url used to resolve relative paths to resources (css, images, javascript, etc). Must be a http:// or https:// publicly available url.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToFileAsync(System.String,System.String)">
+            <summary>
+            Convert the specified HTML string to PDF with an asynchronous call and writes the resulted PDF to a local file.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="filePath">Local file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.convertHtmlStringToFileAsync(System.String,System.String,System.String)">
+            <summary>
+            Convert the specified HTML string to PDF with an asynchronous call and writes the resulted PDF to a local file. Use a base url to resolve relative paths to resources.
+            </summary>
+            <param name="htmlString">HTML string with the content being converted.</param>
+            <param name="baseUrl">Base url used to resolve relative paths to resources (css, images, javascript, etc). Must be a http:// or https:// publicly available url.</param>
+            <param name="filePath">Local file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageSize(SelectPdf.Api.PageSize)">
+            <summary>
+            Set PDF page size. Default value is A4.
+            </summary>
+            <remarks>If page size is set to Custom, use setPageWidth and setPageHeight methods to set the custom width/height of the PDF pages.</remarks>
+            <param name="pageSize">PDF page size.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageWidth(System.Int32)">
+            <summary>
+            Set PDF page width in points. Default value is 595pt (A4 page width in points). 1pt = 1/72 inch.
+            </summary>
+            <remarks>This is taken into account only if page size is set to Custom using setPageSize method.</remarks>
+            <param name="pageWidth">Page width in points.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageHeight(System.Int32)">
+            <summary>
+            Set PDF page height in points. Default value is 842pt (A4 page height in points). 1pt = 1/72 inch.
+            </summary>
+            <remarks>This is taken into account only if page size is set to Custom using setPageSize method.</remarks>
+            <param name="pageHeight">Page height in points.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageOrientation(SelectPdf.Api.PageOrientation)">
+            <summary>
+            Set PDF page orientation. Default value is Portrait.
+            </summary>
+            <param name="pageOrientation">PDF page orientation.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMarginTop(System.Int32)">
+            <summary>
+            Set top margin of the PDF pages. Default value is 5pt.
+            </summary>
+            <param name="marginTop">Margin value in points. 1pt = 1/72 inch.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMarginRight(System.Int32)">
+            <summary>
+            Set right margin of the PDF pages. Default value is 5pt.
+            </summary>
+            <param name="marginRight">Margin value in points. 1pt = 1/72 inch.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMarginBottom(System.Int32)">
+            <summary>
+            Set bottom margin of the PDF pages. Default value is 5pt.
+            </summary>
+            <param name="marginBottom">Margin value in points. 1pt = 1/72 inch.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMarginLeft(System.Int32)">
+            <summary>
+            Set left margin of the PDF pages. Default value is 5pt.
+            </summary>
+            <param name="marginLeft">Margin value in points. 1pt = 1/72 inch.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMargins(System.Int32)">
+            <summary>
+            Set all margins of the PDF pages to the same value. Default value is 5pt.
+            </summary>
+            <param name="margin">Margin value in points. 1pt = 1/72 inch.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPdfName(System.String)">
+            <summary>
+            Specify the name of the pdf document that will be created. The default value is Document.pdf.
+            </summary>
+            <param name="pdfName">Name of the generated PDF document.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setRenderingEngine(SelectPdf.Api.RenderingEngine)">
+            <summary>
+            Set the rendering engine used for the HTML to PDF conversion. Default value is WebKit.
+            </summary>
+            <param name="renderingEngine">HTML rendering engine.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setUserPassword(System.String)">
+            <summary>
+            Set PDF user password.
+            </summary>
+            <param name="userPassword">PDF user password.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setOwnerPassword(System.String)">
+            <summary>
+            Set PDF owner password.
+            </summary>
+            <param name="ownerPassword">PDF owner password.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setWebPageWidth(System.Int32)">
+            <summary>
+            Set the width used by the converter's internal browser window in pixels. The default value is 1024px.
+            </summary>
+            <param name="webPageWidth">Browser window width in pixels.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setWebPageHeight(System.Int32)">
+            <summary>
+            Set the height used by the converter's internal browser window in pixels. The default value is 0px and it means that the page height is automatically calculated by the converter.
+            </summary>
+            <param name="webPageHeight">Browser window height in pixels. Set it to 0px to automatically calculate page height.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMinLoadTime(System.Int32)">
+            <summary>
+            Introduce a delay (in seconds) before the actual conversion to allow the web page to fully load. 
+            </summary>
+            <remarks>
+            This method is an alias for setConversionDelay. The default value is 1 second. Use a larger value if the web page has content that takes time to render when it is displayed in the browser.
+            </remarks>
+            <param name="minLoadTime">Delay in seconds.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setConversionDelay(System.Int32)">
+            <summary>
+            Introduce a delay (in seconds) before the actual conversion to allow the web page to fully load. 
+            </summary>
+            <remarks>
+            This method is an alias for setMinLoadTime. The default value is 1 second. 
+            Use a larger value if the web page has content that takes time to render when it is displayed in the browser.
+            </remarks>
+            <param name="delay">Delay in seconds.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setMaxLoadTime(System.Int32)">
+            <summary>
+            Set the maximum amount of time (in seconds) that the converter will wait for the page to load. 
+            </summary>
+            <remarks>
+            This method is an alias for setNavigationTimeout. A timeout error is displayed when this time elapses. 
+            The default value is 30 seconds. Use a larger value (up to 120 seconds allowed) for pages that take a long time to load.
+            </remarks>
+            <param name="maxLoadTime">Timeout in seconds.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setNavigationTimeout(System.Int32)">
+            <summary>
+            Set the maximum amount of time (in seconds) that the converter will wait for the page to load. 
+            </summary>
+            <remarks>
+            This method is an alias for setMaxLoadTime. A timeout error is displayed when this time elapses. 
+            The default value is 30 seconds. Use a larger value (up to 120 seconds allowed) for pages that take a long time to load.
+            </remarks>
+            <param name="timeout">Timeout in seconds.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setSecureProtocol(SelectPdf.Api.SecureProtocol)">
+            <summary>
+            Set the protocol used for secure (HTTPS) connections.
+            </summary>
+            <remarks>Set this only if you have an older server that only works with older SSL connections.</remarks>
+            <param name="secureProtocol">Secure protocol.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setUseCssPrint(System.Boolean)">
+            <summary>
+            Specify if the CSS Print media type is used instead of the Screen media type. The default value is False.
+            </summary>
+            <param name="useCssPrint">Use CSS Print media or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setBackgroundColor(System.String)">
+            <summary>
+            Specify the background color of the PDF page in RGB html format. The default is #FFFFFF.
+            </summary>
+            <param name="backgroundColor">Background color in #RRGGBB format.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDrawHtmlBackground(System.Boolean)">
+            <summary>
+            Set a flag indicating if the web page background is rendered in PDF. The default value is True.
+            </summary>
+            <param name="drawHtmlBackground">Draw the HTML background or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDisableJavascript(System.Boolean)">
+            <summary>
+            Do not run JavaScript in web pages. The default value is False and javascript is executed.
+            </summary>
+            <param name="disableJavascript">Disable javascript or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDisableInternalLinks(System.Boolean)">
+            <summary>
+            Do not create internal links in the PDF. The default value is False and internal links are created.
+            </summary>
+            <param name="disableInternalLinks">Disable internal links or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDisableExternalLinks(System.Boolean)">
+            <summary>
+            Do not create external links in the PDF. The default value is False and external links are created.
+            </summary>
+            <param name="disableExternalLinks">Disable external links or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setRenderOnTimeout(System.Boolean)">
+            <summary>
+            Try to render the PDF even in case of the web page loading timeout. The default value is False and an exception is raised in case of web page navigation timeout.
+            </summary>
+            <param name="renderOnTimeout">Render in case of timeout or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setKeepImagesTogether(System.Boolean)">
+            <summary>
+            Avoid breaking images between PDF pages. The default value is False and images are split between pages if larger.
+            </summary>
+            <param name="keepImagesTogether">Try to keep images on same page or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDocTitle(System.String)">
+            <summary>
+            Set the PDF document title.
+            </summary>
+            <param name="docTitle">Document title.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDocSubject(System.String)">
+            <summary>
+            Set the subject of the PDF document.
+            </summary>
+            <param name="docSubject">Document subject.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDocKeywords(System.String)">
+            <summary>
+            Set the PDF document keywords.
+            </summary>
+            <param name="docKeywords">Document keywords.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDocAuthor(System.String)">
+            <summary>
+            Set the name of the PDF document author.
+            </summary>
+            <param name="docAuthor">Document author.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setDocAddCreationDate(System.Boolean)">
+            <summary>
+            Add the date and time when the PDF document was created to the PDF document information. The default value is False.
+            </summary>
+            <param name="docAddCreationDate">Add creation date to the document metadata or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerPageLayout(SelectPdf.Api.PageLayout)">
+            <summary>
+            Set the page layout to be used when the document is opened in a PDF viewer. The default value is PageLayout.OneColumn.
+            </summary>
+            <param name="pageLayout">Page layout.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerPageMode(SelectPdf.Api.PageMode)">
+            <summary>
+            Set the document page mode when the pdf document is opened in a PDF viewer. The default value is PageMode.UseNone.
+            </summary>
+            <param name="pageMode">Page mode.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerCenterWindow(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to position the document's window in the center of the screen. The default value is False.
+            </summary>
+            <param name="viewerCenterWindow">Center window or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerDisplayDocTitle(System.Boolean)">
+            <summary>
+            Set a flag specifying whether the window's title bar should display the document title taken from document information. The default value is False.
+            </summary>
+            <param name="viewerDisplayDocTitle">Display title or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerFitWindow(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to resize the document's window to fit the size of the first displayed page. The default value is False.
+            </summary>
+            <param name="viewerFitWindow">Fit window or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerHideMenuBar(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to hide the pdf viewer application's menu bar when the document is active. The default value is False.
+            </summary>
+            <param name="viewerHideMenuBar">Hide menu bar or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerHideToolbar(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to hide the pdf viewer application's tool bars when the document is active. The default value is False.
+            </summary>
+            <param name="viewerHideToolbar">Hide tool bars or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setViewerHideWindowUI(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to hide user interface elements in the document's window (such as scroll bars and navigation controls), leaving only the document's contents displayed. 
+            The default value is False.
+            </summary>
+            <param name="viewerHideWindowUI">Hide window UI or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setShowHeader(System.Boolean)">
+            <summary>
+            Control if a custom header is displayed in the generated PDF document. The default value is False.
+            </summary>
+            <param name="showHeader">Show header or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderHeight(System.Int32)">
+            <summary>
+            The height of the pdf document header. This height is specified in points. 1 point is 1/72 inch. The default value is 50.
+            </summary>
+            <param name="height">Header height.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderUrl(System.String)">
+            <summary>
+            Set the url of the web page that is converted and rendered in the PDF document header.
+            </summary>
+            <param name="url">The url of the web page that is converted and rendered in the pdf document header.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderHtml(System.String)">
+            <summary>
+            Set the raw html that is converted and rendered in the pdf document header.
+            </summary>
+            <param name="html">The raw html that is converted and rendered in the pdf document header.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderBaseUrl(System.String)">
+            <summary>
+            Set an optional base url parameter can be used together with the header HTML to resolve relative paths from the html string.
+            </summary>
+            <param name="baseUrl">Header base url.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderDisplayOnFirstPage(System.Boolean)">
+            <summary>
+            Control the visibility of the header on the first page of the generated pdf document. The default value is True.
+            </summary>
+            <param name="displayOnFirstPage">Display header on the first page or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderDisplayOnOddPages(System.Boolean)">
+            <summary>
+            Control the visibility of the header on the odd numbered pages of the generated pdf document. The default value is True.
+            </summary>
+            <param name="displayOnOddPages">Display header on odd pages or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderDisplayOnEvenPages(System.Boolean)">
+            <summary>
+            Control the visibility of the header on the even numbered pages of the generated pdf document. The default value is True.
+            </summary>
+            <param name="displayOnEvenPages">Display header on even pages or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderWebPageWidth(System.Int32)">
+            <summary>
+            Set the width in pixels used by the converter's internal browser window during the conversion of the header content. The default value is 1024px.
+            </summary>
+            <param name="headerWebPageWidth">Browser window width in pixels.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setHeaderWebPageHeight(System.Int32)">
+            <summary>
+            Set the height in pixels used by the converter's internal browser window during the conversion of the header content. 
+            The default value is 0px and it means that the page height is automatically calculated by the converter.
+            </summary>
+            <param name="headerWebPageHeight">Browser window height in pixels. Set it to 0px to automatically calculate page height.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setShowFooter(System.Boolean)">
+            <summary>
+            Control if a custom footer is displayed in the generated PDF document. The default value is False.
+            </summary>
+            <param name="showFooter">Show footer or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterHeight(System.Int32)">
+            <summary>
+            The height of the pdf document footer. This height is specified in points. 1 point is 1/72 inch. The default value is 50.
+            </summary>
+            <param name="height">Footer height.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterUrl(System.String)">
+            <summary>
+            Set the url of the web page that is converted and rendered in the PDF document footer.
+            </summary>
+            <param name="url">The url of the web page that is converted and rendered in the pdf document footer.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterHtml(System.String)">
+            <summary>
+            Set the raw html that is converted and rendered in the pdf document footer.
+            </summary>
+            <param name="html">The raw html that is converted and rendered in the pdf document footer.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterBaseUrl(System.String)">
+            <summary>
+            Set an optional base url parameter can be used together with the footer HTML to resolve relative paths from the html string.
+            </summary>
+            <param name="baseUrl">Footer base url.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterDisplayOnFirstPage(System.Boolean)">
+            <summary>
+            Control the visibility of the footer on the first page of the generated pdf document. The default value is True.
+            </summary>
+            <param name="displayOnFirstPage">Display footer on the first page or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterDisplayOnOddPages(System.Boolean)">
+            <summary>
+            Control the visibility of the footer on the odd numbered pages of the generated pdf document. The default value is True.
+            </summary>
+            <param name="displayOnOddPages">Display footer on odd pages or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterDisplayOnEvenPages(System.Boolean)">
+            <summary>
+            Control the visibility of the footer on the even numbered pages of the generated pdf document. The default value is True.
+            </summary>
+            <param name="displayOnEvenPages">Display footer on even pages or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterDisplayOnLastPage(System.Boolean)">
+            <summary>
+            Add a special footer on the last page of the generated pdf document only. The default value is False.
+            </summary>
+            <remarks>
+            Use <see cref="M:SelectPdf.Api.HtmlToPdfClient.setFooterUrl(System.String)"/> or <see cref="M:SelectPdf.Api.HtmlToPdfClient.setFooterHtml(System.String)"/> and <see cref="M:SelectPdf.Api.HtmlToPdfClient.setFooterBaseUrl(System.String)"/> to specify the content of the last page footer.
+            Use <see cref="M:SelectPdf.Api.HtmlToPdfClient.setFooterHeight(System.Int32)"/> to specify the height of the special last page footer.
+            </remarks>
+            <param name="displayOnLastPage">Display special footer on the last page or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterWebPageWidth(System.Int32)">
+            <summary>
+            Set the width in pixels used by the converter's internal browser window during the conversion of the footer content. The default value is 1024px.
+            </summary>
+            <param name="footerWebPageWidth">Browser window width in pixels.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setFooterWebPageHeight(System.Int32)">
+            <summary>
+            Set the height in pixels used by the converter's internal browser window during the conversion of the footer content. 
+            The default value is 0px and it means that the page height is automatically calculated by the converter.
+            </summary>
+            <param name="footerWebPageHeight">Browser window height in pixels. Set it to 0px to automatically calculate page height.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setShowPageNumbers(System.Boolean)">
+            <summary>
+            Show page numbers. Default value is True.
+            </summary>
+            <remarks>Page numbers will be displayed in the footer of the PDF document.</remarks>
+            <param name="showPageNumbers">Show page numbers or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersFirst(System.Int32)">
+            <summary>
+            Control the page number for the first page being rendered. The default value is 1.
+            </summary>
+            <param name="firstPageNumber">First page number.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersOffset(System.Int32)">
+            <summary>
+            Control the total number of pages offset in the generated pdf document. The default value is 0.
+            </summary>
+            <param name="totalPagesOffset">Offset for the total number of pages in the generated pdf document.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersTemplate(System.String)">
+            <summary>
+            Set the text that is used to display the page numbers. 
+            It can contain the placeholder {page_number} for the current page number and {total_pages} for the total number of pages. 
+            The default value is "Page: {page_number} of {total_pages}".
+            </summary>
+            <param name="template">Page numbers template.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersFontName(System.String)">
+            <summary>
+            Set the font used to display the page numbers text. The default value is "Helvetica".
+            </summary>
+            <param name="fontName">The font used to display the page numbers text.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersFontSize(System.Int32)">
+            <summary>
+            Set the size of the font used to display the page numbers. The default value is 10 points.
+            </summary>
+            <param name="fontSize">The size in points of the font used to display the page numbers.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersAlignment(SelectPdf.Api.PageNumbersAlignment)">
+            <summary>
+            Set the alignment of the page numbers text. The default value is PageNumbersAlignment.Right.
+            </summary>
+            <param name="alignment">The alignment of the page numbers text.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersColor(System.String)">
+            <summary>
+            Specify the color of the page numbers text in #RRGGBB html format. The default value is #333333.
+            </summary>
+            <param name="color">Page numbers color.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageNumbersVerticalPosition(System.Int32)">
+            <summary>
+            Specify the position in points on the vertical where the page numbers text is displayed in the footer. The default value is 10 points.
+            </summary>
+            <param name="position">Page numbers Y position in points.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPdfBookmarksSelectors(System.String)">
+            <summary>
+            Generate automatic bookmarks in pdf. The elements that will be bookmarked are defined using CSS selectors. 
+            For example, the selector for all the H1 elements is "H1", the selector for all the elements with the CSS class name 'myclass' is "*.myclass" and 
+            the selector for the elements with the id 'myid' is "*#myid". Read more about CSS selectors <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">here</a>.
+            </summary>
+            <param name="selectors">CSS selectors used to identify HTML elements, comma separated.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPdfHideElements(System.String)">
+            <summary>
+            Exclude page elements from the conversion. The elements that will be excluded are defined using CSS selectors. 
+            For example, the selector for all the H1 elements is "H1", the selector for all the elements with the CSS class name 'myclass' is "*.myclass" and 
+            the selector for the elements with the id 'myid' is "*#myid". Read more about CSS selectors <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">here</a>.
+            </summary>
+            <param name="selectors">CSS selectors used to identify HTML elements, comma separated.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPdfShowOnlyElementID(System.String)">
+            <summary>
+            Convert only a specific section of the web page to pdf. 
+            The section that will be converted to pdf is specified by the html element ID. 
+            The element can be anything (image, table, table row, div, text, etc).
+            </summary>
+            <param name="elementID">HTML element ID.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPdfWebElementsSelectors(System.String)">
+            <summary>
+            Get the locations of page elements from the conversion. The elements that will have their locations retrieved are defined using CSS selectors. 
+            For example, the selector for all the H1 elements is "H1", the selector for all the elements with the CSS class name 'myclass' is "*.myclass" and 
+            the selector for the elements with the id 'myid' is "*#myid". Read more about CSS selectors <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">here</a>.
+            </summary>
+            <param name="selectors">CSS selectors used to identify HTML elements, comma separated.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setStartupMode(SelectPdf.Api.StartupMode)">
+            <summary>
+            Set converter startup mode. The default value is StartupMode.Automatic and the conversion is started immediately.
+            </summary>
+            <remarks>
+            By default this is set to <see cref="F:SelectPdf.Api.StartupMode.Automatic"/> and the conversion is started as soon as the page loads (and conversion delay set with <see cref="M:SelectPdf.Api.HtmlToPdfClient.setConversionDelay(System.Int32)"/> elapses). 
+            If set to <see cref="F:SelectPdf.Api.StartupMode.Manual"/>, the conversion is started only by a javascript call to <c>SelectPdf.startConversion()</c> from within the web page.
+            </remarks>
+            <param name="startupMode">Converter startup mode.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setSkipDecoding(System.Boolean)">
+            <summary>
+            Internal use only.
+            </summary>
+            <param name="skipDecoding">The default value is True.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setScaleImages(System.Boolean)">
+            <summary>
+            Set a flag indicating if the images from the page are scaled during the conversion process. The default value is False and images are not scaled.
+            </summary>
+            <param name="scaleImages">Scale images or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setSinglePagePdf(System.Boolean)">
+            <summary>
+            Generate a single page PDF. The converter will automatically resize the PDF page to fit all the content in a single page.
+            The default value of this property is False and the PDF will contain several pages if the content is large.
+            </summary>
+            <param name="generateSinglePagePdf">Generate a single page PDF or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setPageBreaksEnhancedAlgorithm(System.Boolean)">
+            <summary>
+            Get or set a flag indicating if an enhanced custom page breaks algorithm is used. 
+            The enhanced algorithm is a little bit slower but it will prevent the appearance of hidden text in the PDF when custom page breaks are used.
+            The default value for this property is False.
+            </summary>
+            <param name="enableEnhancedPageBreaksAlgorithm">Enable enhanced page breaks algorithm or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setCookies(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Set HTTP cookies for the web page being converted.
+            </summary>
+            <param name="cookies">HTTP cookies that will be sent to the page being converted.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.setCustomParameter(System.String,System.String)">
+            <summary>
+            Set a custom parameter. Do not use this method unless advised by SelectPdf.
+            </summary>
+            <param name="parameterName">Parameter name.</param>
+            <param name="parameterValue">Parameter value.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.getNumberOfPages">
+            <summary>
+            Get the number of pages of the PDF document resulted from the API call.
+            </summary>
+            <returns>Number of pages of the PDF document.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.HtmlToPdfClient.getWebElements">
+            <summary>
+            Get the locations of certain web elements. This is retrieved if pdf_web_elements_selectors parameter is set and elements were found to match the selectors.
+            </summary>
+            <returns>List of web elements locations.</returns>
+        </member>
+        <member name="T:SelectPdf.Api.PdfMergeClient">
+            <summary>
+            Pdf Merge with SelectPdf Online API.
+            </summary>
+            <example>
+            Merge PDF documents in .NET with SelectPdf online REST API:
+            <code language="cs">
+            using System;
+            using SelectPdf.Api;
+            
+            namespace SelectPdf.Api.Tests
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        string testUrl = "https://selectpdf.com/demo/files/selectpdf.pdf";
+                        string testPdf = "Input.pdf";
+                        string localFile = "Result.pdf";
+                        string apiKey = "Your API key here";
+            
+                        Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION);
+            
+                        try
+                        {
+                            PdfMergeClient client = new PdfMergeClient(apiKey);
+            
+                            // set parameters - see full list at https://selectpdf.com/pdf-merge-api/
+                            client
+                                // specify the pdf files that will be merged (order will be preserved in the final pdf)
+            
+                                .addFile(testPdf) // add PDF from local file
+                                .addUrlFile(testUrl) // add PDF From public url
+                                // .addFile(testPdf, "pdf_password") // add PDF (that requires a password) from local file
+                                // .addUrlFile(testUrl, "pdf_password") // add PDF (that requires a password) from public url
+                            ;
+            
+                            Console.WriteLine("Starting pdf merge ...");
+            
+                            // merge pdfs to local file
+                            client.saveToFile(localFile);
+            
+                            // merge pdfs to memory
+                            // byte[] pdf = client.save();
+            
+                            Console.WriteLine("Finished! Number of pages: {0}.", client.getNumberOfPages());
+            
+                            // get API usage
+                            UsageClient usageClient = new UsageClient(apiKey);
+                            UsageInformation usage = usageClient.getUsage(false);
+                            Console.WriteLine("Conversions remained this month: {0}.", usage.Available);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("An error occurred: " + ex.Message);
+                        }
+                    }
+                }
+            }
+            </code>
+            <code language="vb">
+            Imports SelectPdf.Api
+            
+            Module Program
+                Sub Main(args As String())
+                    Dim testUrl As String = "https://selectpdf.com/demo/files/selectpdf.pdf"
+                    Dim testPdf As String = "Input.pdf"
+                    Dim localFile As String = "Result.pdf"
+                    Dim apiKey As String = "Your API key here"
+            
+                    Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION)
+            
+                    Try
+                        Dim client As PdfMergeClient = New PdfMergeClient(apiKey)
+            
+                        ' set parameters - see full list at https://selectpdf.com/pdf-merge-api/
+            
+                        ' specify the pdf files that will be merged (order will be preserved in the final pdf)
+                        client.addFile(testPdf) ' add PDF from local file
+                        client.addUrlFile(testUrl) ' add PDF From Public url
+                        ' client.addFile(testPdf, "pdf_password") ' add PDF (that requires a password) from local file
+                        ' client.addUrlFile(testUrl, "pdf_password") ' add PDF (that requires a password) from public url
+            
+                        Console.WriteLine("Starting pdf merge ...")
+            
+                        ' merge pdfs to local file
+                        client.saveToFile(localFile)
+            
+                        ' merge pdfs to memory
+                        ' Dim pdf As Byte() = client.save()
+            
+                        Console.WriteLine("Finished! Number of pages: {0}.", client.getNumberOfPages())
+            
+                        ' get API usage
+                        Dim usageClient As UsageClient = New UsageClient(apiKey)
+                        Dim usage As UsageInformation = usageClient.getUsage(False)
+                        Console.WriteLine("Conversions remained this month: {0}.", usage.Available)
+            
+                    Catch ex As Exception
+                        Console.WriteLine("An error occurred: " &amp; ex.Message)
+                    End Try
+                End Sub
+            End Module
+            </code>
+            </example>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.#ctor(System.String)">
+            <summary>
+            Construct the Pdf Merge Client.
+            </summary>
+            <param name="apiKey">API key.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.addFile(System.String)">
+            <summary>
+            Add local PDF document to the list of input files.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.addFile(System.String,System.String)">
+            <summary>
+            Add local PDF document to the list of input files.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="userPassword">User password for the PDF document.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.addUrlFile(System.String)">
+            <summary>
+            Add remote PDF document to the list of input files.
+            </summary>
+            <param name="inputUrl">Url of a remote PDF file.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.addUrlFile(System.String,System.String)">
+            <summary>
+            Add remote PDF document to the list of input files.
+            </summary>
+            <param name="inputUrl">Url of a remote PDF file.</param>
+            <param name="userPassword">User password for the PDF document.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.save">
+            <summary>
+            Merge all specified input pdfs and return the resulted PDF.
+            </summary>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.saveToFile(System.String)">
+            <summary>
+            Merge all specified input pdfs and writes the resulted PDF to a local file.
+            </summary>
+            <param name="filePath">Local output file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.saveToStream(System.IO.Stream)">
+            <summary>
+            Merge all specified input pdfs and writes the resulted PDF to a specified stream.
+            </summary>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.saveAsync">
+            <summary>
+            Merge all specified input pdfs and return the resulted PDF. An asynchronous call is used.
+            </summary>
+            <returns>Byte array containing the resulted PDF.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.saveToFileAsync(System.String)">
+            <summary>
+            Merge all specified input pdfs and writes the resulted PDF to a local file. An asynchronous call is used.
+            </summary>
+            <param name="filePath">Local output file including path if necessary.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.saveToStreamAsync(System.IO.Stream)">
+            <summary>
+            Merge all specified input pdfs and writes the resulted PDF to a specified stream. An asynchronous call is used.
+            </summary>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setDocTitle(System.String)">
+            <summary>
+            Set the PDF document title.
+            </summary>
+            <param name="docTitle">Document title.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setDocSubject(System.String)">
+            <summary>
+            Set the subject of the PDF document.
+            </summary>
+            <param name="docSubject">Document subject.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setDocKeywords(System.String)">
+            <summary>
+            Set the PDF document keywords.
+            </summary>
+            <param name="docKeywords">Document keywords.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setDocAuthor(System.String)">
+            <summary>
+            Set the name of the PDF document author.
+            </summary>
+            <param name="docAuthor">Document author.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setDocAddCreationDate(System.Boolean)">
+            <summary>
+            Add the date and time when the PDF document was created to the PDF document information. The default value is False.
+            </summary>
+            <param name="docAddCreationDate">Add creation date to the document metadata or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerPageLayout(SelectPdf.Api.PageLayout)">
+            <summary>
+            Set the page layout to be used when the document is opened in a PDF viewer. The default value is PageLayout.OneColumn.
+            </summary>
+            <param name="pageLayout">Page layout.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerPageMode(SelectPdf.Api.PageMode)">
+            <summary>
+            Set the document page mode when the pdf document is opened in a PDF viewer. The default value is PageMode.UseNone.
+            </summary>
+            <param name="pageMode">Page mode.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerCenterWindow(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to position the document's window in the center of the screen. The default value is False.
+            </summary>
+            <param name="viewerCenterWindow">Center window or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerDisplayDocTitle(System.Boolean)">
+            <summary>
+            Set a flag specifying whether the window's title bar should display the document title taken from document information. The default value is False.
+            </summary>
+            <param name="viewerDisplayDocTitle">Display title or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerFitWindow(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to resize the document's window to fit the size of the first displayed page. The default value is False.
+            </summary>
+            <param name="viewerFitWindow">Fit window or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerHideMenuBar(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to hide the pdf viewer application's menu bar when the document is active. The default value is False.
+            </summary>
+            <param name="viewerHideMenuBar">Hide menu bar or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerHideToolbar(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to hide the pdf viewer application's tool bars when the document is active. The default value is False.
+            </summary>
+            <param name="viewerHideToolbar">Hide tool bars or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setViewerHideWindowUI(System.Boolean)">
+            <summary>
+            Set a flag specifying whether to hide user interface elements in the document's window (such as scroll bars and navigation controls), leaving only the document's contents displayed. 
+            The default value is False.
+            </summary>
+            <param name="viewerHideWindowUI">Hide window UI or not.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setUserPassword(System.String)">
+            <summary>
+            Set PDF user password.
+            </summary>
+            <param name="userPassword">PDF user password.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setOwnerPassword(System.String)">
+            <summary>
+            Set PDF owner password.
+            </summary>
+            <param name="ownerPassword">PDF owner password.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setTimeout(System.Int32)">
+            <summary>
+            Set the maximum amount of time (in seconds) for this job. 
+            </summary>
+            <remarks>
+            The default value is 30 seconds. Use a larger value (up to 120 seconds allowed) for large documents.
+            </remarks>
+            <param name="timeout">Timeout in seconds.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.setCustomParameter(System.String,System.String)">
+            <summary>
+            Set a custom parameter. Do not use this method unless advised by SelectPdf.
+            </summary>
+            <param name="parameterName">Parameter name.</param>
+            <param name="parameterValue">Parameter value.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfMergeClient.getNumberOfPages">
+            <summary>
+            Get the number of pages processed from the PDF document.
+            </summary>
+            <returns>Number of pages processed from the PDF document.</returns>
+        </member>
+        <member name="T:SelectPdf.Api.PdfToTextClient">
+            <summary>
+            Pdf To Text Conversion with SelectPdf Online API.
+            </summary>
+            <example>
+            Sample Code - Pdf To Text:
+            <code language="cs">
+            using System;
+            using SelectPdf.Api;
+            
+            namespace SelectPdf.Api.Tests
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        string testUrl = "https://selectpdf.com/demo/files/selectpdf.pdf";
+                        string testPdf = "Input.pdf";
+                        string localFile = "Result.txt";
+                        string apiKey = "Your API key here";
+            
+                        Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION);
+            
+                        try
+                        {
+                            PdfToTextClient client = new PdfToTextClient(apiKey);
+            
+                            // set parameters - see full list at https://selectpdf.com/pdf-to-text-api/
+                            client
+                                .setStartPage(1) // start page (processing starts from here)
+                                .setEndPage(0) // end page (set 0 to process file til the end)
+                                .setOutputFormat(OutputFormat.Text) // set output format (0-Text or 1-HTML)
+                            ;
+            
+                            Console.WriteLine("Starting pdf to text ...");
+            
+                            // convert local pdf to local text file
+                            client.getTextFromFileToFile(testPdf, localFile);
+            
+                            // extract text from local pdf to memory
+                            // string text = client.getTextFromFile(testPdf);
+                            // print text
+                            // Console.WriteLine(text);
+            
+                            // convert pdf from public url to local text file
+                            // client.getTextFromUrlToFile(testUrl, localFile);
+            
+                            // extract text from pdf from public url to memory
+                            // string text = client.getTextFromUrl(testUrl);
+                            // print text
+                            // Console.WriteLine(text);
+            
+                            Console.WriteLine("Finished! Number of pages processed: {0}.", client.getNumberOfPages());
+            
+                            // get API usage
+                            UsageClient usageClient = new UsageClient(apiKey);
+                            UsageInformation usage = usageClient.getUsage(false);
+                            Console.WriteLine("Conversions remained this month: {0}.", usage.Available);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("An error occurred: " + ex.Message);
+                        }
+                    }
+                }
+            }
+            </code>
+            <code language="vb">
+            Imports SelectPdf.Api
+            
+            Module Program
+                Sub Main(args As String())
+                    Dim testUrl As String = "https://selectpdf.com/demo/files/selectpdf.pdf"
+                    Dim testPdf As String = "Input.pdf"
+                    Dim localFile As String = "Result.txt"
+                    Dim apiKey As String = "Your API key here"
+            
+                    Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION)
+            
+                    Try
+                        Dim client As PdfToTextClient = New PdfToTextClient(apiKey)
+            
+                        ' set parameters - see full list at https://selectpdf.com/pdf-to-text-api/
+            
+                        client.setStartPage(1) ' start page (processing starts from here)
+                        client.setEndPage(0) ' End page (Set 0 To process file til the End)
+                        client.setOutputFormat(OutputFormat.Text) ' Set output format (0-Text Or 1-HTML)
+            
+                        Console.WriteLine("Starting pdf to text ...")
+            
+                        ' convert local pdf to local text file
+                        client.getTextFromFileToFile(testPdf, localFile)
+            
+                        ' extract text from local pdf to memory
+                        ' Dim text As String = client.getTextFromFile(testPdf)
+                        ' print text
+                        ' Console.WriteLine(text)
+            
+                        ' convert pdf from public url to local text file
+                        ' client.getTextFromUrlToFile(testUrl, localFile)
+            
+                        ' extract text from pdf from public url to memory
+                        ' Dim text As String = client.getTextFromUrl(testUrl)
+                        ' print text
+                        ' Console.WriteLine(text)
+            
+                        Console.WriteLine("Finished! Number of pages processed: {0}.", client.getNumberOfPages())
+            
+                        ' get API usage
+                        Dim usageClient As UsageClient = New UsageClient(apiKey)
+                        Dim usage As UsageInformation = usageClient.getUsage(False)
+                        Console.WriteLine("Conversions remained this month: {0}.", usage.Available)
+            
+                    Catch ex As Exception
+                        Console.WriteLine("An error occurred: " &amp; ex.Message)
+                    End Try
+                End Sub
+            End Module
+            </code>
+            Sample Code - Search Pdf:
+            <code language="cs">
+            using System;
+            using SelectPdf.Api;
+            
+            namespace SelectPdf.Api.Tests
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        string testUrl = "https://selectpdf.com/demo/files/selectpdf.pdf";
+                        string testPdf = "Input.pdf";
+                        string apiKey = "Your API key here";
+            
+                        Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION);
+            
+                        try
+                        {
+                            PdfToTextClient client = new PdfToTextClient(apiKey);
+            
+                            // set parameters - see full list at https://selectpdf.com/pdf-to-text-api/
+                            client
+                                .setStartPage(1) // start page (processing starts from here)
+                                .setEndPage(0) // end page (set 0 to process file til the end)
+                                .setOutputFormat(OutputFormat.Text) // set output format (0-Text or 1-HTML)
+                            ;
+            
+                            Console.WriteLine("Starting search pdf ...");
+            
+                            // search local pdf
+                            IList&amp;TextPosition> results = client.searchFile(testPdf, "pdf");
+            
+                            // search pdf from public url
+                            // IList&amp;TextPosition> results = client.searchUrl(testUrl, "pdf");
+            
+                            Console.WriteLine("Search results:\n{0}\nSearch results count: {1}.", string.Join("\n", results), results.Count);
+            
+                            Console.WriteLine("Finished! Number of pages processed: {0}.", client.getNumberOfPages());
+            
+                            // get API usage
+                            UsageClient usageClient = new UsageClient(apiKey);
+                            UsageInformation usage = usageClient.getUsage(false);
+                            Console.WriteLine("Conversions remained this month: {0}.", usage.Available);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("An error occurred: " + ex.Message);
+                        }
+                    }
+                }
+            }
+            </code>
+            <code language="vb">
+            Imports SelectPdf.Api
+            
+            Module Program
+                Sub Main(args As String())
+                    Dim testUrl As String = "https://selectpdf.com/demo/files/selectpdf.pdf"
+                    Dim testPdf As String = "Input.pdf"
+                    Dim apiKey As String = "Your API key here"
+            
+                    Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION)
+            
+                    Try
+                        Dim client As PdfToTextClient = New PdfToTextClient(apiKey)
+            
+                        ' set parameters - see full list at https://selectpdf.com/pdf-to-text-api/
+            
+                        client.setStartPage(1) ' start page (processing starts from here)
+                        client.setEndPage(0) ' End page (Set 0 To process file til the End)
+                        client.setOutputFormat(OutputFormat.Text) ' Set output format (0-Text Or 1-HTML)
+            
+                        Console.WriteLine("Starting search pdf ...")
+            
+                        ' search local pdf
+                        Dim results As IList(Of TextPosition) = client.searchFile(testPdf, "pdf")
+            
+                        ' search pdf from public url
+                        ' Dim results As IList(Of TextPosition) = client.searchUrl(testUrl, "pdf")
+            
+                        Console.WriteLine("Search results:{0}{1}{0}Search results count: {2}.", Environment.NewLine, String.Join(Environment.NewLine, results), results.Count)
+            
+                        Console.WriteLine("Finished! Number of pages processed: {0}.", client.getNumberOfPages())
+            
+                        ' get API usage
+                        Dim usageClient As UsageClient = New UsageClient(apiKey)
+                        Dim usage As UsageInformation = usageClient.getUsage(False)
+                        Console.WriteLine("Conversions remained this month: {0}.", usage.Available)
+            
+                    Catch ex As Exception
+                        Console.WriteLine("An error occurred: " &amp; ex.Message)
+                    End Try
+                End Sub
+            End Module
+            </code>
+            </example>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.#ctor(System.String)">
+            <summary>
+            Construct the Pdf To Text Client.
+            </summary>
+            <param name="apiKey">API key.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromFile(System.String)">
+            <summary>
+            Get the text from the specified pdf.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <returns>Extracted text.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromFileToFile(System.String,System.String)">
+            <summary>
+            Get the text from the specified pdf and write it to the specified text file.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="outputFilePath">The output file where the resulted text will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromFileToStream(System.String,System.IO.Stream)">
+            <summary>
+            Get the text from the specified pdf and write it to the specified stream.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromFileAsync(System.String)">
+            <summary>
+            Get the text from the specified pdf with an asynchronous call.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <returns>Extracted text.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromFileToFileAsync(System.String,System.String)">
+            <summary>
+            Get the text from the specified pdf with an asynchronous call and write it to the specified text file.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="outputFilePath">The output file where the resulted text will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromFileToStreamAsync(System.String,System.IO.Stream)">
+            <summary>
+            Get the text from the specified pdf with an asynchronous call and write it to the specified stream.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchFile(System.String,System.String)">
+            <summary>
+            Search for a specific text in a PDF document. The search is case insensitive and returns partial words also.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchFile(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Search for a specific text in a PDF document.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <param name="caseSensitive">If the search is case sensitive or not.</param>
+            <param name="wholeWordsOnly">If the search works on whole words or not.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchFileAsync(System.String,System.String)">
+            <summary>
+            Search for a specific text in a PDF document with an asynchronous call. The search is case insensitive and returns partial words also.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchFileAsync(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Search for a specific text in a PDF document with an asynchronous call.
+            </summary>
+            <param name="inputPdf">Path to a local PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <param name="caseSensitive">If the search is case sensitive or not.</param>
+            <param name="wholeWordsOnly">If the search works on whole words or not.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchUrl(System.String,System.String)">
+            <summary>
+            Search for a specific text in a PDF document. The search is case insensitive and returns partial words also.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchUrl(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Search for a specific text in a PDF document.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <param name="caseSensitive">If the search is case sensitive or not.</param>
+            <param name="wholeWordsOnly">If the search works on whole words or not.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchUrlAsync(System.String,System.String)">
+            <summary>
+            Search for a specific text in a PDF document with an asynchronous call. The search is case insensitive and returns partial words also.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.searchUrlAsync(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Search for a specific text in a PDF document with an asynchronous call.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="textToSearch">Text to search.</param>
+            <param name="caseSensitive">If the search is case sensitive or not.</param>
+            <param name="wholeWordsOnly">If the search works on whole words or not.</param>
+            <returns>List with text positions in the current PDF document.</returns>
+            <remarks>
+            Pages that participate to this operation are specified by <see cref="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)"/> and <see cref="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)"/> methods.
+            </remarks>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromUrl(System.String)">
+            <summary>
+            Get the text from the specified pdf.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <returns>Extracted text.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromUrlToFile(System.String,System.String)">
+            <summary>
+            Get the text from the specified pdf and write it to the specified text file.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="outputFilePath">The output file where the resulted text will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromUrlToStream(System.String,System.IO.Stream)">
+            <summary>
+            Get the text from the specified pdf and write it to the specified stream.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromUrlAsync(System.String)">
+            <summary>
+            Get the text from the specified pdf with an asynchronous call.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <returns>Extracted text.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromUrlToFileAsync(System.String,System.String)">
+            <summary>
+            Get the text from the specified pdf with an asynchronous call and write it to the specified text file.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="outputFilePath">The output file where the resulted text will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getTextFromUrlToStreamAsync(System.String,System.IO.Stream)">
+            <summary>
+            Get the text from the specified pdf with an asynchronous call and write it to the specified stream.
+            </summary>
+            <param name="url">Address of the PDF file.</param>
+            <param name="stream">The output stream where the resulted PDF will be written.</param>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setStartPage(System.Int32)">
+            <summary>
+            Set Start Page number. Default value is 1 (first page of the document).
+            </summary>
+            <param name="startPage">Start page number (1-based).</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setEndPage(System.Int32)">
+            <summary>
+            Set End Page number. Default value is 0 (process till the last page of the document).
+            </summary>
+            <param name="endPage">End page number (1-based).</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setUserPassword(System.String)">
+            <summary>
+            Set PDF user password.
+            </summary>
+            <param name="userPassword">PDF user password.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setTextLayout(SelectPdf.Api.TextLayout)">
+            <summary>
+            Set the text layout. The default value is TextLayout.Original.
+            </summary>
+            <param name="textLayout">The text layout.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setOutputFormat(SelectPdf.Api.OutputFormat)">
+            <summary>
+            Set the output format. The default value is OutputFormat.Text.
+            </summary>
+            <param name="outputFormat">The output format.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setTimeout(System.Int32)">
+            <summary>
+            Set the maximum amount of time (in seconds) for this job. 
+            </summary>
+            <remarks>
+            The default value is 30 seconds. Use a larger value (up to 120 seconds allowed) for large documents.
+            </remarks>
+            <param name="timeout">Timeout in seconds.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.setCustomParameter(System.String,System.String)">
+            <summary>
+            Set a custom parameter. Do not use this method unless advised by SelectPdf.
+            </summary>
+            <param name="parameterName">Parameter name.</param>
+            <param name="parameterValue">Parameter value.</param>
+            <returns>Reference to the current object.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.PdfToTextClient.getNumberOfPages">
+            <summary>
+            Get the number of pages processed from the PDF document.
+            </summary>
+            <returns>Number of pages processed from the PDF document.</returns>
+        </member>
+        <member name="T:SelectPdf.Api.TextPosition">
+            <summary>
+            The text position in a PDF document.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.TextPosition.#ctor">
+            <summary>
+            Creates a TextPosition object.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.TextPosition.PageNumber">
+            <summary>
+            Number of the page where the text is located (1-based).
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.TextPosition.X">
+            <summary>
+            X coordinate of the text rectangle in the PDF page.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.TextPosition.Y">
+            <summary>
+            Y coordinate of the text rectangle in the PDF page.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.TextPosition.Width">
+            <summary>
+            Width of the text rectangle in the PDF page.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.TextPosition.Height">
+            <summary>
+            Height of the text rectangle in the PDF page.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.TextPosition.ToString">
+            <summary>
+            ToString override.
+            </summary>
+            <returns>String representation of the object.</returns>
+        </member>
+        <member name="T:SelectPdf.Api.UsageClient">
+            <summary>
+            Get usage details for SelectPdf Online API.
+            </summary>
+            <example>
+            Get usage details for SelectPdf online REST API:
+            <code language="cs">
+            using System;
+            using SelectPdf.Api;
+            
+            namespace SelectPdf.Api.Tests
+            {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        string apiKey = "Your API key here";
+            
+                        Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION);
+            
+                        try
+                        {
+                            // get API usage
+                            UsageClient usageClient = new UsageClient(apiKey);
+                            UsageInformation usage = usageClient.getUsage(false);
+                            Console.WriteLine("Conversions remained this month: {0}.", usage.Available);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("An error occurred: " + ex.Message);
+                        }
+                    }
+                }
+            }
+            </code>
+            <code language="vb">
+            Imports SelectPdf.Api
+            
+            Module Program
+                Sub Main(args As String())
+                    Dim apiKey As String = "Your API key here"
+            
+                    Console.WriteLine("This is SelectPdf-{0}.", ApiClient.CLIENT_VERSION)
+            
+                    Try
+                        ' get API usage
+                        Dim usageClient As UsageClient = New UsageClient(apiKey)
+                        Dim usage As UsageInformation = usageClient.getUsage(False)
+                        Console.WriteLine("Conversions remained this month: {0}.", usage.Available)
+            
+                    Catch ex As Exception
+                        Console.WriteLine("An error occurred: " &amp; ex.Message)
+                    End Try
+                End Sub
+            End Module
+            </code>
+            </example>
+        </member>
+        <member name="M:SelectPdf.Api.UsageClient.#ctor(System.String)">
+            <summary>
+            Construct the Usage client.
+            </summary>
+            <param name="apiKey">API Key.</param>
+        </member>
+        <member name="M:SelectPdf.Api.UsageClient.getUsage">
+            <summary>
+            Get API usage information.
+            </summary>
+            <returns>Usage information.</returns>
+        </member>
+        <member name="M:SelectPdf.Api.UsageClient.getUsage(System.Boolean)">
+            <summary>
+            Get API usage information with history if specified.
+            </summary>
+            <param name="getHistory">Get history also.</param>
+            <returns>Usage information.</returns>
+        </member>
+        <member name="T:SelectPdf.Api.UsageInformation">
+            <summary>
+            SelectPdf API usage information.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageInformation.Status">
+            <summary>
+            Subscription status.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageInformation.SubscriptionType">
+            <summary>
+            Subscription type.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageInformation.Limit">
+            <summary>
+            Monthly conversions limit.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageInformation.Used">
+            <summary>
+            Number of conversions used in the current month.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageInformation.Available">
+            <summary>
+            Number of conversions available in the current month.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageInformation.History">
+            <summary>
+            Usage monthly history.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.UsageInformation.#ctor">
+            <summary>
+            Construct the usage information object.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.UsageMonthlyDetails">
+            <summary>
+            SelectPdf API monthly usage information.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageMonthlyDetails.Year">
+            <summary>
+            Year.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageMonthlyDetails.Month">
+            <summary>
+            Month.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageMonthlyDetails.Conversions">
+            <summary>
+            Number of conversions performed.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.UsageMonthlyDetails.Credits">
+            <summary>
+            Number of credits used.
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.WebElement">
+            <summary>
+            Represents the mapping of a HTML element in the PDF document as collection of PDF 
+            rectangles. A HTML element can span on many pages in the generated PDF document 
+            and therefore, in general, many PDF rectangles are necessary to completely describe 
+            the mapping of a HTML element in PDF.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.WebElement.HtmlElementId">
+            <summary>
+            The ID in HTML of the HTML element.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.WebElement.PdfRectangles">
+            <summary>
+            The rectangles occupied by the HTML element in the generated PDF document.
+            A HTML element can span on many pages in the generated PDF document 
+            and therefore, in general, many PDF rectangles are necessary to completely describe 
+            the mapping of a HTML element in PDF.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.WebElement.HtmlElementTagName">
+            <summary>
+            The HTML tag name of the HTML element. 
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.WebElement.HtmlElementCssClassName">
+            <summary>
+            The CSS class name of the HTML element. 
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.WebElementPdfRectangle">
+            <summary>
+            Represents the rectangle occupied by a HTML element in a page of the generated PDF document.
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.WebElementPdfRectangle.PageIndex">
+            <summary>
+            The zero based index of the PDF page containing this rectangle. 
+            </summary>
+        </member>
+        <member name="P:SelectPdf.Api.WebElementPdfRectangle.Rectangle">
+            <summary>
+            The rectangle position inside the PDF page drawing area. The drawing area of the PDF page 
+            does not include the page margins, header or footer. The rectangle dimensions are expressed 
+            in points (1 point is 1/72 inch).
+            </summary>
+        </member>
+        <member name="T:SelectPdf.Api.WebElementsClient">
+            <summary>
+            Get the locations of certain web elements. This is retrieved if pdf_web_elements_selectors parameter was set during the initial conversion call and elements were found to match the selectors.
+            </summary>
+        </member>
+        <member name="M:SelectPdf.Api.WebElementsClient.#ctor(System.String,System.String)">
+            <summary>
+            Construct the web elements client.
+            </summary>
+            <param name="apiKey">API Key.</param>
+            <param name="jobId">Job ID.</param>
+        </member>
+        <member name="M:SelectPdf.Api.WebElementsClient.getWebElements">
+            <summary>
+            Get the locations of certain web elements. This is retrieved if pdf_web_elements_selectors parameter is set and elements were found to match the selectors.
+            </summary>
+            <returns>List of web elements locations.</returns>
+        </member>
+    </members>
+</doc>
